@@ -1,0 +1,161 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:Jellyfin.Orsay.Installer.ViewModels.Pages"
+             xmlns:conv="using:Jellyfin.Orsay.Installer.Converters"
+             mc:Ignorable="d"
+             x:Class="Jellyfin.Orsay.Installer.Views.Pages.TvInstructionsPage"
+             x:DataType="vm:TvInstructionsPageViewModel">
+
+    <Grid RowDefinitions="Auto,Auto,Auto,*" Margin="24">
+
+        <!-- Title -->
+        <TextBlock Grid.Row="0"
+                   Text="{Binding L[TvSetup.Title]}"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="#2C3E50"
+                   Margin="0,0,0,16"/>
+
+        <!-- IP Address Banner -->
+        <Border Grid.Row="1"
+                Background="#2C3E50"
+                CornerRadius="12"
+                Padding="24,16"
+                Margin="0,0,0,20">
+            <StackPanel HorizontalAlignment="Center" Spacing="8">
+                <TextBlock Text="{Binding L[TvSetup.IpBanner]}"
+                           FontSize="14"
+                           Foreground="#BDC3C7"
+                           HorizontalAlignment="Center"/>
+                <TextBlock Text="{Binding IpAddressDisplay}"
+                           FontSize="28"
+                           FontWeight="Bold"
+                           FontFamily="Consolas, monospace"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Series Selector -->
+        <StackPanel Grid.Row="2" Spacing="12" Margin="0,0,0,16">
+            <TextBlock Text="{Binding L[TvSetup.SelectSeries]}"
+                       FontSize="14"
+                       Foreground="#555"
+                       HorizontalAlignment="Center"/>
+
+            <StackPanel Orientation="Horizontal" Spacing="8" HorizontalAlignment="Center">
+                <!-- Series E Button -->
+                <Button Command="{Binding SelectSeriesECommand}"
+                        Padding="16,12"
+                        CornerRadius="8"
+                        Cursor="Hand"
+                        MinWidth="120"
+                        Background="{Binding IsSeriesESelected, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#3498DB;#E8E8E8}"
+                        Foreground="{Binding IsSeriesESelected, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#FFFFFF;#555555}">
+                    <StackPanel>
+                        <TextBlock Text="Series E"
+                                   FontWeight="SemiBold"
+                                   HorizontalAlignment="Center"/>
+                        <TextBlock Text="(2012)"
+                                   FontSize="11"
+                                   Opacity="0.7"
+                                   HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <!-- Series F Button -->
+                <Button Command="{Binding SelectSeriesFCommand}"
+                        Padding="16,12"
+                        CornerRadius="8"
+                        Cursor="Hand"
+                        MinWidth="120"
+                        Background="{Binding IsSeriesFSelected, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#3498DB;#E8E8E8}"
+                        Foreground="{Binding IsSeriesFSelected, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#FFFFFF;#555555}">
+                    <StackPanel>
+                        <TextBlock Text="Series F"
+                                   FontWeight="SemiBold"
+                                   HorizontalAlignment="Center"/>
+                        <TextBlock Text="(2013)"
+                                   FontSize="11"
+                                   Opacity="0.7"
+                                   HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <!-- Series H Button -->
+                <Button Command="{Binding SelectSeriesHCommand}"
+                        Padding="16,12"
+                        CornerRadius="8"
+                        Cursor="Hand"
+                        MinWidth="120"
+                        Background="{Binding IsSeriesHSelected, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#3498DB;#E8E8E8}"
+                        Foreground="{Binding IsSeriesHSelected, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#FFFFFF;#555555}">
+                    <StackPanel>
+                        <TextBlock Text="Series H"
+                                   FontWeight="SemiBold"
+                                   HorizontalAlignment="Center"/>
+                        <TextBlock Text="(2014-15)"
+                                   FontSize="11"
+                                   Opacity="0.7"
+                                   HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+            <TextBlock Text="{Binding L[TvSetup.DontKnowSeries]}"
+                       FontSize="12"
+                       Foreground="#7F8C8D"
+                       HorizontalAlignment="Center"
+                       FontStyle="Italic"
+                       TextWrapping="Wrap"
+                       TextAlignment="Center"/>
+        </StackPanel>
+
+        <!-- Steps List -->
+        <ScrollViewer Grid.Row="3">
+            <ItemsControl ItemsSource="{Binding Steps}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="White"
+                                CornerRadius="10"
+                                Padding="16"
+                                Margin="0,0,0,8"
+                                BoxShadow="0 1 4 0 #15000000">
+                            <Grid ColumnDefinitions="Auto,*">
+                                <!-- Step Number -->
+                                <Border Background="#3498DB"
+                                        CornerRadius="14"
+                                        Width="28" Height="28"
+                                        VerticalAlignment="Top"
+                                        Margin="0,2,12,0">
+                                    <TextBlock Text="{Binding Number}"
+                                               FontWeight="Bold"
+                                               FontSize="13"
+                                               Foreground="White"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"/>
+                                </Border>
+
+                                <!-- Step Content -->
+                                <StackPanel Grid.Column="1" Spacing="4">
+                                    <TextBlock Text="{Binding Title}"
+                                               FontSize="14"
+                                               FontWeight="SemiBold"
+                                               Foreground="#2C3E50"
+                                               TextWrapping="Wrap"/>
+                                    <TextBlock Text="{Binding Description}"
+                                               FontSize="13"
+                                               Foreground="#666"
+                                               TextWrapping="Wrap"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+    </Grid>
+</UserControl>

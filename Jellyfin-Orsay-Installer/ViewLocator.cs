@@ -7,21 +7,33 @@ namespace Jellyfin.Orsay.Installer
 {
     public class ViewLocator : IDataTemplate
     {
-
         public Control? Build(object? param)
         {
             if (param is null)
                 return null;
 
-            var name = param.GetType().FullName!.Replace("ViewModel", "View", StringComparison.Ordinal);
-            var type = Type.GetType(name);
+            var vmName = param.GetType().FullName!;
+
+            // Try convention: ViewModels.Pages.FooPageViewModel -> Views.Pages.FooPage
+            var viewName = vmName
+                .Replace(".ViewModels.", ".Views.", StringComparison.Ordinal)
+                .Replace("ViewModel", "", StringComparison.Ordinal);
+
+            var type = Type.GetType(viewName);
+
+            // Fallback: ViewModels.FooViewModel -> Views.FooView
+            if (type == null)
+            {
+                viewName = vmName.Replace("ViewModel", "View", StringComparison.Ordinal);
+                type = Type.GetType(viewName);
+            }
 
             if (type != null)
             {
                 return (Control)Activator.CreateInstance(type)!;
             }
 
-            return new TextBlock { Text = "Not Found: " + name };
+            return new TextBlock { Text = "Not Found: " + vmName };
         }
 
         public bool Match(object? data)

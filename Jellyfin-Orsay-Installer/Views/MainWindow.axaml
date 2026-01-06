@@ -1,233 +1,183 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:Jellyfin.Orsay.Installer.ViewModels"
+        xmlns:conv="using:Jellyfin.Orsay.Installer.Converters"
+        xmlns:models="using:Jellyfin.Orsay.Installer.Models"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         x:Class="Jellyfin.Orsay.Installer.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/jelly2sams.ico"
-        Title="Jellyfin Orsay Installer"
-        Width="580"
-        Height="980"
-        Background="#F5F5F5"
-        Opened="Window_Opened">
+        Title="Jellyfin Installer: Samsung Smart TV (Orsay) models (2011-2015)"
+        Width="800"
+        Height="880"
+        MinWidth="700"
+        MinHeight="780"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
 
-	<!-- ROOT LAYER -->
-	<Grid>
+    <Grid RowDefinitions="Auto,*,Auto,Auto">
 
-		<!-- ===================== -->
-		<!-- NORMAL INSTALLER UI   -->
-		<!-- ===================== -->
-		<Grid RowDefinitions="Auto,*,Auto"
-              Margin="24">
+        <!-- =================== -->
+        <!-- HEADER              -->
+        <!-- =================== -->
+        <Border Grid.Row="0"
+                Background="#2C3E50"
+                Padding="24,16">
+            <Grid ColumnDefinitions="Auto,*,Auto,Auto">
 
-			<!-- HEADER -->
-			<Border Grid.Row="0"
-                    Classes="card"
-                    Background="#2C3E50"
-                    Padding="24,22"
-                    Margin="0,0,0,28">
-				<Grid ColumnDefinitions="*,Auto"
-                      ColumnSpacing="16"
-                      VerticalAlignment="Center">
-
-					<TextBlock Text="{Binding L[App.Title]}"
-                               FontSize="20"
+                <!-- Logo/Title -->
+                <StackPanel Orientation="Horizontal" Spacing="12">
+                    <Image Source="/Assets/jelly2sams.ico"
+                           Width="32" Height="32"/>
+                    <TextBlock Text="{Binding L[App.Title]}"
+                               FontSize="18"
                                FontWeight="SemiBold"
-                               Foreground="White"/>
+                               Foreground="White"
+                               VerticalAlignment="Center"/>
+                </StackPanel>
 
-					<ComboBox Grid.Column="1"
-                              Classes="header"
-                              MinWidth="110"
-                              ItemsSource="{Binding Languages}"
-                              SelectedItem="{Binding SelectedLanguage}"/>
-				</Grid>
-			</Border>
+                <!-- Language selector -->
+                <ComboBox Grid.Column="2"
+                          Classes="header"
+                          MinWidth="100"
+                          ItemsSource="{Binding Languages}"
+                          SelectedItem="{Binding SelectedLanguage}"
+                          Margin="0,0,12,0">
 
-			<!-- MAIN CONTENT -->
-			<ScrollViewer Grid.Row="1">
-				<StackPanel Spacing="20">
+                    <!-- Compact view for collapsed state: 🇷🇺 RU -->
+                    <ComboBox.SelectionBoxItemTemplate>
+                        <DataTemplate DataType="{x:Type models:LanguageInfo}">
+                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                <TextBlock Text="{Binding FlagEmoji}"
+                                           FontSize="14"
+                                           VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding CodeUpper}"
+                                           FontWeight="SemiBold"
+                                           VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.SelectionBoxItemTemplate>
 
-					<!-- TV SETUP -->
-					<Border Classes="card">
-						<StackPanel Spacing="16">
-
-							<TextBlock Text="{Binding L[Section.TV]}"
-                                       FontSize="16"
-                                       FontWeight="SemiBold"/>
-
-							<TextBlock Text="{Binding L[TV.Step1]}"
-                                       TextWrapping="Wrap"
-                                       Foreground="#555"/>
-
-							<StackPanel Spacing="8">
-								<TextBlock Text="{Binding L[TV.Step2]}"
-                                           FontSize="12"
-                                           Foreground="#6C757D"/>
-
-								<Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
-									<TextBox Text="{Binding IpInput}"
-                                             Padding="12"
-                                             FontSize="14"
-                                             FontFamily="Consolas"/>
-
-									<Button Grid.Column="1"
-                                            Content="{Binding L[Button.ApplyIp]}"
-                                            Command="{Binding ApplyIpCommand}"
-                                            Padding="16,12"
-                                            Background="#27AE60"
-                                            Foreground="White"
-                                            CornerRadius="8"
-											Cursor="Hand"/>
-								</Grid>
-
-								<TextBlock Text="{Binding AppliedIp, StringFormat='Applied: {0}'}"
-                                           FontSize="11"
-                                           Foreground="#27AE60"
-                                           FontStyle="Italic"/>
-							</StackPanel>
-
-							<TextBlock Text="{Binding L[TV.Step3]}"
-                                       TextWrapping="Wrap"
-                                       Foreground="#555"/>
-						</StackPanel>
-					</Border>
-
-					<!-- SERVER STATUS -->
-					<Border Classes="card">
-						<StackPanel Spacing="16">
-
-							<TextBlock Text="{Binding L[Section.Server]}"
-                                       FontSize="16"
-                                       FontWeight="SemiBold"/>
-
-							<Border Background="#2C3E50"
-                                    CornerRadius="12"
-                                    Padding="20">
-								<TextBlock Text="{Binding InstallStatus}"
+                    <!-- Full view for dropdown: 🇷🇺 Русский (Russian) -->
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate DataType="{x:Type models:LanguageInfo}">
+                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                <TextBlock Text="{Binding FlagEmoji}"
                                            FontSize="16"
-                                           FontWeight="Medium"
-                                           Foreground="White"
-                                           HorizontalAlignment="Center"/>
-							</Border>
+                                           VerticalAlignment="Center"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding NativeName}"
+                                               FontWeight="SemiBold"
+                                               VerticalAlignment="Center"/>
+                                    <TextBlock Text=" ("
+                                               Foreground="#888"
+                                               VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding EnglishName}"
+                                               Foreground="#888"
+                                               VerticalAlignment="Center"/>
+                                    <TextBlock Text=")"
+                                               Foreground="#888"
+                                               VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
 
-							<Grid ColumnDefinitions="*,*"
-                                  ColumnSpacing="24">
-								<StackPanel Spacing="4">
-									<TextBlock Text="{Binding L[Server.Requests]}"
-                                               FontSize="12"
-                                               Foreground="#6C757D"/>
-									<TextBlock Text="{Binding RequestsCount}"
-                                               FontSize="16"
-                                               FontWeight="SemiBold"/>
-								</StackPanel>
+                <!-- Logs button -->
+                <Button Grid.Column="3"
+                        Content="{Binding L[Logs.OpenButton]}"
+                        Command="{Binding Wizard.OpenLogsCommand}"
+                        Padding="12,6"
+                        Background="#34495E"
+                        Foreground="White"
+                        CornerRadius="6"
+                        Cursor="Hand"/>
+            </Grid>
+        </Border>
 
-								<StackPanel Grid.Column="1"
-                                            Spacing="4">
-									<TextBlock Text="{Binding L[Server.LastRequest]}"
-                                               FontSize="12"
-                                               Foreground="#6C757D"/>
-									<TextBlock Text="{Binding LastRequestText}"
-                                               FontSize="13"
-                                               TextTrimming="CharacterEllipsis"/>
-								</StackPanel>
-							</Grid>
-						</StackPanel>
-					</Border>
+        <!-- =================== -->
+        <!-- PAGE CONTENT        -->
+        <!-- =================== -->
+        <ContentControl Grid.Row="1"
+                        Content="{Binding Wizard.CurrentPage}"
+                        Margin="0,8"/>
 
-					<!-- LOGS -->
-					<Border Classes="card">
-						<StackPanel Spacing="12">
+        <!-- =================== -->
+        <!-- STEP INDICATORS     -->
+        <!-- =================== -->
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Spacing="12"
+                    Margin="0,16">
 
-							<TextBlock Text="{Binding L[Logs.Title]}"
-                                       FontSize="16"
-                                       FontWeight="SemiBold"/>
+            <!-- Step 1 -->
+            <Ellipse Width="12" Height="12"
+                     Fill="{Binding Wizard.CurrentStep, Converter={x:Static conv:StepIndicatorConverter.Instance}, ConverterParameter=1}"/>
 
-							<TextBox Text="{Binding Logs}"
-                                     IsReadOnly="True"
-                                     AcceptsReturn="True"
-                                     TextWrapping="Wrap"
-                                     FontFamily="Consolas"
-                                     FontSize="10.5"
-                                     Height="140"/>
-						</StackPanel>
-					</Border>
+            <!-- Step 2 -->
+            <Ellipse Width="12" Height="12"
+                     Fill="{Binding Wizard.CurrentStep, Converter={x:Static conv:StepIndicatorConverter.Instance}, ConverterParameter=2}"/>
 
-				</StackPanel>
-			</ScrollViewer>
+            <!-- Step 3 -->
+            <Ellipse Width="12" Height="12"
+                     Fill="{Binding Wizard.CurrentStep, Converter={x:Static conv:StepIndicatorConverter.Instance}, ConverterParameter=3}"/>
 
-			<!-- BUILD BUTTON -->
-			<Border Grid.Row="2"
-                    Classes="card"
-                    Padding="20"
-                    Margin="0,36,0,12">
-				<Button Classes="primary"
-                        Content="{Binding L[Button.BuildStart]}"
-                        Command="{Binding BuildAndStartCommand}"
-                        IsEnabled="{Binding CanBuildAndStart}"
-                        HorizontalAlignment="Stretch"/>
-			</Border>
+            <!-- Step 4 -->
+            <Ellipse Width="12" Height="12"
+                     Fill="{Binding Wizard.CurrentStep, Converter={x:Static conv:StepIndicatorConverter.Instance}, ConverterParameter=4}"/>
 
-		</Grid>
+            <!-- Step 5 -->
+            <Ellipse Width="12" Height="12"
+                     Fill="{Binding Wizard.CurrentStep, Converter={x:Static conv:StepIndicatorConverter.Instance}, ConverterParameter=5}"/>
+        </StackPanel>
 
-		<!-- ===================== -->
-		<!-- MODAL SUCCESS POPUP   -->
-		<!-- ===================== -->
-		<Border IsVisible="{Binding IsInstallDone}"
-                Background="#80000000"
-                ZIndex="1000">
+        <!-- =================== -->
+        <!-- FOOTER NAVIGATION   -->
+        <!-- =================== -->
+        <Border Grid.Row="3"
+                Background="White"
+                Padding="24,16"
+                BoxShadow="0 -2 8 0 #10000000">
+            <Grid ColumnDefinitions="Auto,*,Auto">
 
-			<Grid HorizontalAlignment="Center"
-                  VerticalAlignment="Center">
+                <!-- Step indicator text -->
+                <TextBlock Text="{Binding Wizard.StepIndicator}"
+                           FontSize="14"
+                           Foreground="#7F8C8D"
+                           VerticalAlignment="Center"/>
 
-				<Border Classes="card"
-                        Width="360"
-                        Padding="36">
+                <!-- Navigation buttons -->
+                <StackPanel Grid.Column="2"
+                            Orientation="Horizontal"
+                            Spacing="12">
 
-					<StackPanel Spacing="18"
-                                HorizontalAlignment="Center">
+                    <!-- Back button -->
+                    <Button Content="{Binding Wizard.BackText}"
+                            Command="{Binding Wizard.GoBackCommand}"
+                            IsVisible="{Binding Wizard.CanGoBack}"
+                            Padding="20,12"
+                            Background="#E8E8E8"
+                            Foreground="#555"
+                            CornerRadius="8"
+                            Cursor="Hand"/>
 
-						<TextBlock Text="✅"
-                                   FontSize="56"
-                                   HorizontalAlignment="Center"/>
+                    <!-- Next button -->
+                    <Button Content="{Binding Wizard.NextText}"
+                            Command="{Binding Wizard.GoNextCommand}"
+                            IsVisible="{Binding Wizard.CanGoNext}"
+                            Padding="24,12"
+                            Background="#3498DB"
+                            Foreground="White"
+                            FontWeight="SemiBold"
+                            CornerRadius="8"
+                            Cursor="Hand"/>
+                </StackPanel>
+            </Grid>
+        </Border>
 
-						<TextBlock Text="{Binding InstallStatus}"
-                                   FontSize="18"
-                                   FontWeight="SemiBold"
-                                   TextAlignment="Center"
-                                   Foreground="#2C3E50"/>
-
-						<TextBlock Text="{Binding L[Install.ThatWasEasy]}"
-                                   FontSize="14"
-                                   TextAlignment="Center"
-                                   Foreground="#7F8C8D"/>
-
-						<StackPanel Orientation="Horizontal"
-                                    Spacing="16"
-                                    Margin="0,8,0,0"
-                                    HorizontalAlignment="Center">
-
-							<Button Content="{Binding L[Install.BuyMeABeer]}"
-                                    Command="{Binding BuyMeABeerCommand}"
-                                    Classes="primary"
-                                    Padding="0,14"
-                                    FontSize="14"/>
-
-							<Button Content="{Binding L[Common.Close]}"
-                                    Command="{Binding CloseCommand}"
-                                    Background="#E6E6E6"
-                                    Foreground="#2C3E50"
-                                    CornerRadius="12"
-                                    Padding="20,14"
-                                    FontSize="14"/>
-						</StackPanel>
-
-					</StackPanel>
-
-				</Border>
-			</Grid>
-		</Border>
-
-	</Grid>
+    </Grid>
 </Window>
