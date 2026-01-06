@@ -1068,7 +1068,7 @@ GuiPage_Settings.setOverview = function() {
 		case "SkipMusicAZ":
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Skip A-Z Page When Entering Music";
 			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Go directly to your entire music collection instead of to the A-Z page." +
-					"<br><br>Only set this True if you have a workable combination of the following:<br>&nbsp;<ul style='padding-left:22px'><li>A modest size music collection.</li><li>A reasonably powerful Jellyfin server.</li><li>A little patience.</li></ul>";
+					"<br><br>Only set this True if you have a workable combination of the following:<br>&nbsp;<ul style='padding-left:22px'><li>A modest size music collection.</li><li>A reasonably powerful Emby server.</li><li>A little patience.</li></ul>";
 			break;
 		case "LargerView":	
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Display Larger View";
@@ -1129,7 +1129,7 @@ GuiPage_Settings.setOverview = function() {
 			break;	
 		case "ModelOverride":
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Samsung Evolution Kit";
-			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "If you have purchased a Samsung Evolution Kit to enhance your TV, select the model number to unlock the addition codec support provided.<br><br>Restart the Jellyfin client for the change to take affect.";
+			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "If you have purchased a Samsung Evolution Kit to enhance your TV, select the model number to unlock the addition codec support provided.<br><br>Restart the Emby client for the change to take affect.";
 			break;	
 		case "Bitrate":
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Max Bitrate";
@@ -1153,23 +1153,23 @@ GuiPage_Settings.setOverview = function() {
 			break;	
 		case "DefaultAudioLang":
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Audio Language Preference";
-			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Select the preferred audio language.<br><br>If your language is not listed, you will need to change the setting via the web app which has a full list of languages.<br><br>This is a server option and will affect your Jellyfin experience on all clients";
+			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Select the preferred audio language.<br><br>If your language is not listed, you will need to change the setting via the web app which has a full list of languages.<br><br>This is a server option and will affect your Emby experience on all clients";
 			break;	
 		case "PlayDefaultAudioTrack":
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Play default audio track regardless of language";
-			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Will play the default audio track even if it doesn't match your language setting.<br><br>This is a server option and will affect your Jellyfin experience on all clients";
+			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Will play the default audio track even if it doesn't match your language setting.<br><br>This is a server option and will affect your Emby experience on all clients";
 			break;	
 		case "DefaultSubtitleLang":
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Subtitle Language Preference";
-			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Select the preferred subtitle language.<br><br>If your language is not listed, you will need to change the setting via the web app which has a full list of languages.<br><br>This is a server option and will affect your Jellyfin experience on all clients";
+			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Select the preferred subtitle language.<br><br>If your language is not listed, you will need to change the setting via the web app which has a full list of languages.<br><br>This is a server option and will affect your Emby experience on all clients";
 			break;		
 		case "SubtitleMode":
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Subtitle Mode";
-			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Select the default behaviour of when subtitles are loaded<br><br>Default: Subtitles matching the language preference will be loaded when the audio is in a foreign language.<br><br>Only Forced Subtitles: Only subtitles marked as forced will be loaded.<br><br>Always Play Subtitles: Subtitles matching the language preference will be loaded regardless of the audio language.<br><br>None: Subtitles will not be loaded by default.<br><br>This is a server option and will affect your Jellyfin experience on all clients";
+			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Select the default behaviour of when subtitles are loaded<br><br>Default: Subtitles matching the language preference will be loaded when the audio is in a foreign language.<br><br>Only Forced Subtitles: Only subtitles marked as forced will be loaded.<br><br>Always Play Subtitles: Subtitles matching the language preference will be loaded regardless of the audio language.<br><br>None: Subtitles will not be loaded by default.<br><br>This is a server option and will affect your Emby experience on all clients";
 			break;	
 		case "HidePlayedInLatest":
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Hide watched content from latest media";
-			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Watched items will not appear in the Latest TV or Latest Movies home views or pages.<br><br>This is a server option and will affect your Jellyfin experience on all clients";
+			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Watched items will not appear in the Latest TV or Latest Movies home views or pages.<br><br>This is a server option and will affect your Emby experience on all clients";
 			break;
 		case "EnableCinemaMode":
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Enable cinema mode";
@@ -1177,15 +1177,15 @@ GuiPage_Settings.setOverview = function() {
 			break;
 		case "DisplayMissingEpisodes":
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Display Missing Episodes within Seasons";
-			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Display missing episodes within TV seasons<br><br>This is a server option and will affect your Jellyfin experience on all clients";
+			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Display missing episodes within TV seasons<br><br>This is a server option and will affect your Emby experience on all clients";
 			break;	
 		case "DisplayUnairedEpisodes":
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Display Unaired Episodes within Seasons";
-			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Display unaired episodes within TV seasons<br><br>This is a server option and will affect your Jellyfin experience on all clients";
+			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "Display unaired episodes within TV seasons<br><br>This is a server option and will affect your Emby experience on all clients";
 			break;	
 		case "GroupMovieCollections":
 			document.getElementById("guiPage_Settings_Overview_Title").innerHTML = "Group Movies into Collections";
-			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "When displaying movie lists, movies belonging to a collection will be displayed as one grouped item<br><br>This is a server option and will affect your Jellyfin experience on all clients";
+			document.getElementById("guiPage_Settings_Overview_Content").innerHTML = "When displaying movie lists, movies belonging to a collection will be displayed as one grouped item<br><br>This is a server option and will affect your Emby experience on all clients";
 			break;		
 	}
 }

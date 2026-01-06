@@ -33,7 +33,7 @@ GuiUsers_Manual.start = function() {
 }
 
 GuiUsers_Manual.IMEAuthenticate = function(user, password) {
-    var authenticateSuccess = Server.Authenticate(null, user, password);
+    var authenticateSuccess = Server.Authenticate(null, user, password);		
     if (authenticateSuccess) {   	
     	document.getElementById("NoKeyInput").focus();
     	
