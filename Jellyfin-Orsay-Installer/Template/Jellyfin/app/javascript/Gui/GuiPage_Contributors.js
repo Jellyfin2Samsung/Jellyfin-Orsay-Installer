@@ -1,5 +1,7 @@
 var GuiPage_Contributors = {
-	CoreTeam : ["nvllsvm","joshuaboniface", "JustAMan", "anthonylavado", "Bond-009", "dkanada"]
+		MainDevs : ["ChessDragon136","cmcg"],
+		ContribDevs : ["Cragjagged","DrWatson","im85288","arcticwaters","SamES"],
+		DonateSupport : ["c0m3r","Cbers","crashkelly","DaN","FrostByte","gbone8106","ginganinja","grimfandango","fc7","shorty1483","paulsalter","fluffykiwi","oleg","MongooseMan","SilentAssassin","gogreenpower","Ultroman","Spaceboy","JeremyG","strugglez"]
 }
 
 GuiPage_Contributors.onFocus = function() {
@@ -15,19 +17,43 @@ GuiPage_Contributors.start = function() {
 	
 	document.getElementById("pageContent").innerHTML = "<div class='EpisodesSeriesInfo'>About:</div><div id=ContentAbout style='font-size:1em;' class='guiPage_Settings_Settings'></div>";
 	
-	var htmlToAdd = "Jellyfin for Samsung Smart TVs is a free, open source community project. A broad range of Smarthub devices are supported due to the generously donated time and efforts of, among others, the following people.<br>";
-	htmlToAdd += "Feedback on this and other Jellyfin products is gratefully received at https://jellyfin.org/docs/general/getting-help.html.<br><br>"
-	htmlToAdd += "<span style='font-size:1.2em;'>Core Team</span><table><tr class='guiSettingsRow'>";
-	for (var index = 0; index < this.CoreTeam.length; index++) {
+	var htmlToAdd = "Emby for Samsung Smart TVs is a free, opensource community project. A broad range of Smarthub devices are supported due to the generously donated time and efforts of, among others, the following people.<br>";
+	htmlToAdd += "Feedback on this and other Emby products is gratefully received at emby.media/community.<br><br>"
+	htmlToAdd += "<span style='font-size:1.2em;'>Main Developers</span><table><tr class='guiSettingsRow'>";
+	for (var index = 0; index < this.MainDevs.length; index++) {
 		if (index % 6 == 0) {
 			htmlToAdd += "<tr class='guiSettingsRow'>";
 		}
-		htmlToAdd += "<td class='guiSettingsTD'>" + this.CoreTeam[index] + "</td>";
+		htmlToAdd += "<td class='guiSettingsTD'>" + this.MainDevs[index] + "</td>";
 		if (index+1 % 6 == 0) {
 			htmlToAdd += "</tr>";
 		}
 	}
 	htmlToAdd += "</tr></table><br><br>";
+	htmlToAdd += "<span style='font-size:1.2em;'>Contributing Developers</span><table><tr class='guiSettingsRow'>";
+	for (var index = 0; index < this.ContribDevs.length; index++) {
+		if (index % 6 == 0) {
+			htmlToAdd += "<tr class='guiSettingsRow'>";
+		}
+		htmlToAdd += "<td class='guiSettingsTD'>" + this.ContribDevs[index] + "</td>";
+		if (index+1 % 6 == 0) {
+			htmlToAdd += "</tr>";
+		}
+	}
+	htmlToAdd += "</tr></table><br><br>";
+	htmlToAdd += "<span style='font-size:1.2em;'>Donators, supporters and valued beta testers.</span><table><tr class='guiSettingsRow'>";
+	for (var index = 0; index < this.DonateSupport.length; index++) {
+		if (index % 7 == 0) {
+			htmlToAdd += "<tr class='guiSettingsRow'>";
+		}
+		htmlToAdd += "<td class='guiSettingsTD'>" + this.DonateSupport[index] + "</td>";
+		if (index+1 % 7 == 0) {
+			htmlToAdd += "</tr>";
+		}
+	}
+	
+	document.getElementById("ContentAbout").innerHTML = htmlToAdd + "</tr></table>";
+	
 	//Set Focus for Key Events
 	document.getElementById("GuiPage_Contributors").focus();
 }

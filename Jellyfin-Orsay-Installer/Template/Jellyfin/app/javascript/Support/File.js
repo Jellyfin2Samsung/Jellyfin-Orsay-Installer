@@ -211,7 +211,7 @@ File.deleteUserPasswords = function () {
 		fileSystemObj.closeCommonFile(openRead);	
 
 		for (var index = 0; index < fileJson.Servers[this.ServerEntry].Users.length; index++) {
-			fileJson.Servers[this.ServerEntry].Users[index].Password = ""; // Do this so that users with no password are unaffected!
+			fileJson.Servers[this.ServerEntry].Users[index].Password = Sha1.hash("",true); // Do this so that users with no password are unaffected! 
 		}
 		
 		var openWrite = fileSystemObj.openCommonFile(curWidget.id + '/MB3_Settings.json', 'w');
@@ -331,6 +331,10 @@ File.setUserProperty = function(property,value) {
 	if (openRead) {
 		var fileJson = JSON.parse(openRead.readLine()); //Read line as only 1 and skips line break!
 		fileSystemObj.closeCommonFile(openRead);	
+
+		if (property == "Password") {
+			value = Sha1.hash(value,true);
+		}
 		
 		if (fileJson.Servers[this.ServerEntry].Users[this.UserEntry][property] !== undefined) {
 			fileJson.Servers[this.ServerEntry].Users[this.UserEntry][property] = value;

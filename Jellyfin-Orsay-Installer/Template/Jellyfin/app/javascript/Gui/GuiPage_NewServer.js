@@ -11,7 +11,7 @@ GuiPage_NewServer.start = function() {
 	
 	//Insert html into page
 	document.getElementById("pageContent").innerHTML = "<div class='GuiPage_NewServer12key'> \
-		<p style='padding-bottom:5px;'>Enter the IP address & port number of your Jellyfin server. <br>(You can leave the port blank for 8096)</p> \
+		<p style='padding-bottom:5px;'>Enter the IP address & port number of your Emby server. <br>(You can leave the port blank for 8096)</p> \
 		<form><input id='1' type='text' size='5'  maxlength='3' value=''/>. \
 		<input id='2' type='text' size='5'  maxlength='3' value=''/>. \
 		<input id='3' type='text' size='5'  maxlength='3' value=''/>. \

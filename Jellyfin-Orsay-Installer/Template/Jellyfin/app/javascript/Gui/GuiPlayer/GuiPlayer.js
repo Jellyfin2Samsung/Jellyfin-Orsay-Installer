@@ -2,7 +2,7 @@
 //
 //Samsung Player accepts seconds
 //Samsung Current time works in seconds * 1000
-//Jellyfin works in seconds * 10000000
+//Emby works in seconds * 10000000
 
 var GuiPlayer = {	
 		plugin : null,
@@ -170,6 +170,9 @@ GuiPlayer.startPlayback = function(TranscodeAlg, resumeTicksSamsung) {
 	this.PlaySessionId = playbackInfo ? playbackInfo.PlaySessionId : null;
 
 	var url = this.playingURL + '&PlaySessionId=' + this.PlaySessionId;
+	
+	//Update URL with resumeticks
+	url += '&StartTimeTicks=' + (resumeTicksSamsung*10000);
 
 	//Required for HLS streaming
 	if (this.PlayMethod != "DirectPlay") {
@@ -859,16 +862,19 @@ GuiPlayer.checkTranscodeCanSkip = function(newtime) {
 GuiPlayer.newPlaybackPosition = function(startPositionTicks) {
 	document.getElementById("NoKeyInput").focus();
 	this.stopPlayback();
-	
+
 	this.setDisplaySize();
-	
+
 	var url = this.playingURL + '&PlaySessionId=' + this.PlaySessionId;
+
+	//Update URL with startPositionTicks
+	url += '&StartTimeTicks=' + (Math.round(startPositionTicks));
 
 	//Required for HLS streaming
 	if (this.PlayMethod != "DirectPlay") {
 		url += '|COMPONENT=HLS';
 	}
-	
+
 	var position = Math.round(startPositionTicks / 10000000);
     this.plugin.ResumePlay(url,position);
     this.updateSubtitleTime(startPositionTicks / 10000,"NewSubs");

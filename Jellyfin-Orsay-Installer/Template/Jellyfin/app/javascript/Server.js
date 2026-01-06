@@ -330,7 +330,7 @@ Server.videoStarted = function(showId,MediaSourceID,PlayMethod,PlaySessionId) {
 	var url = this.serverAddr + "/Sessions/Playing";
 	xmlHttp = new XMLHttpRequest();
 	if (xmlHttp) {
-		var contentToPost = '{"QueueableMediaTypes":["Video"],"CanSeek":false,"ItemId":"'+showId+'","PlaySessionId":"'+PlaySessionId+'","MediaSourceId":"'+MediaSourceID+'","IsPaused":false,"IsMuted":false,"PositionTicks":0,"PlayMethod":"'+PlayMethod+'"}';
+		var contentToPost = '{"QueueableMediaTypes":["Video"],"CanSeek":false,"ItemId":'+showId+',"PlaySessionId":'+PlaySessionId+',"MediaSourceId":'+MediaSourceID+',"IsPaused":false,"IsMuted":false,"PositionTicks":0,"PlayMethod":'+PlayMethod+'}';
 		xmlHttp.open("POST", url , true); //must be true!
 		xmlHttp = this.setRequestHeaders(xmlHttp);
 		xmlHttp.send(contentToPost);
@@ -341,7 +341,7 @@ Server.videoStopped = function(showId,MediaSourceID,ticks,PlayMethod,PlaySession
 	var url = this.serverAddr + "/Sessions/Playing/Stopped";
 	xmlHttp = new XMLHttpRequest();
 	if (xmlHttp) {
-		var contentToPost = '{"QueueableMediaTypes":["Video"],"CanSeek":false,"ItemId":"'+showId+'","PlaySessionId":"'+PlaySessionId+'","MediaSourceId":"'+MediaSourceID+'","IsPaused":false,"IsMuted":false,"PositionTicks":'+(ticks*10000)+',"PlayMethod":"'+PlayMethod+'"}';
+		var contentToPost = '{"QueueableMediaTypes":["Video"],"CanSeek":false,"ItemId":'+showId+',"PlaySessionId":'+PlaySessionId+',"MediaSourceId":'+MediaSourceID+',"IsPaused":false,"IsMuted":false,"PositionTicks":'+(ticks*10000)+',"PlayMethod":'+PlayMethod+'}';
 		xmlHttp.open("POST", url , true); //must be true!
 		xmlHttp = this.setRequestHeaders(xmlHttp);
 		xmlHttp.send(contentToPost);
@@ -352,7 +352,7 @@ Server.videoPaused = function(showId,MediaSourceID,ticks,PlayMethod,PlaySessionI
 	var url = this.serverAddr + "/Sessions/Playing/Progress";
 	xmlHttp = new XMLHttpRequest();
 	if (xmlHttp) {
-		var contentToPost = '{"QueueableMediaTypes":["Video"],"CanSeek":false,"ItemId":"'+showId+'","PlaySessionId":"'+PlaySessionId+'","MediaSourceId":"'+MediaSourceID+'","IsPaused":true,"IsMuted":false,"PositionTicks":'+(ticks*10000)+',"PlayMethod":"'+PlayMethod+'"}';
+		var contentToPost = '{"QueueableMediaTypes":["Video"],"CanSeek":false,"ItemId":'+showId+',"PlaySessionId":'+PlaySessionId+',"MediaSourceId":'+MediaSourceID+',"IsPaused":true,"IsMuted":false,"PositionTicks":'+(ticks*10000)+',"PlayMethod":'+PlayMethod+'}';
 		xmlHttp.open("POST", url , true); //must be true!
 		xmlHttp = this.setRequestHeaders(xmlHttp);
 		xmlHttp.send(contentToPost);
@@ -363,7 +363,7 @@ Server.videoTime = function(showId,MediaSourceID,ticks,PlayMethod,PlaySessionId)
 	var url = this.serverAddr + "/Sessions/Playing/Progress";
 	xmlHttp = new XMLHttpRequest();
 	if (xmlHttp) {
-		var contentToPost = '{"QueueableMediaTypes":["Video"],"CanSeek":false,"ItemId":"'+showId+'","PlaySessionId":"'+PlaySessionId+'","MediaSourceId":"'+MediaSourceID+'","IsPaused":false,"IsMuted":false,"PositionTicks":'+(ticks*10000)+',"PlayMethod":"'+PlayMethod+'"}';
+		var contentToPost = '{"QueueableMediaTypes":["Video"],"CanSeek":false,"ItemId":'+showId+',"PlaySessionId":'+PlaySessionId+',"MediaSourceId":'+MediaSourceID+',"IsPaused":false,"IsMuted":false,"PositionTicks":'+(ticks*10000)+',"PlayMethod":'+PlayMethod+'}';
 		xmlHttp.open("POST", url , true); //must be true!
 		xmlHttp = this.setRequestHeaders(xmlHttp);
 		xmlHttp.send(contentToPost);
@@ -504,10 +504,10 @@ Server.DELETE = function(url, item) {
 Server.testConnectionSettings = function (server,fromFile) {	
 	xmlHttp = new XMLHttpRequest();
 	if (xmlHttp) {
-		xmlHttp.open("GET", "http://" + server + "/jellyfin/System/Info/Public?format=json",false);
+		xmlHttp.open("GET", "http://" + server + "/emby/System/Info/Public?format=json",false);
 		xmlHttp.setRequestHeader("Content-Type", 'application/json');
 		xmlHttp.onreadystatechange = function () {
-			GuiNotifications.setNotification("Connection Test","Network Status",true);
+			GuiNotifications.setNotification("hello","Network Status",true);
 			if (xmlHttp.readyState == 4) {
 		        if(xmlHttp.status === 200) {
 			    	if (fromFile == false) {
@@ -515,7 +515,7 @@ Server.testConnectionSettings = function (server,fromFile) {
 			    		File.saveServerToFile(json.Id,json.ServerName,server); 
 			    	}
 			       	//Set Server.serverAddr!
-			       	Server.setServerAddr("http://" + server + "/jellyfin");
+			       	Server.setServerAddr("http://" + server + "/emby");
 			       	//Check Server Version
 			       	if (ServerVersion.checkServerVersion()) {
 			       		GuiUsers.start(true);
@@ -523,7 +523,7 @@ Server.testConnectionSettings = function (server,fromFile) {
 			       		ServerVersion.start();
 			       	}
 		        } else if (xmlHttp.status === 0) {
-		        	GuiNotifications.setNotification("Your Jellyfin server is not responding.","Network Error "+xmlHttp.status,true);
+		        	GuiNotifications.setNotification("Your Emby server is not responding.","Network Error "+xmlHttp.status,true);
 					Support.removeSplashScreen();
 			    	if (fromFile == true) {
 			    		setTimeout(function(){
@@ -536,7 +536,7 @@ Server.testConnectionSettings = function (server,fromFile) {
 			    		}, 3000);
 			    	}
 		        } else {
-		        	GuiNotifications.setNotification("Jellyfin server connection error.","Network Error "+xmlHttp.status,true);
+		        	GuiNotifications.setNotification("Emby server connection error.","Network Error "+xmlHttp.status,true);
 					Support.removeSplashScreen();
 			    	if (fromFile == true) {
 			    		setTimeout(function(){
