@@ -1,0 +1,3 @@
+[submodule "Jellyfin-Orsay-Installer/Template/Jellyfin"]
+	path = Jellyfin-Orsay-Installer/Template/Jellyfin
+	url = git@github.com:TemaSM/jellyfin-samsungtv-orsay.git
