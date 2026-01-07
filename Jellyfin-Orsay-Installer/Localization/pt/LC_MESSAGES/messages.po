@@ -1,0 +1,358 @@
+# Portuguese translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: App
+msgid "App.Title"
+msgstr "Instalador Jellyfin: Samsung Smart TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "Passo {0} de {1}"
+
+msgid "Wizard.GetStarted"
+msgstr "Começar"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "Bem-vindo"
+
+msgid "Welcome.Subtitle"
+msgstr "Instale o Jellyfin na sua Samsung Smart TV modelo 2011-2015"
+
+msgid "Welcome.Feature1"
+msgstr "Instalação fácil em minutos"
+
+msgid "Welcome.Feature2"
+msgstr "Não precisa de pen USB"
+
+msgid "Welcome.Feature3"
+msgstr "Funciona com Samsung TVs 2012-2015"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "Configuração de rede"
+
+msgid "Network.SelectIp"
+msgstr "Selecione o endereço IP do seu PC:"
+
+msgid "Network.Port"
+msgstr "Porta do servidor:"
+
+msgid "Network.PortHint"
+msgstr "Padrão é 80. Altere apenas se necessário."
+
+msgid "Network.SameNetworkHint"
+msgstr "A sua TV deve estar na mesma rede que a interface selecionada."
+
+msgid "Network.GroupOther"
+msgstr "— Outros —"
+
+msgid "Network.GroupVirtual"
+msgstr "— Virtuais —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "Configuração da TV"
+
+msgid "TvSetup.IpBanner"
+msgstr "Introduza este endereço IP na sua TV:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "Selecione a série da sua TV:"
+
+msgid "TvSetup.SeriesE"
+msgstr "Série E (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "Série F (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "Série H (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "Não tem certeza? Verifique o número do modelo na parte traseira da sua TV (ex: UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "Procurar TVs na rede"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Detectado:"
+
+msgid "TvSetup.NextHint"
+msgstr "Leia estas instruções e clique em 'Próximo' para iniciar o servidor. Depois siga os passos na sua TV."
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Abrir Smart Hub"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "Prima o botão Smart Hub no seu controlo remoto, depois prima o botão vermelho A para abrir o menu de login."
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "Entrar como desenvolvedor"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "Introduza 'develop' como nome da conta. A TV irá gerar uma palavra-passe - anote-a. Prima Entrar."
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "Abrir definições de desenvolvedor"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "Prima o botão Tools no seu controlo remoto, vá a Definições, depois selecione Desenvolvedor."
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "Introduzir endereço IP"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "Selecione 'Endereço IP' e introduza: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "Sincronizar aplicações"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "Selecione 'Sincronizar aplicação do utilizador' para iniciar a instalação. A aplicação aparecerá no Smart Hub."
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "Abrir Samsung Account"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "Prima o botão Menu, vá a Funções Smart, depois selecione Samsung Account."
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "Entrar como desenvolvedor"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "Introduza 'develop' como email. Deixe a palavra-passe vazia (ou tente 'sso1029dev!' se necessário). Prima Entrar."
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "Abrir definições de aplicações"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Prima Smart Hub, vá a Mais aplicações (canto inferior direito), depois prima Opções."
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "Introduzir endereço IP"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "Selecione 'IP Settings' e introduza: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "Sincronizar aplicações"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "Selecione 'Start App Sync' para iniciar a instalação."
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "Reiniciar se necessário"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "Se as aplicações não aparecerem, reinicie a sua TV e verifique o Smart Hub novamente."
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "Abrir Samsung Account"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Vá ao Smart Hub, selecione Samsung Account, depois Entrar."
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "Entrar como desenvolvedor"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "Introduza 'develop' como login. Ignore o campo da palavra-passe. Marque 'Lembrar' e prima Entrar."
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "Abrir menu de sincronização"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "No Smart Hub, aponte o controlo remoto para qualquer aplicação e mantenha premido o centro do D-pad até aparecer um menu."
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "Introduzir endereço IP"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "Selecione 'IP Setting' e introduza: {0} (confirme cada grupo de números com o centro do D-pad)."
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "Iniciar sincronização"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "Abra o menu novamente e selecione 'Start User App Sync'."
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "Completar instalação"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "Aceite o pedido de instalação. Saia do Smart Hub e entre novamente para ver as aplicações instaladas."
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "A instalar..."
+
+msgid "Server.Running"
+msgstr "Servidor em execução"
+
+msgid "Server.Stopped"
+msgstr "Servidor parado"
+
+msgid "Server.Requests"
+msgstr "Pedidos"
+
+msgid "Server.LastRequest"
+msgstr "Último pedido"
+
+msgid "Server.InstallProgress"
+msgstr "Progresso da instalação"
+
+msgid "Server.TvConnected"
+msgstr "TV ligada (widgetlist.xml pedido)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "Widget transferido (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "À espera de ligação da TV..."
+
+msgid "Server.InstallDetected"
+msgstr "Instalação detectada!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "Instalação concluída!"
+
+msgid "Completed.Message"
+msgstr "O Jellyfin foi instalado com sucesso na sua TV."
+
+msgid "Completed.WhatsNext"
+msgstr "E agora?"
+
+msgid "Completed.Step1"
+msgstr "Abra o Smart Hub na sua TV"
+
+msgid "Completed.Step2"
+msgstr "Encontre e inicie a aplicação Jellyfin"
+
+msgid "Completed.Step3"
+msgstr "Configure o seu servidor Jellyfin"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "Registo de eventos"
+
+msgid "Logs.OpenButton"
+msgstr "Registo"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "Instalado"
+
+msgid "Install.Waiting"
+msgstr "À espera da TV..."
+
+msgid "Install.ThatWasEasy"
+msgstr "Foi fácil!"
+
+msgid "Install.BuyMeABeer"
+msgstr "Pague-me uma cerveja"
+
+#: Common
+msgid "Common.Back"
+msgstr "Voltar"
+
+msgid "Common.Next"
+msgstr "Próximo"
+
+msgid "Common.Finish"
+msgstr "Finalizar"
+
+msgid "Common.Close"
+msgstr "Fechar"
+
+msgid "Common.Cancel"
+msgstr "Cancelar"
+
+msgid "Common.Select"
+msgstr "Selecionar"
+
+msgid "Common.Copy"
+msgstr "Copiar"
+
+msgid "Common.CopyAll"
+msgstr "Copiar tudo"
+
+msgid "Common.Clear"
+msgstr "Limpar"
+
+msgid "Common.Refresh"
+msgstr "Atualizar"
+
+msgid "Common.Recommended"
+msgstr "Recomendado"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "Procurar TVs"
+
+msgid "Discovery.ScanButton"
+msgstr "Procurar TVs"
+
+msgid "Discovery.Scanning"
+msgstr "A analisar rede..."
+
+msgid "Discovery.Found"
+msgstr "{0} Samsung TV(s) encontrada(s)"
+
+msgid "Discovery.NoTvsFound"
+msgstr "Nenhuma Samsung TV encontrada na rede"
+
+msgid "Discovery.Cancelled"
+msgstr "Pesquisa cancelada"
+
+msgid "Discovery.NoInterface"
+msgstr "Nenhuma interface de rede selecionada"
+
+msgid "Discovery.Error"
+msgstr "Falha na pesquisa"
+
+msgid "Discovery.Phase.Starting"
+msgstr "A iniciar pesquisa..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "A enviar SSDP..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "A analisar portas..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "A analisar {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "A obter informações do dispositivo..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Pesquisa concluída"
+
+msgid "Discovery.Confidence.High"
+msgstr "Alta confiança"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Confiança média"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Baixa confiança"

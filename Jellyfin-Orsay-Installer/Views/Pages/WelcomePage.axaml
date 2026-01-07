@@ -33,7 +33,6 @@
                        Foreground="#7F8C8D"
                        TextWrapping="Wrap"
                        TextAlignment="Center"
-                       MaxWidth="500"
                        HorizontalAlignment="Center"/>
 
             <!-- Features list -->
@@ -42,18 +41,21 @@
                     Padding="24"
                     Margin="0,16,0,0">
                 <StackPanel Spacing="12">
-                    <StackPanel Orientation="Horizontal" Spacing="12">
+                    <Grid ColumnDefinitions="Auto,*">
                         <TextBlock Text="1." FontWeight="SemiBold" Foreground="#3498DB"/>
-                        <TextBlock Text="{Binding L[Welcome.Feature1]}" Foreground="#555"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <TextBlock Grid.Column="1" Text="{Binding L[Welcome.Feature1]}"
+                                   Foreground="#555" TextWrapping="Wrap" Margin="12,0,0,0"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="Auto,*">
                         <TextBlock Text="2." FontWeight="SemiBold" Foreground="#3498DB"/>
-                        <TextBlock Text="{Binding L[Welcome.Feature2]}" Foreground="#555"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <TextBlock Grid.Column="1" Text="{Binding L[Welcome.Feature2]}"
+                                   Foreground="#555" TextWrapping="Wrap" Margin="12,0,0,0"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="Auto,*">
                         <TextBlock Text="3." FontWeight="SemiBold" Foreground="#3498DB"/>
-                        <TextBlock Text="{Binding L[Welcome.Feature3]}" Foreground="#555"/>
-                    </StackPanel>
+                        <TextBlock Grid.Column="1" Text="{Binding L[Welcome.Feature3]}"
+                                   Foreground="#555" TextWrapping="Wrap" Margin="12,0,0,0"/>
+                    </Grid>
                 </StackPanel>
             </Border>
 

@@ -1,0 +1,358 @@
+# Ukrainian translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: App
+msgid "App.Title"
+msgstr "Jellyfin Інсталятор: Samsung Smart TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "Крок {0} з {1}"
+
+msgid "Wizard.GetStarted"
+msgstr "Почати"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "Ласкаво просимо"
+
+msgid "Welcome.Subtitle"
+msgstr "Встановіть Jellyfin на ваш Samsung Smart TV моделей 2011-2015"
+
+msgid "Welcome.Feature1"
+msgstr "Просте встановлення за кілька хвилин"
+
+msgid "Welcome.Feature2"
+msgstr "USB-накопичувач не потрібен"
+
+msgid "Welcome.Feature3"
+msgstr "Працює з Samsung TV 2012-2015 років"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "Налаштування мережі"
+
+msgid "Network.SelectIp"
+msgstr "Виберіть IP-адресу вашого ПК:"
+
+msgid "Network.Port"
+msgstr "Порт сервера:"
+
+msgid "Network.PortHint"
+msgstr "За замовчуванням 80. Змінюйте лише за потреби."
+
+msgid "Network.SameNetworkHint"
+msgstr "Ваш ТВ повинен бути в тій самій мережі, що й обраний інтерфейс."
+
+msgid "Network.GroupOther"
+msgstr "— Інші —"
+
+msgid "Network.GroupVirtual"
+msgstr "— Віртуальні —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "Налаштування ТВ"
+
+msgid "TvSetup.IpBanner"
+msgstr "Введіть цю IP-адресу на телевізорі:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "Виберіть серію вашого ТВ:"
+
+msgid "TvSetup.SeriesE"
+msgstr "Серія E (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "Серія F (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "Серія H (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "Не знаєте серію? Перевірте номер моделі на задній панелі ТВ (напр., UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "Знайти ТВ у мережі"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Знайдено:"
+
+msgid "TvSetup.NextHint"
+msgstr "Прочитайте інструкції, потім натисніть 'Далі' для запуску сервера. Після цього виконайте кроки на телевізорі."
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Відкрийте Smart Hub"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "Натисніть кнопку Smart Hub на пульті, потім натисніть червону кнопку A для входу в меню."
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "Увійдіть як розробник"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "Введіть 'develop' як ім'я облікового запису. ТВ згенерує пароль - запишіть його. Натисніть Вхід."
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "Відкрийте налаштування розробника"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "Натисніть кнопку Tools на пульті, перейдіть до Налаштування, потім виберіть Розробник."
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "Введіть IP-адресу"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "Виберіть 'IP-адреса' та введіть: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "Синхронізація додатків"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "Виберіть 'Синхронізація додатків користувача' для початку встановлення. Додаток з'явиться в Smart Hub."
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "Відкрийте Samsung Account"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "Натисніть кнопку Меню, перейдіть до Функції Smart, потім виберіть Обл. запис Samsung."
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "Увійдіть як розробник"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "Введіть 'develop' як email. Залиште пароль порожнім (або спробуйте 'sso1029dev!' якщо потрібно). Натисніть Вхід."
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "Відкрийте налаштування додатків"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Натисніть Smart Hub, перейдіть до Інші додатки (внизу праворуч), потім натисніть Параметри."
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "Введіть IP-адресу"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "Виберіть 'IP Settings' та введіть: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "Синхронізація додатків"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "Виберіть 'Start App Sync' для початку встановлення."
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "Перезавантажте за потреби"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "Якщо додатки не з'явилися, перезавантажте ТВ та перевірте Smart Hub знову."
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "Відкрийте Samsung Account"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Перейдіть до Smart Hub, виберіть Samsung Account, потім Вхід."
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "Увійдіть як розробник"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "Введіть 'develop' як логін. Пропустіть поле пароля. Поставте галочку 'Запам'ятати' та натисніть Вхід."
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "Відкрийте меню синхронізації"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "У Smart Hub наведіть пульт на будь-який додаток та утримуйте центр хрестовини, поки не з'явиться меню."
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "Введіть IP-адресу"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "Виберіть 'IP Setting' та введіть: {0} (підтверджуйте кожну групу цифр центром хрестовини)."
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "Запустіть синхронізацію"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "Відкрийте меню знову та виберіть 'Start User App Sync'."
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "Завершіть встановлення"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "Прийміть запит на встановлення. Вийдіть зі Smart Hub та увійдіть знову, щоб побачити встановлені додатки."
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "Встановлення..."
+
+msgid "Server.Running"
+msgstr "Сервер запущено"
+
+msgid "Server.Stopped"
+msgstr "Сервер зупинено"
+
+msgid "Server.Requests"
+msgstr "Запити"
+
+msgid "Server.LastRequest"
+msgstr "Останній запит"
+
+msgid "Server.InstallProgress"
+msgstr "Прогрес встановлення"
+
+msgid "Server.TvConnected"
+msgstr "ТВ підключено (запитано widgetlist.xml)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "Віджет завантажено (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "Очікування підключення ТВ..."
+
+msgid "Server.InstallDetected"
+msgstr "Встановлення виявлено!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "Встановлення завершено!"
+
+msgid "Completed.Message"
+msgstr "Jellyfin успішно встановлено на ваш ТВ."
+
+msgid "Completed.WhatsNext"
+msgstr "Що далі?"
+
+msgid "Completed.Step1"
+msgstr "Відкрийте Smart Hub на ТВ"
+
+msgid "Completed.Step2"
+msgstr "Знайдіть та запустіть додаток Jellyfin"
+
+msgid "Completed.Step3"
+msgstr "Налаштуйте підключення до сервера Jellyfin"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "Журнал подій"
+
+msgid "Logs.OpenButton"
+msgstr "Журнал"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "Встановлено"
+
+msgid "Install.Waiting"
+msgstr "Очікування ТВ..."
+
+msgid "Install.ThatWasEasy"
+msgstr "Це було легко!"
+
+msgid "Install.BuyMeABeer"
+msgstr "Пригостіть пивом"
+
+#: Common
+msgid "Common.Back"
+msgstr "Назад"
+
+msgid "Common.Next"
+msgstr "Далі"
+
+msgid "Common.Finish"
+msgstr "Завершити"
+
+msgid "Common.Close"
+msgstr "Закрити"
+
+msgid "Common.Cancel"
+msgstr "Скасувати"
+
+msgid "Common.Select"
+msgstr "Вибрати"
+
+msgid "Common.Copy"
+msgstr "Копіювати"
+
+msgid "Common.CopyAll"
+msgstr "Копіювати все"
+
+msgid "Common.Clear"
+msgstr "Очистити"
+
+msgid "Common.Refresh"
+msgstr "Оновити"
+
+msgid "Common.Recommended"
+msgstr "Рекомендовано"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "Пошук телевізорів"
+
+msgid "Discovery.ScanButton"
+msgstr "Знайти телевізори"
+
+msgid "Discovery.Scanning"
+msgstr "Сканування мережі..."
+
+msgid "Discovery.Found"
+msgstr "Знайдено телевізорів Samsung: {0}"
+
+msgid "Discovery.NoTvsFound"
+msgstr "Телевізори Samsung не знайдено в мережі"
+
+msgid "Discovery.Cancelled"
+msgstr "Сканування скасовано"
+
+msgid "Discovery.NoInterface"
+msgstr "Мережевий інтерфейс не вибрано"
+
+msgid "Discovery.Error"
+msgstr "Помилка пошуку"
+
+msgid "Discovery.Phase.Starting"
+msgstr "Початок пошуку..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "Надсилання SSDP запиту..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "Сканування портів..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "Сканування {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "Отримання інформації..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Пошук завершено"
+
+msgid "Discovery.Confidence.High"
+msgstr "Висока достовірність"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Середня достовірність"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Низька достовірність"

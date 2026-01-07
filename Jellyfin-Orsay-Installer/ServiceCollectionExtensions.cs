@@ -19,6 +19,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ILogService, LogService>();
         services.AddSingleton<INavigationService, NavigationService>();
         services.AddSingleton<IDialogService, DialogService>();
+        services.AddSingleton<ITvDiscoveryService, SsdpTvDiscoveryService>();
+        services.AddSingleton<IClipboardService, ClipboardService>();
 
         // Transient services (new instance each time)
         services.AddTransient<IOrsayPackager, OrsayPackager>();
@@ -37,6 +39,7 @@ public static class ServiceCollectionExtensions
 
         // Dialog ViewModels
         services.AddTransient<LogViewerViewModel>();
+        services.AddTransient<TvScannerViewModel>();
 
         return services;
     }

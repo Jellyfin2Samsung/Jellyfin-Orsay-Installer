@@ -1,8 +1,10 @@
 using System;
+using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
@@ -54,8 +56,31 @@ public sealed class KestrelOrsayServer : IOrsayServer
                      // Request logging middleware
                      app.Use(async (ctx, next) =>
                      {
-                         var path = ctx.Request.Path.ToString();
-                         HandleRequest(path);
+                         var request = ctx.Request;
+
+                         // Read body if present (for POST requests), limit to 10KB
+                         string? body = null;
+                         if (request.ContentLength > 0 && request.ContentLength < 10240)
+                         {
+                             request.EnableBuffering();
+                             using var reader = new StreamReader(request.Body, leaveOpen: true);
+                             body = await reader.ReadToEndAsync();
+                             request.Body.Position = 0;
+                         }
+
+                         var serverRequest = new ServerRequest
+                         {
+                             Method = request.Method,
+                             Path = request.Path.Value ?? "/",
+                             Timestamp = DateTime.Now,
+                             UserAgent = request.Headers.UserAgent.ToString(),
+                             ContentType = request.ContentType,
+                             ContentLength = request.ContentLength,
+                             Body = body,
+                             RemoteIp = ctx.Connection.RemoteIpAddress?.ToString()
+                         };
+
+                         HandleRequest(serverRequest);
                          await next();
                      });
 
@@ -80,18 +105,18 @@ public sealed class KestrelOrsayServer : IOrsayServer
         return Task.CompletedTask;
     }
 
-    private void HandleRequest(string path)
+    private void HandleRequest(ServerRequest request)
     {
         _requestCount++;
-        _lastRequestPath = path;
+        _lastRequestPath = request.Path;
 
-        if (path.EndsWith("widgetlist.xml", StringComparison.OrdinalIgnoreCase))
+        if (request.Path.EndsWith("widgetlist.xml", StringComparison.OrdinalIgnoreCase))
             _widgetListRequested = true;
 
-        if (path.EndsWith(".zip", StringComparison.OrdinalIgnoreCase))
+        if (request.Path.EndsWith(".zip", StringComparison.OrdinalIgnoreCase))
             _widgetDownloaded = true;
 
-        OnRequest?.Invoke(new ServerRequest(path, DateTime.Now));
+        OnRequest?.Invoke(request);
     }
 
     public async Task StopAsync()

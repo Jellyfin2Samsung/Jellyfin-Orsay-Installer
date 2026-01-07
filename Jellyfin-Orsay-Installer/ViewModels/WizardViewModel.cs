@@ -34,9 +34,7 @@ public sealed partial class WizardViewModel : ViewModelBase
 
     public bool CanGoBack => CurrentStep > 1 && CurrentStep < 5;
     public bool CanGoNext => CurrentStep < 4; // Not on server running or completed pages
-
-    public string BackText => L["Wizard.Back"];
-    public string NextText => CurrentStep == 1 ? L["Wizard.GetStarted"] : L["Wizard.Next"];
+    public bool IsFirstStep => CurrentStep == 1;
 
     public WizardViewModel(
         INavigationService navigation,
@@ -54,7 +52,7 @@ public sealed partial class WizardViewModel : ViewModelBase
             CurrentPage = page;
             OnPropertyChanged(nameof(CanGoBack));
             OnPropertyChanged(nameof(CanGoNext));
-            OnPropertyChanged(nameof(NextText));
+            OnPropertyChanged(nameof(IsFirstStep));
             OnPropertyChanged(nameof(StepIndicator));
         };
 
@@ -65,8 +63,6 @@ public sealed partial class WizardViewModel : ViewModelBase
     protected override void OnLocalizationChanged()
     {
         OnPropertyChanged(nameof(StepIndicator));
-        OnPropertyChanged(nameof(BackText));
-        OnPropertyChanged(nameof(NextText));
     }
 
     [RelayCommand]
@@ -148,7 +144,7 @@ public sealed partial class WizardViewModel : ViewModelBase
 
         OnPropertyChanged(nameof(CanGoBack));
         OnPropertyChanged(nameof(CanGoNext));
-        OnPropertyChanged(nameof(NextText));
+        OnPropertyChanged(nameof(IsFirstStep));
         OnPropertyChanged(nameof(StepIndicator));
     }
 

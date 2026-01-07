@@ -49,12 +49,20 @@
                     <Border Background="#2C3E50"
                             CornerRadius="8"
                             Padding="16">
-                        <TextBlock Text="{Binding ServerUrl}"
-                                   FontSize="18"
-                                   FontWeight="SemiBold"
-                                   FontFamily="Consolas"
-                                   Foreground="White"
-                                   HorizontalAlignment="Center"/>
+                        <SelectableTextBlock Text="{Binding ServerUrl}"
+                                            FontSize="18"
+                                            FontWeight="SemiBold"
+                                            FontFamily="Consolas"
+                                            Foreground="White"
+                                            HorizontalAlignment="Center"
+                                            SelectionBrush="#5078C0">
+                            <SelectableTextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuItem Header="{Binding L[Common.Copy]}"
+                                              Command="{Binding CopyUrlCommand}"/>
+                                </MenuFlyout>
+                            </SelectableTextBlock.ContextFlyout>
+                        </SelectableTextBlock>
                     </Border>
 
                     <!-- Stats -->
@@ -106,6 +114,7 @@
                         </Border>
                         <TextBlock Text="{Binding L[Server.TvConnected]}"
                                    VerticalAlignment="Center"
+                                   TextWrapping="Wrap"
                                    Foreground="{Binding Status.WidgetListRequested, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#2C3E50;#95A5A6}"/>
                     </StackPanel>
 
@@ -122,6 +131,7 @@
                         </Border>
                         <TextBlock Text="{Binding L[Server.WidgetDownloaded]}"
                                    VerticalAlignment="Center"
+                                   TextWrapping="Wrap"
                                    Foreground="{Binding Status.WidgetDownloaded, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#2C3E50;#95A5A6}"/>
                     </StackPanel>
 

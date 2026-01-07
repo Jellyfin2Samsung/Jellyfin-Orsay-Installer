@@ -1,0 +1,358 @@
+# Japanese translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: App
+msgid "App.Title"
+msgstr "Jellyfin インストーラー: Samsung スマートTV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "ステップ {0}/{1}"
+
+msgid "Wizard.GetStarted"
+msgstr "開始"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "ようこそ"
+
+msgid "Welcome.Subtitle"
+msgstr "2011-2015年製のSamsung スマートTVにJellyfinをインストールします"
+
+msgid "Welcome.Feature1"
+msgstr "数分で簡単にインストール"
+
+msgid "Welcome.Feature2"
+msgstr "USBドライブ不要"
+
+msgid "Welcome.Feature3"
+msgstr "2012-2015年製Samsung TV対応"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "ネットワーク設定"
+
+msgid "Network.SelectIp"
+msgstr "PCのIPアドレスを選択してください:"
+
+msgid "Network.Port"
+msgstr "サーバーポート:"
+
+msgid "Network.PortHint"
+msgstr "デフォルトは80です。必要な場合のみ変更してください。"
+
+msgid "Network.SameNetworkHint"
+msgstr "TVは選択したインターフェースと同じネットワークに接続されている必要があります。"
+
+msgid "Network.GroupOther"
+msgstr "— その他 —"
+
+msgid "Network.GroupVirtual"
+msgstr "— 仮想 —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "TV設定"
+
+msgid "TvSetup.IpBanner"
+msgstr "TVにこのIPアドレスを入力してください:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "TVシリーズを選択してください:"
+
+msgid "TvSetup.SeriesE"
+msgstr "Eシリーズ (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "Fシリーズ (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "Hシリーズ (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "不明な場合は、TV背面のモデル番号を確認してください（例: UE40ES6100）"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "ネットワークでTVを検索"
+
+msgid "TvSetup.DetectedTv"
+msgstr "検出:"
+
+msgid "TvSetup.NextHint"
+msgstr "この説明を読んだ後、「次へ」をクリックしてサーバーを起動してください。その後、TVで手順に従ってください。"
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Smart Hubを開く"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "リモコンのSmart Hubボタンを押し、赤いAボタンを押してログインメニューを開きます。"
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "開発者としてログイン"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "アカウント名に「develop」と入力します。TVがパスワードを生成するのでメモしてください。サインインを押します。"
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "開発者設定を開く"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "リモコンのツールボタンを押し、設定に移動して、開発者を選択します。"
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "IPアドレスを入力"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "「IPアドレス」を選択し、次を入力してください: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "アプリケーション同期"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "「ユーザーアプリケーション同期」を選択してインストールを開始します。アプリがSmart Hubに表示されます。"
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "Samsungアカウントを開く"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "メニューボタンを押し、スマート機能に移動して、Samsungアカウントを選択します。"
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "開発者としてログイン"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "メールに「develop」と入力します。パスワードは空のままにします（必要に応じて「sso1029dev!」を試してください）。サインインを押します。"
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "アプリ設定を開く"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Smart Hubを押し、その他のアプリ（右下）に移動して、オプションを押します。"
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "IPアドレスを入力"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "「IP設定」を選択し、次を入力してください: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "アプリケーション同期"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "「アプリ同期開始」を選択してインストールを開始します。"
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "必要に応じて再起動"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "アプリが表示されない場合は、TVを再起動してSmart Hubを再確認してください。"
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "Samsungアカウントを開く"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Smart Hubに移動し、Samsungアカウントを選択して、サインインを選択します。"
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "開発者としてログイン"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "ログインに「develop」と入力します。パスワード欄はスキップします。「記憶する」にチェックを入れてサインインを押します。"
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "同期メニューを開く"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "Smart Hubで、リモコンでアプリを指し、メニューが表示されるまでD-padの中央を長押しします。"
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "IPアドレスを入力"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "「IP設定」を選択し、次を入力してください: {0}（各数字グループをD-pad中央で確定）。"
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "同期を開始"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "メニューを再度開き、「Start User App Sync」を選択します。"
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "インストール完了"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "インストールの確認を承認します。Smart Hubを終了して再度開くと、インストールされたアプリが表示されます。"
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "インストール中..."
+
+msgid "Server.Running"
+msgstr "サーバー実行中"
+
+msgid "Server.Stopped"
+msgstr "サーバー停止"
+
+msgid "Server.Requests"
+msgstr "リクエスト"
+
+msgid "Server.LastRequest"
+msgstr "最後のリクエスト"
+
+msgid "Server.InstallProgress"
+msgstr "インストール進捗"
+
+msgid "Server.TvConnected"
+msgstr "TV接続済み（widgetlist.xmlリクエスト）"
+
+msgid "Server.WidgetDownloaded"
+msgstr "ウィジェットダウンロード済み（.zip）"
+
+msgid "Server.WaitingForTv"
+msgstr "TV接続待機中..."
+
+msgid "Server.InstallDetected"
+msgstr "インストール検出！"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "インストール完了！"
+
+msgid "Completed.Message"
+msgstr "JellyfinがTVに正常にインストールされました。"
+
+msgid "Completed.WhatsNext"
+msgstr "次のステップ"
+
+msgid "Completed.Step1"
+msgstr "TVでSmart Hubを開きます"
+
+msgid "Completed.Step2"
+msgstr "Jellyfinアプリを見つけて起動します"
+
+msgid "Completed.Step3"
+msgstr "Jellyfinサーバーを設定します"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "イベントログ"
+
+msgid "Logs.OpenButton"
+msgstr "ログ"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "インストール済み"
+
+msgid "Install.Waiting"
+msgstr "TV待機中..."
+
+msgid "Install.ThatWasEasy"
+msgstr "簡単でしたね！"
+
+msgid "Install.BuyMeABeer"
+msgstr "ビールをおごる"
+
+#: Common
+msgid "Common.Back"
+msgstr "戻る"
+
+msgid "Common.Next"
+msgstr "次へ"
+
+msgid "Common.Finish"
+msgstr "完了"
+
+msgid "Common.Close"
+msgstr "閉じる"
+
+msgid "Common.Cancel"
+msgstr "キャンセル"
+
+msgid "Common.Select"
+msgstr "選択"
+
+msgid "Common.Copy"
+msgstr "コピー"
+
+msgid "Common.CopyAll"
+msgstr "すべてコピー"
+
+msgid "Common.Clear"
+msgstr "クリア"
+
+msgid "Common.Refresh"
+msgstr "更新"
+
+msgid "Common.Recommended"
+msgstr "推奨"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "TV検索"
+
+msgid "Discovery.ScanButton"
+msgstr "TVを検索"
+
+msgid "Discovery.Scanning"
+msgstr "ネットワークを検索中..."
+
+msgid "Discovery.Found"
+msgstr "{0}台のSamsung TVが見つかりました"
+
+msgid "Discovery.NoTvsFound"
+msgstr "ネットワークでSamsung TVが見つかりませんでした"
+
+msgid "Discovery.Cancelled"
+msgstr "検索がキャンセルされました"
+
+msgid "Discovery.NoInterface"
+msgstr "ネットワークインターフェースが選択されていません"
+
+msgid "Discovery.Error"
+msgstr "検索に失敗しました"
+
+msgid "Discovery.Phase.Starting"
+msgstr "検索を開始中..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "SSDPをブロードキャスト中..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "ポートをスキャン中..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "{0}をスキャン中..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "デバイス情報を取得中..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "検索完了"
+
+msgid "Discovery.Confidence.High"
+msgstr "高い信頼度"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "中程度の信頼度"
+
+msgid "Discovery.Confidence.Low"
+msgstr "低い信頼度"

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Jellyfin.Orsay.Installer.Models;
@@ -11,6 +12,7 @@ namespace Jellyfin.Orsay.Installer.ViewModels.Pages;
 public sealed partial class NetworkSetupPageViewModel : ViewModelBase
 {
     private readonly INetworkService _networkService;
+    private readonly IClipboardService _clipboard;
 
     private NetworkListItem? _previousSelectedItem;
 
@@ -29,10 +31,14 @@ public sealed partial class NetworkSetupPageViewModel : ViewModelBase
 
     public bool IsValid => SelectedInterface != null && Port > 0 && Port < 65536;
 
-    public NetworkSetupPageViewModel(INetworkService networkService, ILocalizationService localization)
+    public NetworkSetupPageViewModel(
+        INetworkService networkService,
+        IClipboardService clipboard,
+        ILocalizationService localization)
         : base(localization)
     {
         _networkService = networkService;
+        _clipboard = clipboard;
         RefreshInterfaces();
     }
 
@@ -142,4 +148,7 @@ public sealed partial class NetworkSetupPageViewModel : ViewModelBase
     {
         OnPropertyChanged(nameof(IsValid));
     }
+
+    [RelayCommand]
+    private Task CopyIpAsync() => _clipboard.SetTextAsync(SelectedInterface?.IpAddress);
 }

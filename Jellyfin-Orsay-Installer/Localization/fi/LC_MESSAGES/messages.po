@@ -1,0 +1,358 @@
+# Finnish translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Finnish\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: App
+msgid "App.Title"
+msgstr "Jellyfin-asennusohjelma: Samsung Smart TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "Vaihe {0}/{1}"
+
+msgid "Wizard.GetStarted"
+msgstr "Aloita"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "Tervetuloa"
+
+msgid "Welcome.Subtitle"
+msgstr "Asenna Jellyfin Samsung Smart TV:lle vuosilta 2011-2015"
+
+msgid "Welcome.Feature1"
+msgstr "Helppo asennus muutamassa minuutissa"
+
+msgid "Welcome.Feature2"
+msgstr "USB-asemaa ei tarvita"
+
+msgid "Welcome.Feature3"
+msgstr "Toimii 2012-2015 Samsung TV:iden kanssa"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "Verkkoasetukset"
+
+msgid "Network.SelectIp"
+msgstr "Valitse tietokoneen IP-osoite:"
+
+msgid "Network.Port"
+msgstr "Palvelimen portti:"
+
+msgid "Network.PortHint"
+msgstr "Oletus on 80. Muuta vain tarvittaessa."
+
+msgid "Network.SameNetworkHint"
+msgstr "TV:n on oltava samassa verkossa kuin valittu liitäntä."
+
+msgid "Network.GroupOther"
+msgstr "— Muut —"
+
+msgid "Network.GroupVirtual"
+msgstr "— Virtuaaliset —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "TV:n asetukset"
+
+msgid "TvSetup.IpBanner"
+msgstr "Syötä tämä IP-osoite TV:lle:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "Valitse TV:n sarja:"
+
+msgid "TvSetup.SeriesE"
+msgstr "E-sarja (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "F-sarja (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "H-sarja (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "Et ole varma? Tarkista mallinumero TV:n takaa (esim. UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "Etsi TV:itä verkosta"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Löydetty:"
+
+msgid "TvSetup.NextHint"
+msgstr "Luettuasi nämä ohjeet, napsauta 'Seuraava' käynnistääksesi palvelimen. Seuraa sitten TV:n ohjeita."
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Avaa Smart Hub"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "Paina kaukosäätimen Smart Hub -painiketta ja paina sitten punaista A-painiketta avataksesi kirjautumisvalikon."
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "Kirjaudu kehittäjänä"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "Syötä 'develop' tilin nimeksi. TV luo salasanan - kirjoita se muistiin. Paina Kirjaudu."
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "Avaa kehittäjäasetukset"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "Paina kaukosäätimen Työkalut-painiketta, siirry Asetuksiin ja valitse Kehittäjä."
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "Syötä IP-osoite"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "Valitse 'IP-osoite' ja syötä: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "Synkronoi sovellukset"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "Valitse 'Synkronoi käyttäjäsovellukset' aloittaaksesi asennuksen. Sovellus näkyy Smart Hubissa."
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "Avaa Samsung-tili"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "Paina Valikko-painiketta, siirry Älykkäisiin toimintoihin ja valitse Samsung-tili."
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "Kirjaudu kehittäjänä"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "Syötä 'develop' sähköpostiksi. Jätä salasana tyhjäksi (tai kokeile 'sso1029dev!' tarvittaessa). Paina Kirjaudu."
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "Avaa sovellusasetukset"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Paina Smart Hub, siirry Lisää sovelluksia (oikealla alhaalla) ja paina Asetukset."
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "Syötä IP-osoite"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "Valitse 'IP-asetukset' ja syötä: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "Synkronoi sovellukset"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "Valitse 'Aloita sovellusten synkronointi' aloittaaksesi asennuksen."
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "Käynnistä uudelleen tarvittaessa"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "Jos sovellukset eivät näy, käynnistä TV uudelleen ja tarkista Smart Hub."
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "Avaa Samsung-tili"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Siirry Smart Hubiin, valitse Samsung-tili ja valitse Kirjaudu."
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "Kirjaudu kehittäjänä"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "Syötä 'develop' käyttäjätunnukseksi. Ohita salasanakenttä. Merkitse 'Muista' ja paina Kirjaudu."
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "Avaa synkronointivalikko"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "Smart Hubissa, osoita kaukosäätimellä mitä tahansa sovellusta ja pidä D-padin keskustaa painettuna kunnes valikko ilmestyy."
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "Syötä IP-osoite"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "Valitse 'IP-asetus' ja syötä: {0} (vahvista jokainen numeroryhmä D-padin keskustalla)."
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "Aloita synkronointi"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "Avaa valikko uudelleen ja valitse 'Start User App Sync'."
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "Viimeistele asennus"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "Hyväksy asennuskehote. Poistu Smart Hubista ja palaa nähdäksesi asennetut sovellukset."
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "Asennetaan..."
+
+msgid "Server.Running"
+msgstr "Palvelin käynnissä"
+
+msgid "Server.Stopped"
+msgstr "Palvelin pysäytetty"
+
+msgid "Server.Requests"
+msgstr "Pyynnöt"
+
+msgid "Server.LastRequest"
+msgstr "Viimeisin pyyntö"
+
+msgid "Server.InstallProgress"
+msgstr "Asennuksen edistyminen"
+
+msgid "Server.TvConnected"
+msgstr "TV yhdistetty (widgetlist.xml pyydetty)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "Widget ladattu (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "Odotetaan TV-yhteyttä..."
+
+msgid "Server.InstallDetected"
+msgstr "Asennus havaittu!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "Asennus valmis!"
+
+msgid "Completed.Message"
+msgstr "Jellyfin on asennettu TV:llesi."
+
+msgid "Completed.WhatsNext"
+msgstr "Mitä seuraavaksi?"
+
+msgid "Completed.Step1"
+msgstr "Avaa Smart Hub TV:ssä"
+
+msgid "Completed.Step2"
+msgstr "Etsi ja käynnistä Jellyfin-sovellus"
+
+msgid "Completed.Step3"
+msgstr "Määritä Jellyfin-palvelin"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "Tapahtumaloki"
+
+msgid "Logs.OpenButton"
+msgstr "Lokit"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "Asennettu"
+
+msgid "Install.Waiting"
+msgstr "Odotetaan TV:tä..."
+
+msgid "Install.ThatWasEasy"
+msgstr "Helppoa!"
+
+msgid "Install.BuyMeABeer"
+msgstr "Tarjoa olut"
+
+#: Common
+msgid "Common.Back"
+msgstr "Takaisin"
+
+msgid "Common.Next"
+msgstr "Seuraava"
+
+msgid "Common.Finish"
+msgstr "Valmis"
+
+msgid "Common.Close"
+msgstr "Sulje"
+
+msgid "Common.Cancel"
+msgstr "Peruuta"
+
+msgid "Common.Select"
+msgstr "Valitse"
+
+msgid "Common.Copy"
+msgstr "Kopioi"
+
+msgid "Common.CopyAll"
+msgstr "Kopioi kaikki"
+
+msgid "Common.Clear"
+msgstr "Tyhjennä"
+
+msgid "Common.Refresh"
+msgstr "Päivitä"
+
+msgid "Common.Recommended"
+msgstr "Suositeltu"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "Etsi TV:itä"
+
+msgid "Discovery.ScanButton"
+msgstr "Etsi TV:itä"
+
+msgid "Discovery.Scanning"
+msgstr "Etsitään verkosta..."
+
+msgid "Discovery.Found"
+msgstr "Löydettiin {0} Samsung TV:tä"
+
+msgid "Discovery.NoTvsFound"
+msgstr "Samsung TV:itä ei löytynyt verkosta"
+
+msgid "Discovery.Cancelled"
+msgstr "Etsintä peruutettu"
+
+msgid "Discovery.NoInterface"
+msgstr "Verkkoliitäntää ei valittu"
+
+msgid "Discovery.Error"
+msgstr "Etsintä epäonnistui"
+
+msgid "Discovery.Phase.Starting"
+msgstr "Aloitetaan etsintää..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "Lähetetään SSDP..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "Skannataan portteja..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "Skannataan {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "Haetaan laitetietoja..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Etsintä valmis"
+
+msgid "Discovery.Confidence.High"
+msgstr "Korkea varmuus"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Keskitason varmuus"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Matala varmuus"

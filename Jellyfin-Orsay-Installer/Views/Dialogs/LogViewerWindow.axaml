@@ -71,7 +71,7 @@
                         Spacing="12"
                         HorizontalAlignment="Right">
 
-                <Button Content="{Binding L[Logs.Clear]}"
+                <Button Content="{Binding L[Common.Clear]}"
                         Command="{Binding ClearCommand}"
                         Padding="16,8"
                         Background="#E8E8E8"
@@ -79,7 +79,7 @@
                         CornerRadius="6"
                         Cursor="Hand"/>
 
-                <Button Content="{Binding L[Logs.CopyAll]}"
+                <Button Content="{Binding L[Common.CopyAll]}"
                         Command="{Binding CopyAllCommand}"
                         Padding="16,8"
                         Background="#3498DB"

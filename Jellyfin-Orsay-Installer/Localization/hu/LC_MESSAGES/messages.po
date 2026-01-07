@@ -1,0 +1,358 @@
+# Hungarian translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Hungarian\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: App
+msgid "App.Title"
+msgstr "Jellyfin Telepítő: Samsung Smart TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "{0}. lépés / {1}"
+
+msgid "Wizard.GetStarted"
+msgstr "Kezdés"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "Üdvözöljük"
+
+msgid "Welcome.Subtitle"
+msgstr "Telepítse a Jellyfint 2011-2015-ös Samsung Smart TV-jére"
+
+msgid "Welcome.Feature1"
+msgstr "Egyszerű telepítés percek alatt"
+
+msgid "Welcome.Feature2"
+msgstr "Nincs szükség USB meghajtóra"
+
+msgid "Welcome.Feature3"
+msgstr "2012-2015-ös Samsung TV-kkel működik"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "Hálózat beállítása"
+
+msgid "Network.SelectIp"
+msgstr "Válassza ki a számítógép IP-címét:"
+
+msgid "Network.Port"
+msgstr "Szerver port:"
+
+msgid "Network.PortHint"
+msgstr "Alapértelmezett: 80. Csak szükség esetén módosítsa."
+
+msgid "Network.SameNetworkHint"
+msgstr "A TV-nek ugyanazon a hálózaton kell lennie, mint a kiválasztott interfész."
+
+msgid "Network.GroupOther"
+msgstr "— Egyéb —"
+
+msgid "Network.GroupVirtual"
+msgstr "— Virtuális —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "TV beállítása"
+
+msgid "TvSetup.IpBanner"
+msgstr "Adja meg ezt az IP-címet a TV-n:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "Válassza ki a TV sorozatát:"
+
+msgid "TvSetup.SeriesE"
+msgstr "E sorozat (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "F sorozat (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "H sorozat (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "Nem biztos? Ellenőrizze a modellszámot a TV hátulján (pl. UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "TV-k keresése a hálózaton"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Találat:"
+
+msgid "TvSetup.NextHint"
+msgstr "Az utasítások elolvasása után kattintson a 'Következő' gombra a szerver indításához. Ezután kövesse a lépéseket a TV-n."
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Smart Hub megnyitása"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "Nyomja meg a Smart Hub gombot a távirányítón, majd a piros A gombot a bejelentkezési menü megnyitásához."
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "Bejelentkezés fejlesztőként"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "Írja be a 'develop' fióknevet. A TV generál egy jelszót - jegyezze fel. Nyomja meg a Bejelentkezés gombot."
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "Fejlesztői beállítások megnyitása"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "Nyomja meg az Eszközök gombot a távirányítón, menjen a Beállításokhoz, és válassza a Fejlesztő lehetőséget."
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "IP-cím megadása"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "Válassza az 'IP-cím' lehetőséget és adja meg: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "Alkalmazások szinkronizálása"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "Válassza a 'Felhasználói alkalmazások szinkronizálása' lehetőséget a telepítés megkezdéséhez. Az alkalmazás megjelenik a Smart Hubban."
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "Samsung fiók megnyitása"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "Nyomja meg a Menü gombot, menjen az Okos funkciókhoz, és válassza a Samsung fiók lehetőséget."
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "Bejelentkezés fejlesztőként"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "Írja be a 'develop' e-mail címet. Hagyja üresen a jelszót (vagy próbálja az 'sso1029dev!' jelszót). Nyomja meg a Bejelentkezés gombot."
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "Alkalmazásbeállítások megnyitása"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Nyomja meg a Smart Hub gombot, menjen a További alkalmazásokhoz (jobb alsó sarokban), és nyomja meg a Beállítások gombot."
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "IP-cím megadása"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "Válassza az 'IP-beállítások' lehetőséget és adja meg: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "Alkalmazások szinkronizálása"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "Válassza az 'Alkalmazás szinkronizálás indítása' lehetőséget a telepítés megkezdéséhez."
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "Újraindítás szükség esetén"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "Ha az alkalmazások nem jelennek meg, indítsa újra a TV-t és ellenőrizze újra a Smart Hubot."
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "Samsung fiók megnyitása"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Menjen a Smart Hubba, válassza a Samsung fiók, majd a Bejelentkezés lehetőséget."
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "Bejelentkezés fejlesztőként"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "Írja be a 'develop' felhasználónevet. Hagyja ki a jelszó mezőt. Jelölje be az 'Emlékezz' opciót és nyomja meg a Bejelentkezés gombot."
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "Szinkronizálási menü megnyitása"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "A Smart Hubban irányítsa a távirányítót bármely alkalmazásra és tartsa lenyomva a D-pad közepét, amíg meg nem jelenik egy menü."
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "IP-cím megadása"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "Válassza az 'IP-beállítás' lehetőséget és adja meg: {0} (minden számcsoportot erősítsen meg a D-pad közepével)."
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "Szinkronizálás indítása"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "Nyissa meg újra a menüt és válassza a 'Start User App Sync' lehetőséget."
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "Telepítés befejezése"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "Fogadja el a telepítési kérést. Lépjen ki a Smart Hubból és lépjen be újra a telepített alkalmazások megtekintéséhez."
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "Telepítés..."
+
+msgid "Server.Running"
+msgstr "Szerver fut"
+
+msgid "Server.Stopped"
+msgstr "Szerver leállítva"
+
+msgid "Server.Requests"
+msgstr "Kérések"
+
+msgid "Server.LastRequest"
+msgstr "Utolsó kérés"
+
+msgid "Server.InstallProgress"
+msgstr "Telepítés állapota"
+
+msgid "Server.TvConnected"
+msgstr "TV csatlakoztatva (widgetlist.xml kérve)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "Widget letöltve (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "Várakozás a TV csatlakozására..."
+
+msgid "Server.InstallDetected"
+msgstr "Telepítés észlelve!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "Telepítés kész!"
+
+msgid "Completed.Message"
+msgstr "A Jellyfin sikeresen telepítve lett a TV-re."
+
+msgid "Completed.WhatsNext"
+msgstr "Mi a következő lépés?"
+
+msgid "Completed.Step1"
+msgstr "Nyissa meg a Smart Hubot a TV-n"
+
+msgid "Completed.Step2"
+msgstr "Keresse meg és indítsa el a Jellyfin alkalmazást"
+
+msgid "Completed.Step3"
+msgstr "Állítsa be a Jellyfin szervert"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "Eseménynapló"
+
+msgid "Logs.OpenButton"
+msgstr "Naplók"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "Telepítve"
+
+msgid "Install.Waiting"
+msgstr "Várakozás a TV-re..."
+
+msgid "Install.ThatWasEasy"
+msgstr "Ez könnyű volt!"
+
+msgid "Install.BuyMeABeer"
+msgstr "Vegyél nekem egy sört"
+
+#: Common
+msgid "Common.Back"
+msgstr "Vissza"
+
+msgid "Common.Next"
+msgstr "Következő"
+
+msgid "Common.Finish"
+msgstr "Befejezés"
+
+msgid "Common.Close"
+msgstr "Bezárás"
+
+msgid "Common.Cancel"
+msgstr "Mégse"
+
+msgid "Common.Select"
+msgstr "Kiválasztás"
+
+msgid "Common.Copy"
+msgstr "Másolás"
+
+msgid "Common.CopyAll"
+msgstr "Összes másolása"
+
+msgid "Common.Clear"
+msgstr "Törlés"
+
+msgid "Common.Refresh"
+msgstr "Frissítés"
+
+msgid "Common.Recommended"
+msgstr "Ajánlott"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "TV-k keresése"
+
+msgid "Discovery.ScanButton"
+msgstr "TV-k keresése"
+
+msgid "Discovery.Scanning"
+msgstr "Hálózat keresése..."
+
+msgid "Discovery.Found"
+msgstr "{0} Samsung TV találva"
+
+msgid "Discovery.NoTvsFound"
+msgstr "Nem található Samsung TV a hálózaton"
+
+msgid "Discovery.Cancelled"
+msgstr "Keresés megszakítva"
+
+msgid "Discovery.NoInterface"
+msgstr "Nincs kiválasztva hálózati interfész"
+
+msgid "Discovery.Error"
+msgstr "Keresés sikertelen"
+
+msgid "Discovery.Phase.Starting"
+msgstr "Keresés indítása..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "SSDP küldése..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "Portok keresése..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "{0} keresése..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "Eszközinformációk lekérése..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Keresés befejezve"
+
+msgid "Discovery.Confidence.High"
+msgstr "Magas megbízhatóság"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Közepes megbízhatóság"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Alacsony megbízhatóság"

@@ -1,5 +1,5 @@
 # Russian translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
-# Copyright (C) 2024-2026 Patrick Stel & Contributors
+# Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
 # This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
 #
 msgid ""
@@ -24,17 +24,8 @@ msgstr "Jellyfin Установщик: Samsung Smart TV (Orsay)"
 msgid "Wizard.Step"
 msgstr "Шаг {0} из {1}"
 
-msgid "Wizard.Back"
-msgstr "Назад"
-
-msgid "Wizard.Next"
-msgstr "Далее"
-
 msgid "Wizard.GetStarted"
 msgstr "Начать"
-
-msgid "Wizard.Finish"
-msgstr "Завершить"
 
 #: Welcome Page
 msgid "Welcome.Title"
@@ -64,12 +55,6 @@ msgstr "Порт сервера:"
 
 msgid "Network.PortHint"
 msgstr "По умолчанию 80. Измените только при необходимости."
-
-msgid "Network.Refresh"
-msgstr "Обновить"
-
-msgid "Network.Recommended"
-msgstr "Рекомендуется"
 
 msgid "Network.SameNetworkHint"
 msgstr "Ваш ТВ должен быть в той же сети, что и выбранный интерфейс."
@@ -101,6 +86,15 @@ msgstr "Серия H (2014-15)"
 
 msgid "TvSetup.DontKnowSeries"
 msgstr "Не знаете серию? Проверьте номер модели на задней панели ТВ (напр., UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "Найти ТВ в сети"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Найден:"
+
+msgid "TvSetup.NextHint"
+msgstr "Прочитайте инструкции, затем нажмите 'Далее' для запуска сервера. После этого выполните шаги на телевизоре."
 
 #: TV Setup - Series E (2012)
 msgid "TvSetup.E.Step1.Title"
@@ -211,9 +205,6 @@ msgstr "Примите запрос на установку. Выйдите из
 msgid "Server.Title"
 msgstr "Установка..."
 
-msgid "Server.WaitingForTv"
-msgstr "Ожидание подключения ТВ..."
-
 msgid "Server.Running"
 msgstr "Сервер запущен"
 
@@ -221,25 +212,25 @@ msgid "Server.Stopped"
 msgstr "Сервер остановлен"
 
 msgid "Server.Requests"
-msgstr "Запросов"
+msgstr "Запросы"
 
 msgid "Server.LastRequest"
 msgstr "Последний запрос"
-
-msgid "Server.Url"
-msgstr "URL сервера"
 
 msgid "Server.InstallProgress"
 msgstr "Прогресс установки"
 
 msgid "Server.TvConnected"
-msgstr "ТВ подключён (widgetlist.xml)"
+msgstr "ТВ подключён (запрошен widgetlist.xml)"
 
 msgid "Server.WidgetDownloaded"
 msgstr "Виджет загружен (.zip)"
 
+msgid "Server.WaitingForTv"
+msgstr "Ожидание подключения ТВ..."
+
 msgid "Server.InstallDetected"
-msgstr "Установка обнаружена! Нажмите Далее."
+msgstr "Установка обнаружена!"
 
 #: Completed Page
 msgid "Completed.Title"
@@ -264,12 +255,6 @@ msgstr "Настройте подключение к серверу Jellyfin"
 msgid "Logs.Title"
 msgstr "Журнал событий"
 
-msgid "Logs.Clear"
-msgstr "Очистить"
-
-msgid "Logs.CopyAll"
-msgstr "Копировать всё"
-
 msgid "Logs.OpenButton"
 msgstr "Логи"
 
@@ -287,5 +272,87 @@ msgid "Install.BuyMeABeer"
 msgstr "Угостить пивом"
 
 #: Common
+msgid "Common.Back"
+msgstr "Назад"
+
+msgid "Common.Next"
+msgstr "Далее"
+
+msgid "Common.Finish"
+msgstr "Завершить"
+
 msgid "Common.Close"
 msgstr "Закрыть"
+
+msgid "Common.Cancel"
+msgstr "Отмена"
+
+msgid "Common.Select"
+msgstr "Выбрать"
+
+msgid "Common.Copy"
+msgstr "Копировать"
+
+msgid "Common.CopyAll"
+msgstr "Копировать всё"
+
+msgid "Common.Clear"
+msgstr "Очистить"
+
+msgid "Common.Refresh"
+msgstr "Обновить"
+
+msgid "Common.Recommended"
+msgstr "Рекомендуется"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "Поиск телевизоров"
+
+msgid "Discovery.ScanButton"
+msgstr "Найти телевизоры"
+
+msgid "Discovery.Scanning"
+msgstr "Сканирование сети..."
+
+msgid "Discovery.Found"
+msgstr "Найдено телевизоров Samsung: {0}"
+
+msgid "Discovery.NoTvsFound"
+msgstr "Телевизоры Samsung не найдены в сети"
+
+msgid "Discovery.Cancelled"
+msgstr "Сканирование отменено"
+
+msgid "Discovery.NoInterface"
+msgstr "Сетевой интерфейс не выбран"
+
+msgid "Discovery.Error"
+msgstr "Ошибка поиска"
+
+msgid "Discovery.Phase.Starting"
+msgstr "Начало поиска..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "Отправка SSDP запроса..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "Сканирование портов..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "Сканирование {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "Получение информации..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Поиск завершён"
+
+msgid "Discovery.Confidence.High"
+msgstr "Высокая достоверность"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Средняя достоверность"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Низкая достоверность"
