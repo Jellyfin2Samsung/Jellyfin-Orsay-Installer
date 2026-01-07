@@ -1,0 +1,358 @@
+# Romanian translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Romanian\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);\n"
+
+#: App
+msgid "App.Title"
+msgstr "Program de instalare Jellyfin: Samsung Smart TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "Pasul {0} din {1}"
+
+msgid "Wizard.GetStarted"
+msgstr "Începe"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "Bun venit"
+
+msgid "Welcome.Subtitle"
+msgstr "Instalează Jellyfin pe Samsung Smart TV-ul tău din 2011-2015"
+
+msgid "Welcome.Feature1"
+msgstr "Instalare ușoară în câteva minute"
+
+msgid "Welcome.Feature2"
+msgstr "Nu este nevoie de USB"
+
+msgid "Welcome.Feature3"
+msgstr "Funcționează cu Samsung TV-uri din 2012-2015"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "Configurare rețea"
+
+msgid "Network.SelectIp"
+msgstr "Selectează adresa IP a PC-ului:"
+
+msgid "Network.Port"
+msgstr "Port server:"
+
+msgid "Network.PortHint"
+msgstr "Implicit este 80. Modifică doar dacă este necesar."
+
+msgid "Network.SameNetworkHint"
+msgstr "TV-ul trebuie să fie în aceeași rețea cu interfața selectată."
+
+msgid "Network.GroupOther"
+msgstr "— Altele —"
+
+msgid "Network.GroupVirtual"
+msgstr "— Virtuale —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "Configurare TV"
+
+msgid "TvSetup.IpBanner"
+msgstr "Introdu această adresă IP pe TV:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "Selectează seria TV-ului:"
+
+msgid "TvSetup.SeriesE"
+msgstr "Seria E (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "Seria F (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "Seria H (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "Nu ești sigur? Verifică numărul modelului pe spatele TV-ului (ex. UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "Scanează rețeaua pentru TV-uri"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Detectat:"
+
+msgid "TvSetup.NextHint"
+msgstr "După ce ai citit aceste instrucțiuni, apasă 'Următorul' pentru a porni serverul. Apoi urmează pașii pe TV."
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Deschide Smart Hub"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "Apasă butonul Smart Hub de pe telecomandă, apoi apasă butonul roșu A pentru a deschide meniul de autentificare."
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "Autentifică-te ca dezvoltator"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "Introdu 'develop' ca nume de cont. TV-ul va genera o parolă - notează-o. Apasă Autentificare."
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "Deschide setările dezvoltatorului"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "Apasă butonul Instrumente de pe telecomandă, mergi la Setări, apoi selectează Dezvoltator."
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "Introdu adresa IP"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "Selectează 'Adresă IP' și introdu: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "Sincronizează aplicațiile"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "Selectează 'Sincronizare aplicații utilizator' pentru a începe instalarea. Aplicația va apărea în Smart Hub."
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "Deschide contul Samsung"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "Apasă butonul Meniu, mergi la Funcții Smart, apoi selectează Cont Samsung."
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "Autentifică-te ca dezvoltator"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "Introdu 'develop' ca email. Lasă parola goală (sau încearcă 'sso1029dev!' dacă este necesar). Apasă Autentificare."
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "Deschide setările aplicațiilor"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Apasă Smart Hub, mergi la Mai multe aplicații (jos-dreapta), apoi apasă Opțiuni."
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "Introdu adresa IP"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "Selectează 'Setări IP' și introdu: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "Sincronizează aplicațiile"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "Selectează 'Pornire sincronizare aplicații' pentru a începe instalarea."
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "Repornește dacă este necesar"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "Dacă aplicațiile nu apar, repornește TV-ul și verifică din nou Smart Hub."
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "Deschide contul Samsung"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Mergi la Smart Hub, selectează Cont Samsung, apoi selectează Autentificare."
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "Autentifică-te ca dezvoltator"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "Introdu 'develop' ca nume de utilizator. Sari peste câmpul parolă. Bifează 'Ține minte' și apasă Autentificare."
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "Deschide meniul de sincronizare"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "În Smart Hub, îndreaptă telecomanda spre orice aplicație și ține apăsat centrul D-pad-ului până apare un meniu."
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "Introdu adresa IP"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "Selectează 'Setare IP' și introdu: {0} (confirmă fiecare grup de numere cu centrul D-pad-ului)."
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "Pornește sincronizarea"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "Deschide meniul din nou și selectează 'Start User App Sync'."
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "Finalizează instalarea"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "Acceptă promptul de instalare. Ieși din Smart Hub și intră din nou pentru a vedea aplicațiile instalate."
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "Se instalează..."
+
+msgid "Server.Running"
+msgstr "Server pornit"
+
+msgid "Server.Stopped"
+msgstr "Server oprit"
+
+msgid "Server.Requests"
+msgstr "Cereri"
+
+msgid "Server.LastRequest"
+msgstr "Ultima cerere"
+
+msgid "Server.InstallProgress"
+msgstr "Progres instalare"
+
+msgid "Server.TvConnected"
+msgstr "TV conectat (widgetlist.xml cerut)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "Widget descărcat (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "Se așteaptă conexiunea TV..."
+
+msgid "Server.InstallDetected"
+msgstr "Instalare detectată!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "Instalare completă!"
+
+msgid "Completed.Message"
+msgstr "Jellyfin a fost instalat cu succes pe TV-ul tău."
+
+msgid "Completed.WhatsNext"
+msgstr "Ce urmează?"
+
+msgid "Completed.Step1"
+msgstr "Deschide Smart Hub pe TV"
+
+msgid "Completed.Step2"
+msgstr "Găsește și lansează aplicația Jellyfin"
+
+msgid "Completed.Step3"
+msgstr "Configurează serverul Jellyfin"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "Jurnal de evenimente"
+
+msgid "Logs.OpenButton"
+msgstr "Jurnale"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "Instalat"
+
+msgid "Install.Waiting"
+msgstr "Se așteaptă TV-ul..."
+
+msgid "Install.ThatWasEasy"
+msgstr "A fost ușor!"
+
+msgid "Install.BuyMeABeer"
+msgstr "Cumpără-mi o bere"
+
+#: Common
+msgid "Common.Back"
+msgstr "Înapoi"
+
+msgid "Common.Next"
+msgstr "Următorul"
+
+msgid "Common.Finish"
+msgstr "Finalizare"
+
+msgid "Common.Close"
+msgstr "Închide"
+
+msgid "Common.Cancel"
+msgstr "Anulare"
+
+msgid "Common.Select"
+msgstr "Selectare"
+
+msgid "Common.Copy"
+msgstr "Copiază"
+
+msgid "Common.CopyAll"
+msgstr "Copiază tot"
+
+msgid "Common.Clear"
+msgstr "Șterge"
+
+msgid "Common.Refresh"
+msgstr "Reîmprospătare"
+
+msgid "Common.Recommended"
+msgstr "Recomandat"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "Căutare TV-uri"
+
+msgid "Discovery.ScanButton"
+msgstr "Căutare TV-uri"
+
+msgid "Discovery.Scanning"
+msgstr "Se scanează rețeaua..."
+
+msgid "Discovery.Found"
+msgstr "{0} Samsung TV găsite"
+
+msgid "Discovery.NoTvsFound"
+msgstr "Nu s-au găsit Samsung TV-uri în rețea"
+
+msgid "Discovery.Cancelled"
+msgstr "Scanare anulată"
+
+msgid "Discovery.NoInterface"
+msgstr "Nicio interfață de rețea selectată"
+
+msgid "Discovery.Error"
+msgstr "Descoperire eșuată"
+
+msgid "Discovery.Phase.Starting"
+msgstr "Se pornește descoperirea..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "Se transmite SSDP..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "Se scanează porturile..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "Se scanează {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "Se preiau informațiile dispozitivului..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Descoperire completă"
+
+msgid "Discovery.Confidence.High"
+msgstr "Încredere ridicată"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Încredere medie"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Încredere scăzută"

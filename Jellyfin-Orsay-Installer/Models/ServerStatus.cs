@@ -48,7 +48,48 @@ public record ServerStatus
 /// <summary>
 /// Represents a request received by the server.
 /// </summary>
-public record ServerRequest(string Path, DateTime Timestamp)
+public record ServerRequest
 {
-    public override string ToString() => $"[{Timestamp:HH:mm:ss}] {Path}";
+    /// <summary>
+    /// HTTP method (GET, POST, etc.).
+    /// </summary>
+    public required string Method { get; init; }
+
+    /// <summary>
+    /// Request path (e.g., /widgetlist.xml).
+    /// </summary>
+    public required string Path { get; init; }
+
+    /// <summary>
+    /// Request timestamp.
+    /// </summary>
+    public required DateTime Timestamp { get; init; }
+
+    /// <summary>
+    /// User-Agent header value.
+    /// </summary>
+    public string? UserAgent { get; init; }
+
+    /// <summary>
+    /// Content-Type header value.
+    /// </summary>
+    public string? ContentType { get; init; }
+
+    /// <summary>
+    /// Content-Length header value.
+    /// </summary>
+    public long? ContentLength { get; init; }
+
+    /// <summary>
+    /// Request body (limited to 10KB).
+    /// </summary>
+    public string? Body { get; init; }
+
+    /// <summary>
+    /// Remote client IP address.
+    /// </summary>
+    public string? RemoteIp { get; init; }
+
+    public override string ToString() =>
+        $"[{Timestamp:HH:mm:ss}] {Method} {Path}";
 }

@@ -1,0 +1,182 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="using:Jellyfin.Orsay.Installer.ViewModels.Dialogs"
+        xmlns:models="using:Jellyfin.Orsay.Installer.Models"
+        xmlns:conv="using:Jellyfin.Orsay.Installer.Converters"
+        mc:Ignorable="d"
+        x:Class="Jellyfin.Orsay.Installer.Views.Dialogs.TvScannerWindow"
+        x:DataType="vm:TvScannerViewModel"
+        Title="{Binding L[Discovery.Title]}"
+        Width="520"
+        Height="450"
+        MinWidth="400"
+        MinHeight="350"
+        Background="#F5F5F5"
+        WindowStartupLocation="CenterOwner"
+        CanResize="True">
+
+    <Grid RowDefinitions="Auto,*,Auto,Auto">
+
+        <!-- Progress Section -->
+        <Border Grid.Row="0"
+                Background="White"
+                Padding="16"
+                Margin="16,16,16,8"
+                CornerRadius="8"
+                BoxShadow="0 2 8 0 #20000000">
+            <StackPanel Spacing="8">
+                <!-- Status Message -->
+                <TextBlock Text="{Binding StatusMessage}"
+                           FontSize="14"
+                           Foreground="#2C3E50"
+                           TextWrapping="Wrap"/>
+
+                <!-- Progress Bar -->
+                <ProgressBar Value="{Binding ProgressPercent}"
+                             Maximum="100"
+                             Height="8"
+                             CornerRadius="4"
+                             IsIndeterminate="{Binding IsScanning}"
+                             Foreground="#3498DB"/>
+            </StackPanel>
+        </Border>
+
+        <!-- TV List -->
+        <Border Grid.Row="1"
+                Background="White"
+                CornerRadius="8"
+                Margin="16,8,16,8"
+                BoxShadow="0 2 8 0 #20000000">
+            <Grid>
+                <!-- Empty State -->
+                <StackPanel VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            IsVisible="{Binding !HasResults}">
+                    <TextBlock Text="{Binding L[Discovery.NoTvsFound]}"
+                               FontSize="14"
+                               Foreground="#95A5A6"
+                               TextAlignment="Center"
+                               IsVisible="{Binding !IsScanning}"/>
+                    <TextBlock Text="{Binding L[Discovery.Scanning]}"
+                               FontSize="14"
+                               Foreground="#7F8C8D"
+                               TextAlignment="Center"
+                               IsVisible="{Binding IsScanning}"/>
+                </StackPanel>
+
+                <!-- TV List -->
+                <ListBox ItemsSource="{Binding DiscoveredTvs}"
+                         SelectedItem="{Binding SelectedTv}"
+                         Background="Transparent"
+                         Padding="8"
+                         IsVisible="{Binding HasResults}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate x:DataType="models:DiscoveredTv">
+                            <Border Padding="12,8"
+                                    Background="#FAFAFA"
+                                    CornerRadius="6"
+                                    Margin="0,2">
+                                <Grid ColumnDefinitions="*,Auto">
+                                    <StackPanel Grid.Column="0" Spacing="4">
+                                        <!-- Display Name / IP -->
+                                        <TextBlock Text="{Binding DisplayText}"
+                                                   FontSize="14"
+                                                   FontWeight="SemiBold"
+                                                   Foreground="#2C3E50"/>
+
+                                        <!-- Model / Version Info -->
+                                        <StackPanel Orientation="Horizontal" Spacing="8">
+                                            <TextBlock Text="{Binding ModelName}"
+                                                       FontSize="12"
+                                                       Foreground="#7F8C8D"
+                                                       IsVisible="{Binding ModelName, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+                                            <TextBlock Text="{Binding ModelNumber}"
+                                                       FontSize="12"
+                                                       Foreground="#95A5A6"
+                                                       IsVisible="{Binding ModelNumber, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+                                        </StackPanel>
+
+                                        <!-- Manufacturer -->
+                                        <TextBlock Text="{Binding Manufacturer}"
+                                                   FontSize="11"
+                                                   Foreground="#BDC3C7"
+                                                   IsVisible="{Binding Manufacturer, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+                                    </StackPanel>
+
+                                    <!-- Confidence Indicator -->
+                                    <Border Grid.Column="1"
+                                            VerticalAlignment="Center"
+                                            Padding="8,4"
+                                            CornerRadius="4"
+                                            Background="{Binding ConfidenceScore, Converter={x:Static conv:ConfidenceToColorConverter.Instance}}">
+                                        <TextBlock Text="{Binding ConfidenceScore, StringFormat={}{0}%}"
+                                                   FontSize="11"
+                                                   Foreground="White"
+                                                   FontWeight="SemiBold"/>
+                                    </Border>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Border>
+
+        <!-- Scan Button -->
+        <Panel Grid.Row="2"
+               Margin="16,0,16,8">
+            <Button Content="{Binding L[Discovery.ScanButton]}"
+                    Command="{Binding StartScanCommand}"
+                    HorizontalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    Padding="16,10"
+                    Background="#3498DB"
+                    Foreground="White"
+                    CornerRadius="6"
+                    FontWeight="SemiBold"
+                    Cursor="Hand"
+                    IsVisible="{Binding !IsScanning}"/>
+            <Button Content="{Binding L[Common.Cancel]}"
+                    Command="{Binding CancelScanCommand}"
+                    HorizontalAlignment="Stretch"
+                    HorizontalContentAlignment="Center"
+                    Padding="16,10"
+                    Background="#E74C3C"
+                    Foreground="White"
+                    CornerRadius="6"
+                    FontWeight="SemiBold"
+                    Cursor="Hand"
+                    IsVisible="{Binding IsScanning}"/>
+        </Panel>
+
+        <!-- Action Buttons -->
+        <Border Grid.Row="3"
+                Background="White"
+                Padding="16"
+                BoxShadow="0 -2 8 0 #10000000">
+            <StackPanel Orientation="Horizontal"
+                        Spacing="12"
+                        HorizontalAlignment="Right">
+
+                <Button Content="{Binding L[Common.Close]}"
+                        Command="{Binding CloseCommand}"
+                        Padding="16,8"
+                        Background="#E8E8E8"
+                        Foreground="#555"
+                        CornerRadius="6"
+                        Cursor="Hand"/>
+
+                <Button Content="{Binding L[Common.Select]}"
+                        Command="{Binding SelectTvCommand}"
+                        Padding="16,8"
+                        Background="#27AE60"
+                        Foreground="White"
+                        CornerRadius="6"
+                        Cursor="Hand"/>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>

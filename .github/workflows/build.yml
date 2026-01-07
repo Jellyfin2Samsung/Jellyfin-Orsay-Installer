@@ -1,0 +1,154 @@
+name: Build
+
+on:
+  push:
+    branches: [master]
+    tags: ['v*']
+  pull_request:
+    branches: [master]
+
+env:
+  DOTNET_VERSION: '10.0.x'
+  PROJECT_PATH: 'Jellyfin-Orsay-Installer/Jellyfin-Orsay-Installer.csproj'
+  PRODUCT_NAME: 'Jellyfin-Orsay-Installer'
+
+jobs:
+  build:
+    name: Build all platforms
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+          include-prerelease: true
+
+      - name: Set version
+        id: version
+        run: echo "VERSION=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_ENV
+
+      - name: Restore dependencies
+        run: dotnet restore ${{ env.PROJECT_PATH }}
+
+      - name: Publish for Windows x64
+        run: |
+          dotnet publish ${{ env.PROJECT_PATH }} \
+            -c Release \
+            -r win-x64 \
+            -p:SelfContained=true \
+            -p:PublishSingleFile=true \
+            -o publish/win-x64
+
+      - name: Publish for Windows ARM64
+        run: |
+          dotnet publish ${{ env.PROJECT_PATH }} \
+            -c Release \
+            -r win-arm64 \
+            -p:SelfContained=true \
+            -p:PublishSingleFile=true \
+            -o publish/win-arm64
+
+      - name: Publish for Linux x64
+        run: |
+          dotnet publish ${{ env.PROJECT_PATH }} \
+            -c Release \
+            -r linux-x64 \
+            -p:SelfContained=true \
+            -p:PublishSingleFile=true \
+            -o publish/linux-x64
+
+      - name: Publish for Linux ARM64
+        run: |
+          dotnet publish ${{ env.PROJECT_PATH }} \
+            -c Release \
+            -r linux-arm64 \
+            -p:SelfContained=true \
+            -p:PublishSingleFile=true \
+            -o publish/linux-arm64
+
+      - name: Publish for macOS x64
+        run: |
+          dotnet publish ${{ env.PROJECT_PATH }} \
+            -c Release \
+            -r osx-x64 \
+            -p:SelfContained=true \
+            -p:PublishSingleFile=true \
+            -o publish/osx-x64
+
+      - name: Publish for macOS ARM64
+        run: |
+          dotnet publish ${{ env.PROJECT_PATH }} \
+            -c Release \
+            -r osx-arm64 \
+            -p:SelfContained=true \
+            -p:PublishSingleFile=true \
+            -o publish/osx-arm64
+
+      - name: Create Windows archives
+        run: |
+          cd publish/win-x64
+          zip -r ../../${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-win-x64.zip .
+          cd ../win-arm64
+          zip -r ../../${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-win-arm64.zip .
+
+      - name: Create Linux archives
+        run: |
+          cd publish/linux-x64
+          tar -czvf ../../${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-linux-x64.tar.gz .
+          cd ../linux-arm64
+          tar -czvf ../../${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-linux-arm64.tar.gz .
+
+      - name: Create macOS archives
+        run: |
+          cd publish/osx-x64
+          tar -czvf ../../${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-osx-x64.tar.gz .
+          cd ../osx-arm64
+          tar -czvf ../../${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-osx-arm64.tar.gz .
+
+      - name: Upload Windows x64 artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-win-x64
+          path: ${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-win-x64.zip
+          retention-days: 30
+
+      - name: Upload Windows ARM64 artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-win-arm64
+          path: ${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-win-arm64.zip
+          retention-days: 30
+
+      - name: Upload Linux x64 artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-linux-x64
+          path: ${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-linux-x64.tar.gz
+          retention-days: 30
+
+      - name: Upload Linux ARM64 artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-linux-arm64
+          path: ${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-linux-arm64.tar.gz
+          retention-days: 30
+
+      - name: Upload macOS x64 artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-osx-x64
+          path: ${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-osx-x64.tar.gz
+          retention-days: 30
+
+      - name: Upload macOS ARM64 artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-osx-arm64
+          path: ${{ env.PRODUCT_NAME }}-${{ env.VERSION }}-osx-arm64.tar.gz
+          retention-days: 30

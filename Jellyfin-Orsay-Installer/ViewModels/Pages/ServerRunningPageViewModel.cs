@@ -13,6 +13,7 @@ public sealed partial class ServerRunningPageViewModel : ViewModelBase, IAsyncDi
     private readonly IOrsayServer _server;
     private readonly IOrsayPackager _packager;
     private readonly ILogService _logService;
+    private readonly IClipboardService _clipboard;
 
     [ObservableProperty]
     private ServerStatus _status = ServerStatus.Stopped;
@@ -37,12 +38,14 @@ public sealed partial class ServerRunningPageViewModel : ViewModelBase, IAsyncDi
         IOrsayServer server,
         IOrsayPackager packager,
         ILogService logService,
+        IClipboardService clipboard,
         ILocalizationService localization)
         : base(localization)
     {
         _server = server;
         _packager = packager;
         _logService = logService;
+        _clipboard = clipboard;
 
         _server.OnRequest += HandleRequest;
         _server.OnLog += msg => _logService.Log(msg);
@@ -99,6 +102,9 @@ public sealed partial class ServerRunningPageViewModel : ViewModelBase, IAsyncDi
         await _server.StopAsync();
         Status = ServerStatus.Stopped;
     }
+
+    [RelayCommand]
+    private Task CopyUrlAsync() => _clipboard.SetTextAsync(ServerUrl);
 
     public async ValueTask DisposeAsync()
     {

@@ -1,5 +1,5 @@
 # Dutch translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
-# Copyright (C) 2024-2026 Patrick Stel & Contributors
+# Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
 # This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
 #
 msgid ""
@@ -24,17 +24,8 @@ msgstr "Jellyfin Installatie: Samsung Smart TV (Orsay)"
 msgid "Wizard.Step"
 msgstr "Stap {0} van {1}"
 
-msgid "Wizard.Back"
-msgstr "Terug"
-
-msgid "Wizard.Next"
-msgstr "Volgende"
-
 msgid "Wizard.GetStarted"
 msgstr "Beginnen"
-
-msgid "Wizard.Finish"
-msgstr "Voltooien"
 
 #: Welcome Page
 msgid "Welcome.Title"
@@ -64,12 +55,6 @@ msgstr "Server poort:"
 
 msgid "Network.PortHint"
 msgstr "Standaard is 80. Wijzig alleen indien nodig."
-
-msgid "Network.Refresh"
-msgstr "Vernieuwen"
-
-msgid "Network.Recommended"
-msgstr "Aanbevolen"
 
 msgid "Network.SameNetworkHint"
 msgstr "Uw TV moet op hetzelfde netwerk zijn als de geselecteerde interface."
@@ -101,6 +86,15 @@ msgstr "Serie H (2014-15)"
 
 msgid "TvSetup.DontKnowSeries"
 msgstr "Niet zeker? Controleer het modelnummer op de achterkant van uw TV (bijv. UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "Netwerk scannen naar TV's"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Gedetecteerd:"
+
+msgid "TvSetup.NextHint"
+msgstr "Lees deze instructies en klik op 'Volgende' om de server te starten. Volg daarna de stappen op uw TV."
 
 #: TV Setup - Series E (2012)
 msgid "TvSetup.E.Step1.Title"
@@ -211,11 +205,8 @@ msgstr "Accepteer de installatieprompt. Verlaat Smart Hub en ga opnieuw naar bin
 msgid "Server.Title"
 msgstr "Installeren..."
 
-msgid "Server.WaitingForTv"
-msgstr "Wachten op TV-verbinding..."
-
 msgid "Server.Running"
-msgstr "Server actief"
+msgstr "Server draait"
 
 msgid "Server.Stopped"
 msgstr "Server gestopt"
@@ -226,20 +217,20 @@ msgstr "Verzoeken"
 msgid "Server.LastRequest"
 msgstr "Laatste verzoek"
 
-msgid "Server.Url"
-msgstr "Server URL"
-
 msgid "Server.InstallProgress"
-msgstr "Installatievoortgang"
+msgstr "Installatieproces"
 
 msgid "Server.TvConnected"
-msgstr "TV verbonden (widgetlist.xml)"
+msgstr "TV verbonden (widgetlist.xml opgevraagd)"
 
 msgid "Server.WidgetDownloaded"
 msgstr "Widget gedownload (.zip)"
 
+msgid "Server.WaitingForTv"
+msgstr "Wachten op TV-verbinding..."
+
 msgid "Server.InstallDetected"
-msgstr "Installatie gedetecteerd! Klik op Volgende."
+msgstr "Installatie gedetecteerd!"
 
 #: Completed Page
 msgid "Completed.Title"
@@ -264,12 +255,6 @@ msgstr "Configureer uw Jellyfin-server"
 msgid "Logs.Title"
 msgstr "Logboek"
 
-msgid "Logs.Clear"
-msgstr "Wissen"
-
-msgid "Logs.CopyAll"
-msgstr "Alles kopiëren"
-
 msgid "Logs.OpenButton"
 msgstr "Logs"
 
@@ -287,5 +272,87 @@ msgid "Install.BuyMeABeer"
 msgstr "Koop me een biertje"
 
 #: Common
+msgid "Common.Back"
+msgstr "Terug"
+
+msgid "Common.Next"
+msgstr "Volgende"
+
+msgid "Common.Finish"
+msgstr "Voltooien"
+
 msgid "Common.Close"
 msgstr "Sluiten"
+
+msgid "Common.Cancel"
+msgstr "Annuleren"
+
+msgid "Common.Select"
+msgstr "Selecteren"
+
+msgid "Common.Copy"
+msgstr "Kopiëren"
+
+msgid "Common.CopyAll"
+msgstr "Alles kopiëren"
+
+msgid "Common.Clear"
+msgstr "Wissen"
+
+msgid "Common.Refresh"
+msgstr "Vernieuwen"
+
+msgid "Common.Recommended"
+msgstr "Aanbevolen"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "Zoeken naar TV's"
+
+msgid "Discovery.ScanButton"
+msgstr "Zoeken naar TV's"
+
+msgid "Discovery.Scanning"
+msgstr "Netwerk scannen..."
+
+msgid "Discovery.Found"
+msgstr "{0} Samsung TV('s) gevonden"
+
+msgid "Discovery.NoTvsFound"
+msgstr "Geen Samsung TV's gevonden op het netwerk"
+
+msgid "Discovery.Cancelled"
+msgstr "Scan geannuleerd"
+
+msgid "Discovery.NoInterface"
+msgstr "Geen netwerkinterface geselecteerd"
+
+msgid "Discovery.Error"
+msgstr "Zoeken mislukt"
+
+msgid "Discovery.Phase.Starting"
+msgstr "Zoeken starten..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "SSDP uitzenden..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "Poorten scannen..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "Scannen {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "Apparaatinfo ophalen..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Zoeken voltooid"
+
+msgid "Discovery.Confidence.High"
+msgstr "Hoge betrouwbaarheid"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Gemiddelde betrouwbaarheid"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Lage betrouwbaarheid"

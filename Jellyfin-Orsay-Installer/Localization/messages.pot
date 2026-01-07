@@ -1,5 +1,5 @@
 # Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) - Translation Template
-# Copyright (C) 2024-2026 Patrick Stel & Contributors
+# Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
 # This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
 #
 msgid ""
@@ -24,16 +24,7 @@ msgstr ""
 msgid "Wizard.Step"
 msgstr ""
 
-msgid "Wizard.Back"
-msgstr ""
-
-msgid "Wizard.Next"
-msgstr ""
-
 msgid "Wizard.GetStarted"
-msgstr ""
-
-msgid "Wizard.Finish"
 msgstr ""
 
 #: Welcome Page
@@ -63,12 +54,6 @@ msgid "Network.Port"
 msgstr ""
 
 msgid "Network.PortHint"
-msgstr ""
-
-msgid "Network.Refresh"
-msgstr ""
-
-msgid "Network.Recommended"
 msgstr ""
 
 msgid "Network.SameNetworkHint"
@@ -252,12 +237,6 @@ msgstr ""
 msgid "Logs.Title"
 msgstr ""
 
-msgid "Logs.Clear"
-msgstr ""
-
-msgid "Logs.CopyAll"
-msgstr ""
-
 msgid "Logs.OpenButton"
 msgstr ""
 
@@ -275,5 +254,35 @@ msgid "Install.BuyMeABeer"
 msgstr ""
 
 #: Common
+msgid "Common.Back"
+msgstr ""
+
+msgid "Common.Next"
+msgstr ""
+
+msgid "Common.Finish"
+msgstr ""
+
 msgid "Common.Close"
+msgstr ""
+
+msgid "Common.Cancel"
+msgstr ""
+
+msgid "Common.Select"
+msgstr ""
+
+msgid "Common.Copy"
+msgstr ""
+
+msgid "Common.CopyAll"
+msgstr ""
+
+msgid "Common.Clear"
+msgstr ""
+
+msgid "Common.Refresh"
+msgstr ""
+
+msgid "Common.Recommended"
 msgstr ""

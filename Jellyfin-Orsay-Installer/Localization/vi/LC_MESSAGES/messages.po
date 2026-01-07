@@ -1,0 +1,358 @@
+# Vietnamese translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: App
+msgid "App.Title"
+msgstr "Trình cài đặt Jellyfin: Samsung Smart TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "Bước {0}/{1}"
+
+msgid "Wizard.GetStarted"
+msgstr "Bắt đầu"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "Chào mừng"
+
+msgid "Welcome.Subtitle"
+msgstr "Cài đặt Jellyfin trên Samsung Smart TV đời 2011-2015"
+
+msgid "Welcome.Feature1"
+msgstr "Cài đặt dễ dàng trong vài phút"
+
+msgid "Welcome.Feature2"
+msgstr "Không cần USB"
+
+msgid "Welcome.Feature3"
+msgstr "Hỗ trợ Samsung TV 2012-2015"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "Cài đặt mạng"
+
+msgid "Network.SelectIp"
+msgstr "Chọn địa chỉ IP của máy tính:"
+
+msgid "Network.Port"
+msgstr "Cổng máy chủ:"
+
+msgid "Network.PortHint"
+msgstr "Mặc định là 80. Chỉ thay đổi khi cần thiết."
+
+msgid "Network.SameNetworkHint"
+msgstr "TV phải cùng mạng với giao diện được chọn."
+
+msgid "Network.GroupOther"
+msgstr "— Khác —"
+
+msgid "Network.GroupVirtual"
+msgstr "— Ảo —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "Cài đặt TV"
+
+msgid "TvSetup.IpBanner"
+msgstr "Nhập địa chỉ IP này vào TV:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "Chọn dòng TV:"
+
+msgid "TvSetup.SeriesE"
+msgstr "Dòng E (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "Dòng F (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "Dòng H (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "Không chắc? Kiểm tra số model ở mặt sau TV (ví dụ: UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "Quét mạng tìm TV"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Đã phát hiện:"
+
+msgid "TvSetup.NextHint"
+msgstr "Sau khi đọc hướng dẫn, nhấp 'Tiếp theo' để khởi động máy chủ. Sau đó làm theo các bước trên TV."
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Mở Smart Hub"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "Nhấn nút Smart Hub trên điều khiển, sau đó nhấn nút A đỏ để mở menu đăng nhập."
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "Đăng nhập với tư cách Nhà phát triển"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "Nhập 'develop' làm tên tài khoản. TV sẽ tạo mật khẩu - ghi lại. Nhấn Đăng nhập."
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "Mở Cài đặt Nhà phát triển"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "Nhấn nút Tools trên điều khiển, vào Cài đặt, sau đó chọn Nhà phát triển."
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "Nhập địa chỉ IP"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "Chọn 'Địa chỉ IP' và nhập: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "Đồng bộ ứng dụng"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "Chọn 'Đồng bộ ứng dụng người dùng' để bắt đầu cài đặt. Ứng dụng sẽ xuất hiện trong Smart Hub."
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "Mở Tài khoản Samsung"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "Nhấn nút Menu, vào Tính năng thông minh, sau đó chọn Tài khoản Samsung."
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "Đăng nhập với tư cách Nhà phát triển"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "Nhập 'develop' làm email. Để trống mật khẩu (hoặc thử 'sso1029dev!' nếu cần). Nhấn Đăng nhập."
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "Mở Cài đặt ứng dụng"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Nhấn Smart Hub, vào Thêm ứng dụng (góc dưới phải), sau đó nhấn Tùy chọn."
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "Nhập địa chỉ IP"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "Chọn 'Cài đặt IP' và nhập: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "Đồng bộ ứng dụng"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "Chọn 'Bắt đầu đồng bộ ứng dụng' để bắt đầu cài đặt."
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "Khởi động lại nếu cần"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "Nếu ứng dụng không xuất hiện, hãy khởi động lại TV và kiểm tra lại Smart Hub."
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "Mở Tài khoản Samsung"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Vào Smart Hub, chọn Tài khoản Samsung, sau đó chọn Đăng nhập."
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "Đăng nhập với tư cách Nhà phát triển"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "Nhập 'develop' làm tên đăng nhập. Bỏ qua trường mật khẩu. Đánh dấu 'Ghi nhớ' và nhấn Đăng nhập."
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "Mở Menu đồng bộ"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "Trong Smart Hub, hướng điều khiển vào ứng dụng bất kỳ và giữ tâm D-pad cho đến khi menu xuất hiện."
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "Nhập địa chỉ IP"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "Chọn 'Cài đặt IP' và nhập: {0} (xác nhận từng nhóm số bằng tâm D-pad)."
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "Bắt đầu đồng bộ"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "Mở lại menu và chọn 'Start User App Sync'."
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "Hoàn tất cài đặt"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "Chấp nhận thông báo cài đặt. Thoát Smart Hub và vào lại để xem các ứng dụng đã cài."
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "Đang cài đặt..."
+
+msgid "Server.Running"
+msgstr "Máy chủ đang chạy"
+
+msgid "Server.Stopped"
+msgstr "Máy chủ đã dừng"
+
+msgid "Server.Requests"
+msgstr "Yêu cầu"
+
+msgid "Server.LastRequest"
+msgstr "Yêu cầu cuối"
+
+msgid "Server.InstallProgress"
+msgstr "Tiến độ cài đặt"
+
+msgid "Server.TvConnected"
+msgstr "TV đã kết nối (yêu cầu widgetlist.xml)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "Đã tải widget (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "Đang chờ kết nối TV..."
+
+msgid "Server.InstallDetected"
+msgstr "Phát hiện cài đặt!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "Cài đặt hoàn tất!"
+
+msgid "Completed.Message"
+msgstr "Jellyfin đã được cài đặt thành công trên TV."
+
+msgid "Completed.WhatsNext"
+msgstr "Bước tiếp theo?"
+
+msgid "Completed.Step1"
+msgstr "Mở Smart Hub trên TV"
+
+msgid "Completed.Step2"
+msgstr "Tìm và mở ứng dụng Jellyfin"
+
+msgid "Completed.Step3"
+msgstr "Cấu hình máy chủ Jellyfin"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "Nhật ký sự kiện"
+
+msgid "Logs.OpenButton"
+msgstr "Nhật ký"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "Đã cài đặt"
+
+msgid "Install.Waiting"
+msgstr "Đang chờ TV..."
+
+msgid "Install.ThatWasEasy"
+msgstr "Thật dễ dàng!"
+
+msgid "Install.BuyMeABeer"
+msgstr "Mời tôi ly bia"
+
+#: Common
+msgid "Common.Back"
+msgstr "Quay lại"
+
+msgid "Common.Next"
+msgstr "Tiếp theo"
+
+msgid "Common.Finish"
+msgstr "Hoàn tất"
+
+msgid "Common.Close"
+msgstr "Đóng"
+
+msgid "Common.Cancel"
+msgstr "Hủy"
+
+msgid "Common.Select"
+msgstr "Chọn"
+
+msgid "Common.Copy"
+msgstr "Sao chép"
+
+msgid "Common.CopyAll"
+msgstr "Sao chép tất cả"
+
+msgid "Common.Clear"
+msgstr "Xóa"
+
+msgid "Common.Refresh"
+msgstr "Làm mới"
+
+msgid "Common.Recommended"
+msgstr "Khuyến nghị"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "Tìm kiếm TV"
+
+msgid "Discovery.ScanButton"
+msgstr "Tìm kiếm TV"
+
+msgid "Discovery.Scanning"
+msgstr "Đang quét mạng..."
+
+msgid "Discovery.Found"
+msgstr "Tìm thấy {0} Samsung TV"
+
+msgid "Discovery.NoTvsFound"
+msgstr "Không tìm thấy Samsung TV trong mạng"
+
+msgid "Discovery.Cancelled"
+msgstr "Đã hủy quét"
+
+msgid "Discovery.NoInterface"
+msgstr "Chưa chọn giao diện mạng"
+
+msgid "Discovery.Error"
+msgstr "Tìm kiếm thất bại"
+
+msgid "Discovery.Phase.Starting"
+msgstr "Đang bắt đầu tìm kiếm..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "Đang phát SSDP..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "Đang quét cổng..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "Đang quét {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "Đang lấy thông tin thiết bị..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Hoàn tất tìm kiếm"
+
+msgid "Discovery.Confidence.High"
+msgstr "Độ tin cậy cao"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Độ tin cậy trung bình"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Độ tin cậy thấp"

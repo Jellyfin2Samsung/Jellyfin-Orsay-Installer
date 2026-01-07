@@ -8,7 +8,7 @@
              x:Class="Jellyfin.Orsay.Installer.Views.Pages.TvInstructionsPage"
              x:DataType="vm:TvInstructionsPageViewModel">
 
-    <Grid RowDefinitions="Auto,Auto,Auto,*" Margin="24">
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,*" Margin="24">
 
         <!-- Title -->
         <TextBlock Grid.Row="0"
@@ -54,15 +54,9 @@
                         MinWidth="120"
                         Background="{Binding IsSeriesESelected, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#3498DB;#E8E8E8}"
                         Foreground="{Binding IsSeriesESelected, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#FFFFFF;#555555}">
-                    <StackPanel>
-                        <TextBlock Text="Series E"
-                                   FontWeight="SemiBold"
-                                   HorizontalAlignment="Center"/>
-                        <TextBlock Text="(2012)"
-                                   FontSize="11"
-                                   Opacity="0.7"
-                                   HorizontalAlignment="Center"/>
-                    </StackPanel>
+                    <TextBlock Text="{Binding L[TvSetup.SeriesE]}"
+                               FontWeight="SemiBold"
+                               HorizontalAlignment="Center"/>
                 </Button>
 
                 <!-- Series F Button -->
@@ -73,15 +67,9 @@
                         MinWidth="120"
                         Background="{Binding IsSeriesFSelected, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#3498DB;#E8E8E8}"
                         Foreground="{Binding IsSeriesFSelected, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#FFFFFF;#555555}">
-                    <StackPanel>
-                        <TextBlock Text="Series F"
-                                   FontWeight="SemiBold"
-                                   HorizontalAlignment="Center"/>
-                        <TextBlock Text="(2013)"
-                                   FontSize="11"
-                                   Opacity="0.7"
-                                   HorizontalAlignment="Center"/>
-                    </StackPanel>
+                    <TextBlock Text="{Binding L[TvSetup.SeriesF]}"
+                               FontWeight="SemiBold"
+                               HorizontalAlignment="Center"/>
                 </Button>
 
                 <!-- Series H Button -->
@@ -92,15 +80,9 @@
                         MinWidth="120"
                         Background="{Binding IsSeriesHSelected, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#3498DB;#E8E8E8}"
                         Foreground="{Binding IsSeriesHSelected, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#FFFFFF;#555555}">
-                    <StackPanel>
-                        <TextBlock Text="Series H"
-                                   FontWeight="SemiBold"
-                                   HorizontalAlignment="Center"/>
-                        <TextBlock Text="(2014-15)"
-                                   FontSize="11"
-                                   Opacity="0.7"
-                                   HorizontalAlignment="Center"/>
-                    </StackPanel>
+                    <TextBlock Text="{Binding L[TvSetup.SeriesH]}"
+                               FontWeight="SemiBold"
+                               HorizontalAlignment="Center"/>
                 </Button>
             </StackPanel>
 
@@ -111,10 +93,58 @@
                        FontStyle="Italic"
                        TextWrapping="Wrap"
                        TextAlignment="Center"/>
+
+            <!-- Scan for TVs button -->
+            <Button Command="{Binding ScanForTvsCommand}"
+                    HorizontalAlignment="Center"
+                    Margin="0,8,0,0"
+                    Padding="16,8"
+                    Background="#27AE60"
+                    Foreground="White"
+                    CornerRadius="6"
+                    Cursor="Hand">
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <TextBlock Text="🔍" FontSize="14"/>
+                    <TextBlock Text="{Binding L[TvSetup.ScanForTvs]}" FontWeight="SemiBold"/>
+                </StackPanel>
+            </Button>
+
+            <!-- Detected TV info -->
+            <Border Background="#E8F5E9"
+                    CornerRadius="6"
+                    Padding="12,8"
+                    Margin="0,8,0,0"
+                    IsVisible="{Binding DetectedTvInfo, Converter={x:Static StringConverters.IsNotNullOrEmpty}}">
+                <StackPanel Orientation="Horizontal" Spacing="8" HorizontalAlignment="Center" MaxWidth="500">
+                    <TextBlock Text="✓" Foreground="#27AE60" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding L[TvSetup.DetectedTv]}" Foreground="#2E7D32"/>
+                    <TextBlock Text="{Binding DetectedTvInfo}" Foreground="#1B5E20" FontWeight="SemiBold"
+                               TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
         </StackPanel>
 
+        <!-- Hint: Click Next to start server -->
+        <Border Grid.Row="3"
+                Background="#E3F2FD"
+                CornerRadius="8"
+                Padding="16,12"
+                Margin="0,0,0,12">
+            <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Center">
+                <TextBlock Text="i"
+                           FontSize="16"
+                           FontWeight="Bold"
+                           Foreground="#1565C0"/>
+                <TextBlock Text="{Binding L[TvSetup.NextHint]}"
+                           Foreground="#1565C0"
+                           FontWeight="SemiBold"
+                           TextWrapping="Wrap"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
         <!-- Steps List -->
-        <ScrollViewer Grid.Row="3">
+        <ScrollViewer Grid.Row="4">
             <ItemsControl ItemsSource="{Binding Steps}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>

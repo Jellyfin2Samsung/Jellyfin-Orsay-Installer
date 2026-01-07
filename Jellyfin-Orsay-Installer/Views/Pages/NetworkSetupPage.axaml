@@ -49,22 +49,63 @@
                                                FontSize="12"
                                                Padding="0,4"/>
                                     <!-- Interface item -->
-                                    <TextBlock Text="{Binding Interface.DisplayText}"
-                                               IsVisible="{Binding !IsSeparator}"
-                                               VerticalAlignment="Center"/>
+                                    <StackPanel Orientation="Horizontal" IsVisible="{Binding !IsSeparator}">
+                                        <TextBlock Text="{Binding Interface.DisplayText}"
+                                                   VerticalAlignment="Center"
+                                                   TextTrimming="CharacterEllipsis"/>
+                                        <TextBlock Text="{Binding $parent[UserControl].((vm:NetworkSetupPageViewModel)DataContext).L[Common.Recommended]}"
+                                                   IsVisible="{Binding Interface.IsPreferred}"
+                                                   Foreground="#27AE60"
+                                                   FontWeight="SemiBold"
+                                                   Margin="8,0,0,0"
+                                                   VerticalAlignment="Center"/>
+                                    </StackPanel>
                                 </Panel>
                             </DataTemplate>
                         </ComboBox.ItemTemplate>
                     </ComboBox>
 
-                    <!-- Refresh button -->
-                    <Button Content="{Binding L[Network.Refresh]}"
-                            Command="{Binding RefreshInterfacesCommand}"
-                            HorizontalAlignment="Left"
-                            Padding="16,8"
-                            Background="#E8E8E8"
-                            Foreground="#555"
-                            CornerRadius="6"/>
+                    <!-- Selected IP (copyable) -->
+                    <Border Background="#2C3E50"
+                            CornerRadius="6"
+                            Padding="12"
+                            IsVisible="{Binding SelectedInterface, Converter={x:Static ObjectConverters.IsNotNull}}">
+                        <SelectableTextBlock Text="{Binding SelectedInterface.IpAddress}"
+                                             FontSize="16"
+                                             FontFamily="Consolas"
+                                             Foreground="White"
+                                             HorizontalAlignment="Center"
+                                             VerticalAlignment="Center"
+                                             SelectionBrush="#5078C0">
+                            <SelectableTextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuItem Header="{Binding $parent[UserControl].((vm:NetworkSetupPageViewModel)DataContext).L[Common.Copy]}"
+                                              Command="{Binding $parent[UserControl].((vm:NetworkSetupPageViewModel)DataContext).CopyIpCommand}"/>
+                                </MenuFlyout>
+                            </SelectableTextBlock.ContextFlyout>
+                        </SelectableTextBlock>
+                    </Border>
+
+                    <!-- Refresh and Copy buttons -->
+                    <Grid ColumnDefinitions="*,*">
+                        <Button Grid.Column="0"
+                                Content="{Binding L[Common.Refresh]}"
+                                Command="{Binding RefreshInterfacesCommand}"
+                                HorizontalAlignment="Left"
+                                Padding="16,8"
+                                Background="#E8E8E8"
+                                Foreground="#555"
+                                CornerRadius="6"/>
+                        <Button Grid.Column="1"
+                                Content="{Binding L[Common.Copy]}"
+                                Command="{Binding CopyIpCommand}"
+                                HorizontalAlignment="Right"
+                                Padding="16,8"
+                                Background="#E8E8E8"
+                                Foreground="#555"
+                                CornerRadius="6"
+                                IsVisible="{Binding SelectedInterface, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+                    </Grid>
 
                 </StackPanel>
             </Border>
@@ -84,8 +125,13 @@
                     <NumericUpDown Value="{Binding Port}"
                                    Minimum="1"
                                    Maximum="65535"
-                                   Width="150"
-                                   HorizontalAlignment="Left"/>
+                                   Increment="1"
+                                   FormatString="0"
+                                   Width="180"
+                                   MinHeight="40"
+                                   HorizontalAlignment="Left"
+                                   FontSize="16"
+                                   CornerRadius="6"/>
 
                     <TextBlock Text="{Binding L[Network.PortHint]}"
                                FontSize="12"

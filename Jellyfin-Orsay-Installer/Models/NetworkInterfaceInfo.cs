@@ -55,9 +55,7 @@ public record NetworkInterfaceInfo
     /// <summary>
     /// Gets the display string for UI presentation.
     /// </summary>
-    public string DisplayText => IsPreferred
-        ? $"{IpAddress} ({Name}) - Recommended"
-        : $"{IpAddress} ({Name})";
+    public string DisplayText => $"{IpAddress} ({Name})";
 
     public override string ToString() => DisplayText;
 }

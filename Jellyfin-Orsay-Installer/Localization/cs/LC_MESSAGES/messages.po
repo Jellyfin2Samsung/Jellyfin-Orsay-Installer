@@ -1,0 +1,358 @@
+# Czech translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Czech\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: App
+msgid "App.Title"
+msgstr "Instalátor Jellyfin: Samsung Smart TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "Krok {0} z {1}"
+
+msgid "Wizard.GetStarted"
+msgstr "Začít"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "Vítejte"
+
+msgid "Welcome.Subtitle"
+msgstr "Nainstalujte Jellyfin na Samsung Smart TV z let 2011-2015"
+
+msgid "Welcome.Feature1"
+msgstr "Snadná instalace během několika minut"
+
+msgid "Welcome.Feature2"
+msgstr "Není potřeba USB disk"
+
+msgid "Welcome.Feature3"
+msgstr "Funguje se Samsung TV z let 2012-2015"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "Nastavení sítě"
+
+msgid "Network.SelectIp"
+msgstr "Vyberte IP adresu počítače:"
+
+msgid "Network.Port"
+msgstr "Port serveru:"
+
+msgid "Network.PortHint"
+msgstr "Výchozí je 80. Měňte pouze v případě potřeby."
+
+msgid "Network.SameNetworkHint"
+msgstr "Televizor musí být ve stejné síti jako vybrané rozhraní."
+
+msgid "Network.GroupOther"
+msgstr "— Ostatní —"
+
+msgid "Network.GroupVirtual"
+msgstr "— Virtuální —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "Nastavení TV"
+
+msgid "TvSetup.IpBanner"
+msgstr "Zadejte tuto IP adresu na televizoru:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "Vyberte sérii televizoru:"
+
+msgid "TvSetup.SeriesE"
+msgstr "Série E (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "Série F (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "Série H (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "Nejste si jisti? Zkontrolujte číslo modelu na zadní straně TV (např. UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "Hledat TV v síti"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Nalezeno:"
+
+msgid "TvSetup.NextHint"
+msgstr "Po přečtení těchto pokynů klikněte na 'Další' pro spuštění serveru. Pak postupujte podle kroků na televizoru."
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Otevřete Smart Hub"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "Stiskněte tlačítko Smart Hub na ovladači a poté červené tlačítko A pro otevření přihlašovací nabídky."
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "Přihlaste se jako vývojář"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "Zadejte 'develop' jako název účtu. TV vygeneruje heslo - poznamenejte si ho. Stiskněte Přihlásit."
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "Otevřete nastavení vývojáře"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "Stiskněte tlačítko Nástroje na ovladači, přejděte do Nastavení a vyberte Vývojář."
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "Zadejte IP adresu"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "Vyberte 'IP adresa' a zadejte: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "Synchronizujte aplikace"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "Vyberte 'Synchronizace uživatelských aplikací' pro zahájení instalace. Aplikace se objeví ve Smart Hub."
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "Otevřete účet Samsung"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "Stiskněte tlačítko Menu, přejděte na Chytré funkce a vyberte Účet Samsung."
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "Přihlaste se jako vývojář"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "Zadejte 'develop' jako e-mail. Heslo nechte prázdné (nebo zkuste 'sso1029dev!' pokud je potřeba). Stiskněte Přihlásit."
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "Otevřete nastavení aplikací"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Stiskněte Smart Hub, přejděte na Další aplikace (vpravo dole) a stiskněte Možnosti."
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "Zadejte IP adresu"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "Vyberte 'Nastavení IP' a zadejte: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "Synchronizujte aplikace"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "Vyberte 'Spustit synchronizaci aplikací' pro zahájení instalace."
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "Restartujte v případě potřeby"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "Pokud se aplikace nezobrazí, restartujte TV a znovu zkontrolujte Smart Hub."
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "Otevřete účet Samsung"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Přejděte do Smart Hub, vyberte Účet Samsung a pak Přihlásit."
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "Přihlaste se jako vývojář"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "Zadejte 'develop' jako přihlašovací jméno. Pole hesla přeskočte. Zaškrtněte 'Zapamatovat' a stiskněte Přihlásit."
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "Otevřete nabídku synchronizace"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "Ve Smart Hub namiřte ovladač na libovolnou aplikaci a podržte střed D-padu, dokud se nezobrazí nabídka."
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "Zadejte IP adresu"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "Vyberte 'Nastavení IP' a zadejte: {0} (každou skupinu čísel potvrďte středem D-padu)."
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "Spusťte synchronizaci"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "Znovu otevřete nabídku a vyberte 'Start User App Sync'."
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "Dokončete instalaci"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "Přijměte výzvu k instalaci. Opusťte Smart Hub a znovu ho otevřete pro zobrazení nainstalovaných aplikací."
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "Instalace..."
+
+msgid "Server.Running"
+msgstr "Server běží"
+
+msgid "Server.Stopped"
+msgstr "Server zastaven"
+
+msgid "Server.Requests"
+msgstr "Požadavky"
+
+msgid "Server.LastRequest"
+msgstr "Poslední požadavek"
+
+msgid "Server.InstallProgress"
+msgstr "Průběh instalace"
+
+msgid "Server.TvConnected"
+msgstr "TV připojena (požadován widgetlist.xml)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "Widget stažen (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "Čekání na připojení TV..."
+
+msgid "Server.InstallDetected"
+msgstr "Instalace detekována!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "Instalace dokončena!"
+
+msgid "Completed.Message"
+msgstr "Jellyfin byl úspěšně nainstalován na váš televizor."
+
+msgid "Completed.WhatsNext"
+msgstr "Co dál?"
+
+msgid "Completed.Step1"
+msgstr "Otevřete Smart Hub na televizoru"
+
+msgid "Completed.Step2"
+msgstr "Najděte a spusťte aplikaci Jellyfin"
+
+msgid "Completed.Step3"
+msgstr "Nakonfigurujte server Jellyfin"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "Protokol událostí"
+
+msgid "Logs.OpenButton"
+msgstr "Protokoly"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "Nainstalováno"
+
+msgid "Install.Waiting"
+msgstr "Čekání na TV..."
+
+msgid "Install.ThatWasEasy"
+msgstr "To bylo snadné!"
+
+msgid "Install.BuyMeABeer"
+msgstr "Kupte mi pivo"
+
+#: Common
+msgid "Common.Back"
+msgstr "Zpět"
+
+msgid "Common.Next"
+msgstr "Další"
+
+msgid "Common.Finish"
+msgstr "Dokončit"
+
+msgid "Common.Close"
+msgstr "Zavřít"
+
+msgid "Common.Cancel"
+msgstr "Zrušit"
+
+msgid "Common.Select"
+msgstr "Vybrat"
+
+msgid "Common.Copy"
+msgstr "Kopírovat"
+
+msgid "Common.CopyAll"
+msgstr "Kopírovat vše"
+
+msgid "Common.Clear"
+msgstr "Vymazat"
+
+msgid "Common.Refresh"
+msgstr "Obnovit"
+
+msgid "Common.Recommended"
+msgstr "Doporučeno"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "Hledat TV"
+
+msgid "Discovery.ScanButton"
+msgstr "Hledat TV"
+
+msgid "Discovery.Scanning"
+msgstr "Prohledávání sítě..."
+
+msgid "Discovery.Found"
+msgstr "Nalezeno {0} Samsung TV"
+
+msgid "Discovery.NoTvsFound"
+msgstr "V síti nebyly nalezeny žádné Samsung TV"
+
+msgid "Discovery.Cancelled"
+msgstr "Hledání zrušeno"
+
+msgid "Discovery.NoInterface"
+msgstr "Není vybráno síťové rozhraní"
+
+msgid "Discovery.Error"
+msgstr "Hledání selhalo"
+
+msgid "Discovery.Phase.Starting"
+msgstr "Zahajování hledání..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "Vysílání SSDP..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "Skenování portů..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "Skenování {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "Získávání informací o zařízení..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Hledání dokončeno"
+
+msgid "Discovery.Confidence.High"
+msgstr "Vysoká jistota"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Střední jistota"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Nízká jistota"

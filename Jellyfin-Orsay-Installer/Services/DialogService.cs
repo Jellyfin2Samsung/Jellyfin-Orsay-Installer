@@ -4,6 +4,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Jellyfin.Orsay.Installer.Core;
+using Jellyfin.Orsay.Installer.Models;
 using Jellyfin.Orsay.Installer.ViewModels.Dialogs;
 using Jellyfin.Orsay.Installer.Views.Dialogs;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,6 +15,7 @@ public sealed class DialogService : IDialogService
 {
     private readonly IServiceProvider _serviceProvider;
     private LogViewerWindow? _logViewerWindow;
+    private TvScannerWindow? _tvScannerWindow;
 
     public DialogService(IServiceProvider serviceProvider)
     {
@@ -52,6 +54,44 @@ public sealed class DialogService : IDialogService
         else
         {
             _logViewerWindow.Show();
+        }
+    }
+
+    public void ShowTvScanner(
+        string localIpAddress,
+        Action<DiscoveredTv?>? onTvSelected = null,
+        Action<DiscoveredTv>? onBestTvFound = null)
+    {
+        if (_tvScannerWindow != null && _tvScannerWindow.IsVisible)
+        {
+            _tvScannerWindow.Activate();
+            return;
+        }
+
+        var viewModel = _serviceProvider.GetRequiredService<TvScannerViewModel>();
+        viewModel.LocalIpAddress = localIpAddress;
+
+        if (onTvSelected != null)
+        {
+            viewModel.TvSelected += onTvSelected;
+        }
+
+        if (onBestTvFound != null)
+        {
+            viewModel.BestTvFound += onBestTvFound;
+        }
+
+        _tvScannerWindow = new TvScannerWindow { DataContext = viewModel };
+        _tvScannerWindow.Closed += (_, _) => _tvScannerWindow = null;
+
+        var mainWindow = GetMainWindow();
+        if (mainWindow != null)
+        {
+            _tvScannerWindow.Show(mainWindow);
+        }
+        else
+        {
+            _tvScannerWindow.Show();
         }
     }
 

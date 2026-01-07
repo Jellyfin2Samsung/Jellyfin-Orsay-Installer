@@ -1,6 +1,8 @@
 using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Jellyfin.Orsay.Installer.Core;
 using Jellyfin.Orsay.Installer.Models;
 using Jellyfin.Orsay.Installer.Services.Abstractions;
 
@@ -8,6 +10,8 @@ namespace Jellyfin.Orsay.Installer.ViewModels.Pages;
 
 public sealed partial class TvInstructionsPageViewModel : ViewModelBase
 {
+    private readonly IDialogService _dialogService;
+
     [ObservableProperty]
     private string _ipAddress = string.Empty;
 
@@ -17,6 +21,9 @@ public sealed partial class TvInstructionsPageViewModel : ViewModelBase
     [ObservableProperty]
     private TvSeries _selectedSeries = TvSeries.H;
 
+    [ObservableProperty]
+    private string? _detectedTvInfo;
+
     public ObservableCollection<TvSetupStep> Steps { get; } = new();
 
     public string IpAddressDisplay => Port == 80 ? IpAddress : $"{IpAddress}:{Port}";
@@ -25,9 +32,12 @@ public sealed partial class TvInstructionsPageViewModel : ViewModelBase
     public bool IsSeriesFSelected => SelectedSeries == TvSeries.F;
     public bool IsSeriesHSelected => SelectedSeries == TvSeries.H;
 
-    public TvInstructionsPageViewModel(ILocalizationService localization)
+    public TvInstructionsPageViewModel(
+        IDialogService dialogService,
+        ILocalizationService localization)
         : base(localization)
     {
+        _dialogService = dialogService;
         UpdateSteps();
     }
 
@@ -64,6 +74,64 @@ public sealed partial class TvInstructionsPageViewModel : ViewModelBase
 
     [RelayCommand]
     private void SelectSeriesH() => SelectedSeries = TvSeries.H;
+
+    [RelayCommand]
+    private void ScanForTvs()
+    {
+        _dialogService.ShowTvScanner(
+            IpAddress,
+            onTvSelected: selectedTv =>
+            {
+                // Called when user clicks "Select" (dialog closes)
+                if (selectedTv != null)
+                {
+                    ApplyDetectedTv(selectedTv);
+                }
+            },
+            onBestTvFound: bestTv =>
+            {
+                // Called during scan when best TV found (dialog stays open)
+                ApplyDetectedTv(bestTv);
+            });
+    }
+
+    private void ApplyDetectedTv(DiscoveredTv tv)
+    {
+        var detectedSeries = DetectSeriesFromModel(tv.ModelName);
+        if (detectedSeries.HasValue)
+        {
+            SelectedSeries = detectedSeries.Value;
+        }
+
+        DetectedTvInfo = string.IsNullOrEmpty(tv.ModelName)
+            ? tv.IpAddress
+            : $"{tv.ModelName} ({tv.IpAddress})";
+    }
+
+    /// <summary>
+    /// Detects TV series from Samsung model name.
+    /// Model format: UE[size][Series][model] e.g., UE40F6400, UE55H6400
+    /// Series letters: E (2012), F (2013), H (2014), J (2015)
+    /// </summary>
+    private static TvSeries? DetectSeriesFromModel(string? modelName)
+    {
+        if (string.IsNullOrEmpty(modelName))
+            return null;
+
+        // Pattern: looks for series letter after size digits
+        // Examples: UE40E5500, UE55F6400, UN40H5500, UE48J6300
+        var match = Regex.Match(modelName, @"U[AEKN]\d{2}([EFHJ])", RegexOptions.IgnoreCase);
+        if (!match.Success)
+            return null;
+
+        return match.Groups[1].Value.ToUpperInvariant() switch
+        {
+            "E" => TvSeries.E,
+            "F" => TvSeries.F,
+            "H" or "J" => TvSeries.H, // J series uses same instructions as H
+            _ => null
+        };
+    }
 
     private void UpdateSteps()
     {

@@ -1,0 +1,358 @@
+# Turkish translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: App
+msgid "App.Title"
+msgstr "Jellyfin Yükleyici: Samsung Smart TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "Adım {0} / {1}"
+
+msgid "Wizard.GetStarted"
+msgstr "Başla"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "Hoş Geldiniz"
+
+msgid "Welcome.Subtitle"
+msgstr "Samsung Smart TV 2011-2015 modelinize Jellyfin yükleyin"
+
+msgid "Welcome.Feature1"
+msgstr "Birkaç dakikada kolay kurulum"
+
+msgid "Welcome.Feature2"
+msgstr "USB bellek gerekmez"
+
+msgid "Welcome.Feature3"
+msgstr "2012-2015 Samsung TV'lerle çalışır"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "Ağ Ayarları"
+
+msgid "Network.SelectIp"
+msgstr "Bilgisayarınızın IP adresini seçin:"
+
+msgid "Network.Port"
+msgstr "Sunucu Portu:"
+
+msgid "Network.PortHint"
+msgstr "Varsayılan 80. Yalnızca gerekirse değiştirin."
+
+msgid "Network.SameNetworkHint"
+msgstr "TV'niz seçilen arabirimle aynı ağda olmalıdır."
+
+msgid "Network.GroupOther"
+msgstr "— Diğer —"
+
+msgid "Network.GroupVirtual"
+msgstr "— Sanal —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "TV Ayarları"
+
+msgid "TvSetup.IpBanner"
+msgstr "TV'nize bu IP adresini girin:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "TV serinizi seçin:"
+
+msgid "TvSetup.SeriesE"
+msgstr "E Serisi (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "F Serisi (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "H Serisi (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "Emin değil misiniz? TV'nizin arkasındaki model numarasını kontrol edin (örn. UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "Ağda TV Ara"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Tespit Edildi:"
+
+msgid "TvSetup.NextHint"
+msgstr "Bu talimatları okuyun ve sunucuyu başlatmak için 'İleri'ye tıklayın. Ardından TV'nizdeki adımları takip edin."
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Smart Hub'ı Aç"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "Kumandanızdaki Smart Hub düğmesine basın, ardından giriş menüsünü açmak için kırmızı A düğmesine basın."
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "Geliştirici Olarak Giriş Yap"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "Hesap adı olarak 'develop' girin. TV bir şifre oluşturacak - not alın. Giriş Yap'a basın."
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "Geliştirici Ayarlarını Aç"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "Kumandanızdaki Tools düğmesine basın, Ayarlar'a gidin, ardından Geliştirici'yi seçin."
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "IP Adresini Gir"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "'IP Adresi'ni seçin ve girin: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "Uygulamaları Senkronize Et"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "Kurulumu başlatmak için 'Kullanıcı Uygulaması Senkronizasyonu'nu seçin. Uygulama Smart Hub'da görünecektir."
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "Samsung Hesabını Aç"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "Menü düğmesine basın, Akıllı Özellikler'e gidin, ardından Samsung Hesabı'nı seçin."
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "Geliştirici Olarak Giriş Yap"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "E-posta olarak 'develop' girin. Şifreyi boş bırakın (gerekirse 'sso1029dev!' deneyin). Giriş Yap'a basın."
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "Uygulama Ayarlarını Aç"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Smart Hub'a basın, Daha Fazla Uygulama'ya gidin (sağ alt), ardından Seçenekler'e basın."
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "IP Adresini Gir"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "'IP Settings'i seçin ve girin: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "Uygulamaları Senkronize Et"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "Kurulumu başlatmak için 'Start App Sync'i seçin."
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "Gerekirse Yeniden Başlat"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "Uygulamalar görünmezse TV'nizi yeniden başlatın ve Smart Hub'ı tekrar kontrol edin."
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "Samsung Hesabını Aç"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Smart Hub'a gidin, Samsung Hesabı'nı seçin, ardından Giriş Yap."
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "Geliştirici Olarak Giriş Yap"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "Kullanıcı adı olarak 'develop' girin. Şifre alanını atlayın. 'Hatırla'yı işaretleyin ve Giriş Yap'a basın."
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "Senkronizasyon Menüsünü Aç"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "Smart Hub'da kumandanızı herhangi bir uygulamaya doğrultun ve menü görünene kadar D-pad'in ortasını basılı tutun."
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "IP Adresini Gir"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "'IP Setting'i seçin ve girin: {0} (her sayı grubunu D-pad ortasıyla onaylayın)."
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "Senkronizasyonu Başlat"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "Menüyü tekrar açın ve 'Start User App Sync'i seçin."
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "Kurulumu Tamamla"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "Kurulum istemini kabul edin. Smart Hub'dan çıkın ve yüklenen uygulamaları görmek için tekrar girin."
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "Yükleniyor..."
+
+msgid "Server.Running"
+msgstr "Sunucu çalışıyor"
+
+msgid "Server.Stopped"
+msgstr "Sunucu durduruldu"
+
+msgid "Server.Requests"
+msgstr "İstekler"
+
+msgid "Server.LastRequest"
+msgstr "Son istek"
+
+msgid "Server.InstallProgress"
+msgstr "Kurulum ilerleme"
+
+msgid "Server.TvConnected"
+msgstr "TV bağlandı (widgetlist.xml istendi)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "Widget indirildi (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "TV bağlantısı bekleniyor..."
+
+msgid "Server.InstallDetected"
+msgstr "Kurulum algılandı!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "Kurulum Tamamlandı!"
+
+msgid "Completed.Message"
+msgstr "Jellyfin TV'nize başarıyla yüklendi."
+
+msgid "Completed.WhatsNext"
+msgstr "Sırada Ne Var?"
+
+msgid "Completed.Step1"
+msgstr "TV'nizde Smart Hub'ı açın"
+
+msgid "Completed.Step2"
+msgstr "Jellyfin uygulamasını bulun ve başlatın"
+
+msgid "Completed.Step3"
+msgstr "Jellyfin sunucunuzu yapılandırın"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "Olay Günlüğü"
+
+msgid "Logs.OpenButton"
+msgstr "Günlük"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "Yüklendi"
+
+msgid "Install.Waiting"
+msgstr "TV bekleniyor..."
+
+msgid "Install.ThatWasEasy"
+msgstr "Çok kolaydı!"
+
+msgid "Install.BuyMeABeer"
+msgstr "Bana bir bira ısmarla"
+
+#: Common
+msgid "Common.Back"
+msgstr "Geri"
+
+msgid "Common.Next"
+msgstr "İleri"
+
+msgid "Common.Finish"
+msgstr "Bitir"
+
+msgid "Common.Close"
+msgstr "Kapat"
+
+msgid "Common.Cancel"
+msgstr "İptal"
+
+msgid "Common.Select"
+msgstr "Seç"
+
+msgid "Common.Copy"
+msgstr "Kopyala"
+
+msgid "Common.CopyAll"
+msgstr "Tümünü Kopyala"
+
+msgid "Common.Clear"
+msgstr "Temizle"
+
+msgid "Common.Refresh"
+msgstr "Yenile"
+
+msgid "Common.Recommended"
+msgstr "Önerilen"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "TV Ara"
+
+msgid "Discovery.ScanButton"
+msgstr "TV Ara"
+
+msgid "Discovery.Scanning"
+msgstr "Ağ taranıyor..."
+
+msgid "Discovery.Found"
+msgstr "{0} Samsung TV bulundu"
+
+msgid "Discovery.NoTvsFound"
+msgstr "Ağda Samsung TV bulunamadı"
+
+msgid "Discovery.Cancelled"
+msgstr "Tarama iptal edildi"
+
+msgid "Discovery.NoInterface"
+msgstr "Ağ arabirimi seçilmedi"
+
+msgid "Discovery.Error"
+msgstr "Arama başarısız"
+
+msgid "Discovery.Phase.Starting"
+msgstr "Arama başlatılıyor..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "SSDP gönderiliyor..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "Portlar taranıyor..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "{0} taranıyor..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "Cihaz bilgisi alınıyor..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Arama tamamlandı"
+
+msgid "Discovery.Confidence.High"
+msgstr "Yüksek güvenilirlik"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Orta güvenilirlik"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Düşük güvenilirlik"
