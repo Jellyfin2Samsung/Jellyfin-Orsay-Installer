@@ -1,10 +1,10 @@
-# Finnish translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Finnish translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015)
 # Copyright (C) 2024-2026 Patrick Stel & Contributors
-# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-04 00:00+0000\n"
 "PO-Revision-Date: 2026-01-07 00:00+0000\n"
@@ -32,7 +32,7 @@ msgid "Welcome.Title"
 msgstr "Tervetuloa"
 
 msgid "Welcome.Subtitle"
-msgstr "Asenna Jellyfin Samsung Smart TV:lle vuosilta 2011-2015"
+msgstr "Asenna Jellyfin Samsung Smart TV:lle vuosilta 2012-2015"
 
 msgid "Welcome.Feature1"
 msgstr "Helppo asennus muutamassa minuutissa"
@@ -107,7 +107,7 @@ msgid "TvSetup.E.Step2.Title"
 msgstr "Kirjaudu kehittäjänä"
 
 msgid "TvSetup.E.Step2.Desc"
-msgstr "Syötä 'develop' tilin nimeksi. TV luo salasanan - kirjoita se muistiin. Paina Kirjaudu."
+msgstr "Syötä 'develop' Samsung Account ID:ksi. Syötä salasana-kenttään '000000' tai jätä se tyhjäksi, jos mallisi sallii sen. Paina Kirjaudu."
 
 msgid "TvSetup.E.Step3.Title"
 msgstr "Avaa kehittäjäasetukset"
@@ -119,13 +119,13 @@ msgid "TvSetup.E.Step4.Title"
 msgstr "Syötä IP-osoite"
 
 msgid "TvSetup.E.Step4.Desc"
-msgstr "Valitse 'IP-osoite' ja syötä: {0}"
+msgstr "Valitse 'Setting Server IP' ja syötä: {0}"
 
 msgid "TvSetup.E.Step5.Title"
 msgstr "Synkronoi sovellukset"
 
 msgid "TvSetup.E.Step5.Desc"
-msgstr "Valitse 'Synkronoi käyttäjäsovellukset' aloittaaksesi asennuksen. Sovellus näkyy Smart Hubissa."
+msgstr "Valitse 'User Application Synchronization' aloittaaksesi asennuksen. Sovellus ilmestyy Smart Hubiin."
 
 #: TV Setup - Series F (2013)
 msgid "TvSetup.F.Step1.Title"
@@ -175,7 +175,7 @@ msgid "TvSetup.H.Step2.Title"
 msgstr "Kirjaudu kehittäjänä"
 
 msgid "TvSetup.H.Step2.Desc"
-msgstr "Syötä 'develop' käyttäjätunnukseksi. Ohita salasanakenttä. Merkitse 'Muista' ja paina Kirjaudu."
+msgstr "Syötä 'develop' kirjautumistunnukseksi. Käytä '000000', jos salasana-kenttä näytetään, tai jätä se tyhjäksi, jos mallisi ohittaa sen. Valitse 'Muista' ja paina Kirjaudu."
 
 msgid "TvSetup.H.Step3.Title"
 msgstr "Avaa synkronointivalikko"

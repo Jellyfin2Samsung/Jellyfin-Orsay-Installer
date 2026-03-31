@@ -1,10 +1,10 @@
-# Hungarian translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Hungarian translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015)
 # Copyright (C) 2024-2026 Patrick Stel & Contributors
-# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-04 00:00+0000\n"
 "PO-Revision-Date: 2026-01-07 00:00+0000\n"
@@ -32,7 +32,7 @@ msgid "Welcome.Title"
 msgstr "Üdvözöljük"
 
 msgid "Welcome.Subtitle"
-msgstr "Telepítse a Jellyfint 2011-2015-ös Samsung Smart TV-jére"
+msgstr "Telepítse a Jellyfint 2012-2015-ös Samsung Smart TV-jére"
 
 msgid "Welcome.Feature1"
 msgstr "Egyszerű telepítés percek alatt"
@@ -107,7 +107,7 @@ msgid "TvSetup.E.Step2.Title"
 msgstr "Bejelentkezés fejlesztőként"
 
 msgid "TvSetup.E.Step2.Desc"
-msgstr "Írja be a 'develop' fióknevet. A TV generál egy jelszót - jegyezze fel. Nyomja meg a Bejelentkezés gombot."
+msgstr "Írja be a 'develop' értéket Samsung Account ID-ként. Írja be a jelszómezőbe a '000000' értéket, vagy hagyja üresen, ha a modellje ezt elfogadja. Nyomja meg a Bejelentkezés gombot."
 
 msgid "TvSetup.E.Step3.Title"
 msgstr "Fejlesztői beállítások megnyitása"
@@ -119,13 +119,13 @@ msgid "TvSetup.E.Step4.Title"
 msgstr "IP-cím megadása"
 
 msgid "TvSetup.E.Step4.Desc"
-msgstr "Válassza az 'IP-cím' lehetőséget és adja meg: {0}"
+msgstr "Válassza a 'Setting Server IP' lehetőséget, és adja meg: {0}"
 
 msgid "TvSetup.E.Step5.Title"
 msgstr "Alkalmazások szinkronizálása"
 
 msgid "TvSetup.E.Step5.Desc"
-msgstr "Válassza a 'Felhasználói alkalmazások szinkronizálása' lehetőséget a telepítés megkezdéséhez. Az alkalmazás megjelenik a Smart Hubban."
+msgstr "Válassza a 'User Application Synchronization' lehetőséget a telepítés indításához. Az alkalmazás megjelenik a Smart Hubban."
 
 #: TV Setup - Series F (2013)
 msgid "TvSetup.F.Step1.Title"
@@ -175,7 +175,7 @@ msgid "TvSetup.H.Step2.Title"
 msgstr "Bejelentkezés fejlesztőként"
 
 msgid "TvSetup.H.Step2.Desc"
-msgstr "Írja be a 'develop' felhasználónevet. Hagyja ki a jelszó mezőt. Jelölje be az 'Emlékezz' opciót és nyomja meg a Bejelentkezés gombot."
+msgstr "Írja be a 'develop' értéket bejelentkezési névként. Használja a '000000' értéket, ha megjelenik a jelszómező, vagy hagyja üresen, ha a modellje átugorja azt. Jelölje be az 'Emlékezz' opciót, és nyomja meg a Bejelentkezés gombot."
 
 msgid "TvSetup.H.Step3.Title"
 msgstr "Szinkronizálási menü megnyitása"

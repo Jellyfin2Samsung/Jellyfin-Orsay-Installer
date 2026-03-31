@@ -1,10 +1,10 @@
-# Thai translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Thai translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015)
 # Copyright (C) 2024-2026 Patrick Stel & Contributors
-# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-04 00:00+0000\n"
 "PO-Revision-Date: 2026-01-07 00:00+0000\n"
@@ -32,7 +32,7 @@ msgid "Welcome.Title"
 msgstr "ยินดีต้อนรับ"
 
 msgid "Welcome.Subtitle"
-msgstr "ติดตั้ง Jellyfin บน Samsung Smart TV รุ่นปี 2011-2015"
+msgstr "ติดตั้ง Jellyfin บน Samsung Smart TV รุ่นปี 2012-2015"
 
 msgid "Welcome.Feature1"
 msgstr "ติดตั้งง่ายภายในไม่กี่นาที"
@@ -107,7 +107,7 @@ msgid "TvSetup.E.Step2.Title"
 msgstr "เข้าสู่ระบบเป็นนักพัฒนา"
 
 msgid "TvSetup.E.Step2.Desc"
-msgstr "ป้อน 'develop' เป็นชื่อบัญชี ทีวีจะสร้างรหัสผ่าน - จดไว้ กดลงชื่อเข้าใช้"
+msgstr "ป้อน 'develop' เป็น Samsung Account ID ป้อน '000000' ในช่องรหัสผ่าน หรือปล่อยว่างไว้หากรุ่นของคุณรองรับ จากนั้นกดลงชื่อเข้าใช้"
 
 msgid "TvSetup.E.Step3.Title"
 msgstr "เปิดการตั้งค่านักพัฒนา"
@@ -119,13 +119,13 @@ msgid "TvSetup.E.Step4.Title"
 msgstr "ป้อนที่อยู่ IP"
 
 msgid "TvSetup.E.Step4.Desc"
-msgstr "เลือก 'ที่อยู่ IP' แล้วป้อน: {0}"
+msgstr "เลือก 'Setting Server IP' แล้วป้อน: {0}"
 
 msgid "TvSetup.E.Step5.Title"
 msgstr "ซิงค์แอปพลิเคชัน"
 
 msgid "TvSetup.E.Step5.Desc"
-msgstr "เลือก 'ซิงค์แอปพลิเคชันผู้ใช้' เพื่อเริ่มการติดตั้ง แอปจะปรากฏใน Smart Hub"
+msgstr "เลือก 'User Application Synchronization' เพื่อเริ่มการติดตั้ง แอปจะปรากฏใน Smart Hub"
 
 #: TV Setup - Series F (2013)
 msgid "TvSetup.F.Step1.Title"
@@ -175,7 +175,7 @@ msgid "TvSetup.H.Step2.Title"
 msgstr "เข้าสู่ระบบเป็นนักพัฒนา"
 
 msgid "TvSetup.H.Step2.Desc"
-msgstr "ป้อน 'develop' เป็นชื่อเข้าสู่ระบบ ข้ามช่องรหัสผ่าน ทำเครื่องหมาย 'จดจำ' แล้วกดลงชื่อเข้าใช้"
+msgstr "ป้อน 'develop' เป็นชื่อเข้าสู่ระบบ ใช้ '000000' หากมีช่องรหัสผ่านแสดงขึ้นมา หรือปล่อยว่างไว้หากรุ่นของคุณข้ามขั้นตอนนี้ เลือก 'จดจำ' แล้วกดลงชื่อเข้าใช้"
 
 msgid "TvSetup.H.Step3.Title"
 msgstr "เปิดเมนูซิงค์"

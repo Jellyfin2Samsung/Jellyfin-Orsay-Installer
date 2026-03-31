@@ -1,10 +1,10 @@
-# Japanese translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Japanese translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015)
 # Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
-# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-04 00:00+0000\n"
 "PO-Revision-Date: 2026-01-07 00:00+0000\n"
@@ -32,7 +32,7 @@ msgid "Welcome.Title"
 msgstr "ようこそ"
 
 msgid "Welcome.Subtitle"
-msgstr "2011-2015年製のSamsung スマートTVにJellyfinをインストールします"
+msgstr "2012-2015年製のSamsung スマートTVにJellyfinをインストールします"
 
 msgid "Welcome.Feature1"
 msgstr "数分で簡単にインストール"
@@ -107,7 +107,7 @@ msgid "TvSetup.E.Step2.Title"
 msgstr "開発者としてログイン"
 
 msgid "TvSetup.E.Step2.Desc"
-msgstr "アカウント名に「develop」と入力します。TVがパスワードを生成するのでメモしてください。サインインを押します。"
+msgstr "Samsung Account ID に「develop」と入力します。パスワード欄に「000000」を入力し、対応しているモデルでは空欄のままでも構いません。サインインを押します。"
 
 msgid "TvSetup.E.Step3.Title"
 msgstr "開発者設定を開く"
@@ -119,13 +119,13 @@ msgid "TvSetup.E.Step4.Title"
 msgstr "IPアドレスを入力"
 
 msgid "TvSetup.E.Step4.Desc"
-msgstr "「IPアドレス」を選択し、次を入力してください: {0}"
+msgstr "「Setting Server IP」を選択し、次を入力してください: {0}"
 
 msgid "TvSetup.E.Step5.Title"
 msgstr "アプリケーション同期"
 
 msgid "TvSetup.E.Step5.Desc"
-msgstr "「ユーザーアプリケーション同期」を選択してインストールを開始します。アプリがSmart Hubに表示されます。"
+msgstr "インストールを開始するには「User Application Synchronization」を選択します。アプリは Smart Hub に表示されます。"
 
 #: TV Setup - Series F (2013)
 msgid "TvSetup.F.Step1.Title"
@@ -175,7 +175,7 @@ msgid "TvSetup.H.Step2.Title"
 msgstr "開発者としてログイン"
 
 msgid "TvSetup.H.Step2.Desc"
-msgstr "ログインに「develop」と入力します。パスワード欄はスキップします。「記憶する」にチェックを入れてサインインを押します。"
+msgstr "ログインに「develop」と入力します。パスワード欄が表示される場合は「000000」を使い、モデルによってその欄が省略される場合は空欄のままにします。「記憶する」にチェックを入れてサインインを押します。"
 
 msgid "TvSetup.H.Step3.Title"
 msgstr "同期メニューを開く"

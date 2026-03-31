@@ -1,10 +1,10 @@
-# French translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# French translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015)
 # Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
-# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-04 00:00+0000\n"
 "PO-Revision-Date: 2026-01-07 00:00+0000\n"
@@ -32,7 +32,7 @@ msgid "Welcome.Title"
 msgstr "Bienvenue"
 
 msgid "Welcome.Subtitle"
-msgstr "Installez Jellyfin sur votre Samsung Smart TV modèle 2011-2015"
+msgstr "Installez Jellyfin sur votre Samsung Smart TV modèle 2012-2015"
 
 msgid "Welcome.Feature1"
 msgstr "Installation facile en quelques minutes"
@@ -107,7 +107,7 @@ msgid "TvSetup.E.Step2.Title"
 msgstr "Se connecter en développeur"
 
 msgid "TvSetup.E.Step2.Desc"
-msgstr "Entrez 'develop' comme nom de compte. Le TV générera un mot de passe - notez-le. Appuyez sur Connexion."
+msgstr "Entrez 'develop' comme identifiant Samsung Account. Entrez '000000' dans le champ mot de passe, ou laissez-le vide si votre modèle l'accepte. Appuyez sur Connexion."
 
 msgid "TvSetup.E.Step3.Title"
 msgstr "Ouvrir les paramètres développeur"
@@ -119,13 +119,13 @@ msgid "TvSetup.E.Step4.Title"
 msgstr "Entrer l'adresse IP"
 
 msgid "TvSetup.E.Step4.Desc"
-msgstr "Sélectionnez 'Adresse IP' et entrez : {0}"
+msgstr "Sélectionnez 'Setting Server IP' et entrez : {0}"
 
 msgid "TvSetup.E.Step5.Title"
 msgstr "Synchroniser les applications"
 
 msgid "TvSetup.E.Step5.Desc"
-msgstr "Sélectionnez 'Synchroniser les applications utilisateur' pour démarrer l'installation. L'application apparaîtra dans Smart Hub."
+msgstr "Sélectionnez 'User Application Synchronization' pour démarrer l'installation. L'application apparaîtra dans Smart Hub."
 
 #: TV Setup - Series F (2013)
 msgid "TvSetup.F.Step1.Title"
@@ -175,7 +175,7 @@ msgid "TvSetup.H.Step2.Title"
 msgstr "Se connecter en développeur"
 
 msgid "TvSetup.H.Step2.Desc"
-msgstr "Entrez 'develop' comme identifiant. Ignorez le champ mot de passe. Cochez 'Se souvenir' et appuyez sur Connexion."
+msgstr "Entrez 'develop' comme identifiant. Utilisez '000000' si le champ mot de passe est affiché, ou laissez-le vide si votre modèle l'ignore. Cochez 'Se souvenir' et appuyez sur Connexion."
 
 msgid "TvSetup.H.Step3.Title"
 msgstr "Ouvrir le menu de synchronisation"

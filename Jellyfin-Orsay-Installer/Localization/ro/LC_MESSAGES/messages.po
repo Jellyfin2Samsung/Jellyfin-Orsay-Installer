@@ -1,10 +1,10 @@
-# Romanian translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Romanian translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015)
 # Copyright (C) 2024-2026 Patrick Stel & Contributors
-# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-04 00:00+0000\n"
 "PO-Revision-Date: 2026-01-07 00:00+0000\n"
@@ -32,7 +32,7 @@ msgid "Welcome.Title"
 msgstr "Bun venit"
 
 msgid "Welcome.Subtitle"
-msgstr "Instalează Jellyfin pe Samsung Smart TV-ul tău din 2011-2015"
+msgstr "Instalează Jellyfin pe Samsung Smart TV-ul tău din 2012-2015"
 
 msgid "Welcome.Feature1"
 msgstr "Instalare ușoară în câteva minute"
@@ -107,7 +107,7 @@ msgid "TvSetup.E.Step2.Title"
 msgstr "Autentifică-te ca dezvoltator"
 
 msgid "TvSetup.E.Step2.Desc"
-msgstr "Introdu 'develop' ca nume de cont. TV-ul va genera o parolă - notează-o. Apasă Autentificare."
+msgstr "Introduceți 'develop' ca ID Samsung Account. Introduceți '000000' în câmpul parolei sau lăsați-l gol dacă modelul dvs. acceptă asta. Apăsați Conectare."
 
 msgid "TvSetup.E.Step3.Title"
 msgstr "Deschide setările dezvoltatorului"
@@ -119,13 +119,13 @@ msgid "TvSetup.E.Step4.Title"
 msgstr "Introdu adresa IP"
 
 msgid "TvSetup.E.Step4.Desc"
-msgstr "Selectează 'Adresă IP' și introdu: {0}"
+msgstr "Selectați 'Setting Server IP' și introduceți: {0}"
 
 msgid "TvSetup.E.Step5.Title"
 msgstr "Sincronizează aplicațiile"
 
 msgid "TvSetup.E.Step5.Desc"
-msgstr "Selectează 'Sincronizare aplicații utilizator' pentru a începe instalarea. Aplicația va apărea în Smart Hub."
+msgstr "Selectați 'User Application Synchronization' pentru a începe instalarea. Aplicația va apărea în Smart Hub."
 
 #: TV Setup - Series F (2013)
 msgid "TvSetup.F.Step1.Title"
@@ -175,7 +175,7 @@ msgid "TvSetup.H.Step2.Title"
 msgstr "Autentifică-te ca dezvoltator"
 
 msgid "TvSetup.H.Step2.Desc"
-msgstr "Introdu 'develop' ca nume de utilizator. Sari peste câmpul parolă. Bifează 'Ține minte' și apasă Autentificare."
+msgstr "Introduceți 'develop' ca autentificare. Folosiți '000000' dacă este afișat câmpul parolei sau lăsați-l gol dacă modelul dvs. îl omite. Bifați 'Ține minte' și apăsați Conectare."
 
 msgid "TvSetup.H.Step3.Title"
 msgstr "Deschide meniul de sincronizare"

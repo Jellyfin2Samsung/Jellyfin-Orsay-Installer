@@ -5,7 +5,7 @@
 </p>
 
 <div align="center">
-  <p>A simple cross-platform installer to package and install the <strong>Jellyfin Orsay widget</strong> on Samsung Smart TVs (2011–2015).</p>
+  <p>A simple cross-platform installer to package and install the <strong>Jellyfin Orsay widget</strong> on Samsung Smart TVs (2012–2015).</p>
 
   <a href="https://discord.gg/7mga3zh8Cv"><img src="https://img.shields.io/badge/Ask%20it%20on%20Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" /></a>
 
@@ -38,7 +38,7 @@
 2. Start the installer
 3. Note the **PC IP address** shown in the app
 4. Click **Build & Start**
-5. On the TV: **Apps → Sync**
+5. On the TV: follow the **series-specific sync path** below
 
 That’s it.
 
@@ -46,7 +46,7 @@ That’s it.
 
 ## 🛠️ Enable Developer Mode (Samsung Orsay TVs)
 
-To install community apps on Samsung **Orsay-based Smart TVs (2011–2015)**, Developer Mode must be enabled.
+To install community apps on Samsung **Orsay-based Smart TVs (2012–2015)**, Developer Mode must be enabled.
 
 ### 1️⃣ Log in as developer
 
@@ -59,23 +59,23 @@ To install community apps on Samsung **Orsay-based Smart TVs (2011–2015)**, De
 
 ---
 
-### 2️⃣ Open Developer Settings
+### 2️⃣ Open the install menu
 
-After logging in as `develop`:
+After logging in as `develop`, use the path that matches your TV series:
 
-- Press the **BLUE** button on the Smart Hub screen  
+- **E series (2012):** press the **BLUE** button on the Smart Hub screen  
   **or**
-- Open **Tools → Settings** (model dependent)
-
-This opens the **Developer Menu**.
+  open **Tools → Settings** (model dependent) to open the **Developer Menu**
+- **F series (2013):** open **Smart Hub → More Apps** (bottom right), then open **Options** (top right)
+- **H / compatible 2015 Orsay series:** in **Smart Hub**, highlight any app and hold the center button until the sync menu appears
 
 ---
 
 ### 3️⃣ Set the Server IP
 
-In the Developer Menu:
+In the menu you opened above:
 
-1. Select **Setting Server IP**
+1. Select **Setting Server IP** on E series or **IP Setting** on F/H series
 2. Enter the **IP address shown in the installer**
 3. Confirm and save
 
@@ -85,9 +85,9 @@ This tells the TV where to fetch the widget from.
 
 ### 4️⃣ Sync User Applications
 
-Still in the Developer Menu:
+Still in the same menu:
 
-1. Select **User Application Synchronization**
+1. Select **User Application Synchronization** on E series, **Start App Sync** on F series, or **Start User App Sync** on H/compatible 2015 Orsay series
 2. Wait for the sync to complete
 
 The Jellyfin app will now appear in Smart Hub.
@@ -96,7 +96,7 @@ The Jellyfin app will now appear in Smart Hub.
 
 ### ℹ️ Notes
 
-- These steps apply to **Orsay TVs only** (roughly 2011–2015)
+- These steps apply to **Orsay TVs only** (roughly 2012–2015)
 - Menu names may vary slightly by firmware version
 - Newer Samsung TVs using **Tizen** are **not supported**
 

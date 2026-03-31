@@ -1,10 +1,10 @@
-# Vietnamese translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Vietnamese translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015)
 # Copyright (C) 2024-2026 Patrick Stel & Contributors
-# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-04 00:00+0000\n"
 "PO-Revision-Date: 2026-01-07 00:00+0000\n"
@@ -32,7 +32,7 @@ msgid "Welcome.Title"
 msgstr "Chào mừng"
 
 msgid "Welcome.Subtitle"
-msgstr "Cài đặt Jellyfin trên Samsung Smart TV đời 2011-2015"
+msgstr "Cài đặt Jellyfin trên Samsung Smart TV đời 2012-2015"
 
 msgid "Welcome.Feature1"
 msgstr "Cài đặt dễ dàng trong vài phút"
@@ -107,7 +107,7 @@ msgid "TvSetup.E.Step2.Title"
 msgstr "Đăng nhập với tư cách Nhà phát triển"
 
 msgid "TvSetup.E.Step2.Desc"
-msgstr "Nhập 'develop' làm tên tài khoản. TV sẽ tạo mật khẩu - ghi lại. Nhấn Đăng nhập."
+msgstr "Nhập 'develop' làm ID Samsung Account. Nhập '000000' vào ô mật khẩu hoặc để trống nếu mẫu TV của bạn chấp nhận. Nhấn Đăng nhập."
 
 msgid "TvSetup.E.Step3.Title"
 msgstr "Mở Cài đặt Nhà phát triển"
@@ -119,13 +119,13 @@ msgid "TvSetup.E.Step4.Title"
 msgstr "Nhập địa chỉ IP"
 
 msgid "TvSetup.E.Step4.Desc"
-msgstr "Chọn 'Địa chỉ IP' và nhập: {0}"
+msgstr "Chọn 'Setting Server IP' và nhập: {0}"
 
 msgid "TvSetup.E.Step5.Title"
 msgstr "Đồng bộ ứng dụng"
 
 msgid "TvSetup.E.Step5.Desc"
-msgstr "Chọn 'Đồng bộ ứng dụng người dùng' để bắt đầu cài đặt. Ứng dụng sẽ xuất hiện trong Smart Hub."
+msgstr "Chọn 'User Application Synchronization' để bắt đầu cài đặt. Ứng dụng sẽ xuất hiện trong Smart Hub."
 
 #: TV Setup - Series F (2013)
 msgid "TvSetup.F.Step1.Title"
@@ -175,7 +175,7 @@ msgid "TvSetup.H.Step2.Title"
 msgstr "Đăng nhập với tư cách Nhà phát triển"
 
 msgid "TvSetup.H.Step2.Desc"
-msgstr "Nhập 'develop' làm tên đăng nhập. Bỏ qua trường mật khẩu. Đánh dấu 'Ghi nhớ' và nhấn Đăng nhập."
+msgstr "Nhập 'develop' làm tên đăng nhập. Dùng '000000' nếu ô mật khẩu xuất hiện hoặc để trống nếu mẫu TV của bạn bỏ qua bước đó. Chọn 'Ghi nhớ' rồi nhấn Đăng nhập."
 
 msgid "TvSetup.H.Step3.Title"
 msgstr "Mở Menu đồng bộ"

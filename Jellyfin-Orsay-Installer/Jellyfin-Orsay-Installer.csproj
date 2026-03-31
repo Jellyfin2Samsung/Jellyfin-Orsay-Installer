@@ -9,9 +9,9 @@
     <RootNamespace>Jellyfin.Orsay.Installer</RootNamespace>
 
     <!-- Assembly Metadata -->
-    <AssemblyTitle>Jellyfin Installer: Samsung Smart TV (Orsay) models (2011-2015)</AssemblyTitle>
-    <Product>Jellyfin Installer: Samsung Smart TV (Orsay) models (2011-2015)</Product>
-    <Description>Install Jellyfin media player on Samsung Smart TV (Orsay) models (2011-2015)</Description>
+    <AssemblyTitle>Jellyfin Installer: Samsung Smart TV (Orsay) models (2012-2015)</AssemblyTitle>
+    <Product>Jellyfin Installer: Samsung Smart TV (Orsay) models (2012-2015)</Product>
+    <Description>Install Jellyfin media player on Samsung Smart TV (Orsay) models (2012-2015)</Description>
     <Company>Patrick Stel, Artem Smirnov &amp; Contributors</Company>
     <Copyright>Copyright © 2024-2026 Patrick Stel, Artem Smirnov &amp; Contributors</Copyright>
 

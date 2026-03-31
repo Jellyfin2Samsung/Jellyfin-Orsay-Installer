@@ -1,10 +1,10 @@
-# Czech translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Czech translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015)
 # Copyright (C) 2024-2026 Patrick Stel & Contributors
-# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-04 00:00+0000\n"
 "PO-Revision-Date: 2026-01-07 00:00+0000\n"
@@ -32,7 +32,7 @@ msgid "Welcome.Title"
 msgstr "Vítejte"
 
 msgid "Welcome.Subtitle"
-msgstr "Nainstalujte Jellyfin na Samsung Smart TV z let 2011-2015"
+msgstr "Nainstalujte Jellyfin na Samsung Smart TV z let 2012-2015"
 
 msgid "Welcome.Feature1"
 msgstr "Snadná instalace během několika minut"
@@ -107,7 +107,7 @@ msgid "TvSetup.E.Step2.Title"
 msgstr "Přihlaste se jako vývojář"
 
 msgid "TvSetup.E.Step2.Desc"
-msgstr "Zadejte 'develop' jako název účtu. TV vygeneruje heslo - poznamenejte si ho. Stiskněte Přihlásit."
+msgstr "Zadejte 'develop' jako ID účtu Samsung. Do pole hesla zadejte '000000', nebo jej nechte prázdné, pokud to váš model umožňuje. Stiskněte Přihlásit."
 
 msgid "TvSetup.E.Step3.Title"
 msgstr "Otevřete nastavení vývojáře"
@@ -119,13 +119,13 @@ msgid "TvSetup.E.Step4.Title"
 msgstr "Zadejte IP adresu"
 
 msgid "TvSetup.E.Step4.Desc"
-msgstr "Vyberte 'IP adresa' a zadejte: {0}"
+msgstr "Vyberte 'Setting Server IP' a zadejte: {0}"
 
 msgid "TvSetup.E.Step5.Title"
 msgstr "Synchronizujte aplikace"
 
 msgid "TvSetup.E.Step5.Desc"
-msgstr "Vyberte 'Synchronizace uživatelských aplikací' pro zahájení instalace. Aplikace se objeví ve Smart Hub."
+msgstr "Vyberte 'User Application Synchronization' pro spuštění instalace. Aplikace se zobrazí ve Smart Hubu."
 
 #: TV Setup - Series F (2013)
 msgid "TvSetup.F.Step1.Title"
@@ -175,7 +175,7 @@ msgid "TvSetup.H.Step2.Title"
 msgstr "Přihlaste se jako vývojář"
 
 msgid "TvSetup.H.Step2.Desc"
-msgstr "Zadejte 'develop' jako přihlašovací jméno. Pole hesla přeskočte. Zaškrtněte 'Zapamatovat' a stiskněte Přihlásit."
+msgstr "Zadejte 'develop' jako přihlášení. Pokud se zobrazí pole hesla, použijte '000000', nebo jej nechte prázdné, pokud jej váš model přeskakuje. Zaškrtněte 'Zapamatovat' a stiskněte Přihlásit."
 
 msgid "TvSetup.H.Step3.Title"
 msgstr "Otevřete nabídku synchronizace"

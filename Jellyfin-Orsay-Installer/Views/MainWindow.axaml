@@ -9,7 +9,7 @@
         x:Class="Jellyfin.Orsay.Installer.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/jelly2sams.ico"
-        Title="Jellyfin Installer: Samsung Smart TV (Orsay) models (2011-2015)"
+        Title="Jellyfin Installer: Samsung Smart TV (Orsay) models (2012-2015)"
         Width="800"
         Height="880"
         MinWidth="700"

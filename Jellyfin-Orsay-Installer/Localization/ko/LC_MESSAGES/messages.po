@@ -1,10 +1,10 @@
-# Korean translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Korean translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015)
 # Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
-# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-04 00:00+0000\n"
 "PO-Revision-Date: 2026-01-07 00:00+0000\n"
@@ -32,7 +32,7 @@ msgid "Welcome.Title"
 msgstr "환영합니다"
 
 msgid "Welcome.Subtitle"
-msgstr "2011-2015년형 삼성 스마트 TV에 Jellyfin을 설치하세요"
+msgstr "2012-2015년형 삼성 스마트 TV에 Jellyfin을 설치하세요"
 
 msgid "Welcome.Feature1"
 msgstr "몇 분 만에 간편하게 설치"
@@ -107,7 +107,7 @@ msgid "TvSetup.E.Step2.Title"
 msgstr "개발자로 로그인"
 
 msgid "TvSetup.E.Step2.Desc"
-msgstr "계정 이름으로 'develop'을 입력하세요. TV가 비밀번호를 생성합니다 - 메모해 두세요. 로그인을 누르세요."
+msgstr "Samsung Account ID에 'develop'를 입력하세요. 비밀번호 필드에는 '000000'을 입력하고, 모델이 허용하면 비워 두어도 됩니다. 로그인 버튼을 누르세요."
 
 msgid "TvSetup.E.Step3.Title"
 msgstr "개발자 설정 열기"
@@ -119,13 +119,13 @@ msgid "TvSetup.E.Step4.Title"
 msgstr "IP 주소 입력"
 
 msgid "TvSetup.E.Step4.Desc"
-msgstr "'IP 주소'를 선택하고 다음을 입력하세요: {0}"
+msgstr "'Setting Server IP'를 선택하고 다음을 입력하세요: {0}"
 
 msgid "TvSetup.E.Step5.Title"
 msgstr "애플리케이션 동기화"
 
 msgid "TvSetup.E.Step5.Desc"
-msgstr "'사용자 애플리케이션 동기화'를 선택하여 설치를 시작하세요. 앱이 Smart Hub에 나타납니다."
+msgstr "설치를 시작하려면 'User Application Synchronization'을 선택하세요. 앱이 Smart Hub에 나타납니다."
 
 #: TV Setup - Series F (2013)
 msgid "TvSetup.F.Step1.Title"
@@ -175,7 +175,7 @@ msgid "TvSetup.H.Step2.Title"
 msgstr "개발자로 로그인"
 
 msgid "TvSetup.H.Step2.Desc"
-msgstr "로그인으로 'develop'을 입력하세요. 비밀번호 필드는 건너뛰세요. '기억하기'를 체크하고 로그인을 누르세요."
+msgstr "로그인에 'develop'를 입력하세요. 비밀번호 필드가 표시되면 '000000'을 사용하고, 모델이 해당 필드를 건너뛰면 비워 두세요. '기억하기'를 체크한 뒤 로그인 버튼을 누르세요."
 
 msgid "TvSetup.H.Step3.Title"
 msgstr "동기화 메뉴 열기"

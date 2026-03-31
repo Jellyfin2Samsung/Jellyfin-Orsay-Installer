@@ -1,10 +1,10 @@
-# Chinese Simplified translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Chinese Simplified translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015)
 # Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
-# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-04 00:00+0000\n"
 "PO-Revision-Date: 2026-01-07 00:00+0000\n"
@@ -32,7 +32,7 @@ msgid "Welcome.Title"
 msgstr "欢迎"
 
 msgid "Welcome.Subtitle"
-msgstr "在您的三星智能电视 2011-2015 型号上安装 Jellyfin"
+msgstr "在您的三星智能电视 2012-2015 型号上安装 Jellyfin"
 
 msgid "Welcome.Feature1"
 msgstr "几分钟内轻松安装"
@@ -107,7 +107,7 @@ msgid "TvSetup.E.Step2.Title"
 msgstr "以开发者身份登录"
 
 msgid "TvSetup.E.Step2.Desc"
-msgstr "输入 'develop' 作为账户名。电视将生成密码 - 请记录下来。按登录。"
+msgstr "输入 'develop' 作为 Samsung Account ID。在密码字段中输入 '000000'，如果您的机型支持，也可以留空。按登录。"
 
 msgid "TvSetup.E.Step3.Title"
 msgstr "打开开发者设置"
@@ -119,13 +119,13 @@ msgid "TvSetup.E.Step4.Title"
 msgstr "输入 IP 地址"
 
 msgid "TvSetup.E.Step4.Desc"
-msgstr "选择"IP 地址"并输入：{0}"
+msgstr "选择 'Setting Server IP' 并输入：{0}"
 
 msgid "TvSetup.E.Step5.Title"
 msgstr "同步应用程序"
 
 msgid "TvSetup.E.Step5.Desc"
-msgstr "选择"用户应用程序同步"开始安装。应用将出现在 Smart Hub 中。"
+msgstr "选择 'User Application Synchronization' 以开始安装。应用会出现在 Smart Hub 中。"
 
 #: TV Setup - Series F (2013)
 msgid "TvSetup.F.Step1.Title"
@@ -175,7 +175,7 @@ msgid "TvSetup.H.Step2.Title"
 msgstr "以开发者身份登录"
 
 msgid "TvSetup.H.Step2.Desc"
-msgstr "输入 'develop' 作为登录名。跳过密码字段。勾选"记住"并按登录。"
+msgstr "输入 'develop' 作为登录名。如果显示密码字段，请使用 '000000'；如果您的机型会跳过该字段，则留空。勾选 '记住' 后按登录。"记住"并按登录。"
 
 msgid "TvSetup.H.Step3.Title"
 msgstr "打开同步菜单"

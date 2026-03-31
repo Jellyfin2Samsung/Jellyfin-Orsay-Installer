@@ -1,10 +1,10 @@
-# Turkish translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Turkish translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015)
 # Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
-# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2012-2015) 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-04 00:00+0000\n"
 "PO-Revision-Date: 2026-01-07 00:00+0000\n"
@@ -32,7 +32,7 @@ msgid "Welcome.Title"
 msgstr "Hoş Geldiniz"
 
 msgid "Welcome.Subtitle"
-msgstr "Samsung Smart TV 2011-2015 modelinize Jellyfin yükleyin"
+msgstr "Samsung Smart TV 2012-2015 modelinize Jellyfin yükleyin"
 
 msgid "Welcome.Feature1"
 msgstr "Birkaç dakikada kolay kurulum"
@@ -107,7 +107,7 @@ msgid "TvSetup.E.Step2.Title"
 msgstr "Geliştirici Olarak Giriş Yap"
 
 msgid "TvSetup.E.Step2.Desc"
-msgstr "Hesap adı olarak 'develop' girin. TV bir şifre oluşturacak - not alın. Giriş Yap'a basın."
+msgstr "Samsung Account kimliği olarak 'develop' girin. Parola alanına '000000' girin veya modeliniz bunu kabul ediyorsa boş bırakın. Giriş Yap'a basın."
 
 msgid "TvSetup.E.Step3.Title"
 msgstr "Geliştirici Ayarlarını Aç"
@@ -119,13 +119,13 @@ msgid "TvSetup.E.Step4.Title"
 msgstr "IP Adresini Gir"
 
 msgid "TvSetup.E.Step4.Desc"
-msgstr "'IP Adresi'ni seçin ve girin: {0}"
+msgstr "'Setting Server IP' seçeneğini seçin ve şunu girin: {0}"
 
 msgid "TvSetup.E.Step5.Title"
 msgstr "Uygulamaları Senkronize Et"
 
 msgid "TvSetup.E.Step5.Desc"
-msgstr "Kurulumu başlatmak için 'Kullanıcı Uygulaması Senkronizasyonu'nu seçin. Uygulama Smart Hub'da görünecektir."
+msgstr "Kurulumu başlatmak için 'User Application Synchronization' seçeneğini seçin. Uygulama Smart Hub'da görünecektir."
 
 #: TV Setup - Series F (2013)
 msgid "TvSetup.F.Step1.Title"
@@ -175,7 +175,7 @@ msgid "TvSetup.H.Step2.Title"
 msgstr "Geliştirici Olarak Giriş Yap"
 
 msgid "TvSetup.H.Step2.Desc"
-msgstr "Kullanıcı adı olarak 'develop' girin. Şifre alanını atlayın. 'Hatırla'yı işaretleyin ve Giriş Yap'a basın."
+msgstr "'develop' değerini giriş olarak girin. Parola alanı görünüyorsa '000000' kullanın, modeliniz bu alanı atlıyorsa boş bırakın. 'Hatırla'yı seçin ve Giriş Yap'a basın."
 
 msgid "TvSetup.H.Step3.Title"
 msgstr "Senkronizasyon Menüsünü Aç"
