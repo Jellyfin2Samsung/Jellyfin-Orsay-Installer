@@ -113,7 +113,7 @@ public sealed partial class TvInstructionsPageViewModel : ViewModelBase
     /// Model format: UE[size][Series][model] e.g., UE40F6400, UE55H6400
     /// Series letters: E (2012), F (2013), H (2014), J (2015)
     /// </summary>
-    private static TvSeries? DetectSeriesFromModel(string? modelName)
+    internal static TvSeries? DetectSeriesFromModel(string? modelName)
     {
         if (string.IsNullOrEmpty(modelName))
             return null;
