@@ -1,3 +1,6 @@
+# THIS REPO IS NOT MAINTAINED ANYMORE 
+# I'LL CHECK IT EVERY ONCE IN A WHILE 
+# FOR TIZEN CHECK https://github.com/Jellyfin2Samsung/Samsung-Jellyfin-Installer
 # Jellyfin 2 Samsung (Orsay)
 
 <p align="center">
