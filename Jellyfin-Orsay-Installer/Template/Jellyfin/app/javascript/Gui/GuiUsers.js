@@ -174,14 +174,13 @@ GuiUsers.processSelectedUser = function () {
 			document.getElementById("GuiUsers").focus();
 			new GuiUsers_Input("guiUsers_Password");
 		} else {
-			var password = "";
-			var authenticateSuccess = Server.Authenticate(this.UserData[this.selectedUser].Id, this.UserData[this.selectedUser].Name, password);
+			var authenticateSuccess = Server.Authenticate(this.UserData[this.selectedUser].Id, this.UserData[this.selectedUser].Name, "");		
 			if (authenticateSuccess) {
 				//Reset GUI to as new - Not Required as it already is!!
 				//Hide loading
 				document.getElementById("guiLoading").style.visibility = "hidden";
 				//Add Username & Password to DB
-				File.addUser(this.UserData[this.selectedUser].Id,this.UserData[this.selectedUser].Name,password,this.rememberPassword);
+				File.addUser(this.UserData[this.selectedUser].Id,this.UserData[this.selectedUser].Name,"",this.rememberPassword);
 				//Change Focus and call function in GuiMain to initiate the page!
 				GuiMainMenu.start();
 			} else {
@@ -379,7 +378,7 @@ var GuiUsers_Input  = function(id) {
 
 //Run from IME if user has password - Run in GuiUsers for ease of access to class variables
 GuiUsers.IMEAuthenticate = function(password) {
-	var authenticateSuccess = Server.Authenticate(this.UserData[this.selectedUser].Id, this.UserData[this.selectedUser].Name, password);
+	var authenticateSuccess = Server.Authenticate(this.UserData[this.selectedUser].Id, this.UserData[this.selectedUser].Name, password);		
 	if (authenticateSuccess) {
 		//Reset GUI to as new!
 		document.getElementById("guiUsers_pwd").style.visibility="hidden";

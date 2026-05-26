@@ -348,7 +348,7 @@ GuiPage_Music.processSelectedItem = function() {
 	}
 	
 	//Genre Instant Mix
-	//http://192.168.1.108:28067/jellyfin/MusicGenres/Anime/InstantMix?UserId=4b4c128121aa642086bb225659a7d471&Fields=MediaSources%2CChapters&Limit=50
+	//http://192.168.1.108:28067/emby/MusicGenres/Anime/InstantMix?UserId=4b4c128121aa642086bb225659a7d471&Fields=MediaSources%2CChapters&Limit=50
 	//Artist Instant Mix
 	//Artist/NameID/InstatnMix?
 }

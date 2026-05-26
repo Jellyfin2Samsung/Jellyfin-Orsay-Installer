@@ -9,7 +9,6 @@ var GuiMusicPlayer = {
 		updateTimeCount : 0,
 
 		videoURL : null,
-		PlaySessionId : null,
 		
 		selectedItem : 0,
 		playedFromPage : null,
@@ -326,12 +325,6 @@ GuiMusicPlayer.handlePlayKey = function() {
 			this.currentTime = 0;
 		    this.updateTimeCount = 0;
 		    
-		    //Fetch PlaySessionId
-			var playbackInfo = Server.getPlaybackInfo(this.queuedItems[this.currentPlayingItem].Id);
-			this.PlaySessionId = playbackInfo ? playbackInfo.PlaySessionId : null;
-		    
-			this.videoURL += '&PlaySessionId=' + this.PlaySessionId;
-
 			//Calculate position in seconds
 		    this.pluginMusic.Play(this.videoURL);
 		}
@@ -343,7 +336,7 @@ GuiMusicPlayer.handlePlayKey = function() {
 
 GuiMusicPlayer.handlePauseKey = function() {
 	this.pluginMusic.Pause();
-	Server.videoPaused(this.queuedItems[this.currentPlayingItem].Id,this.queuedItems[this.currentPlayingItem].MediaSources[0].Id,this.currentTime,"DirectStream",this.PlaySessionId);
+	Server.videoPaused(this.queuedItems[this.currentPlayingItem].Id,this.queuedItems[this.currentPlayingItem].MediaSources[0].Id,this.currentTime,"DirectStream");
 	document.getElementById("guiMusicPlayerPlay").style.backgroundImage="url('images/musicplayer/play-29x37.png')";
 	document.getElementById("guiMusicPlayerPause").style.backgroundImage="url('images/musicplayer/pause-active-32x37.png')";
 	this.Status = "PAUSED";
@@ -353,7 +346,7 @@ GuiMusicPlayer.stopPlayback = function() {
 	//Reset everything
 	this.Status = "STOPPED";
 	alert (this.currentPlayingItem);
-	Server.videoStopped(this.queuedItems[this.currentPlayingItem].Id,this.queuedItems[this.currentPlayingItem].MediaSources[0].Id,this.currentTime,"DirectStream",this.PlaySessionId);
+	Server.videoStopped(this.queuedItems[this.currentPlayingItem].Id,this.queuedItems[this.currentPlayingItem].MediaSources[0].Id,this.currentTime,"DirectStream");
 	this.showThemeId = null;
 	this.isThemeMusicPlaying = false;
 	this.currentPlayingItem = 0;
@@ -407,7 +400,7 @@ GuiMusicPlayer.returnToPage = function() {
 GuiMusicPlayer.handleNextKey = function() {
 	
 	//Stop Any Playback
-	Server.videoStopped(this.queuedItems[this.currentPlayingItem].Id,this.queuedItems[this.currentPlayingItem].MediaSources[0].Id,this.currentTime,"DirectStream",this.PlaySessionId);
+	Server.videoStopped(this.queuedItems[this.currentPlayingItem].Id,this.queuedItems[this.currentPlayingItem].MediaSources[0].Id,this.currentTime,"DirectStream");
 	this.pluginMusic.Stop();
 	this.Status = "STOPPED";
 		
@@ -436,7 +429,7 @@ GuiMusicPlayer.handlePreviousKey = function() {
 	//Stop Any Playback
 	var timeOfStoppedSong = Math.floor((this.currentTime % 60000) / 1000);
 		
-	Server.videoStopped(this.queuedItems[this.currentPlayingItem].Id,this.queuedItems[this.currentPlayingItem].MediaSources[0].Id,this.currentTime,"DirectStream",this.PlaySessionId);
+	Server.videoStopped(this.queuedItems[this.currentPlayingItem].Id,this.queuedItems[this.currentPlayingItem].MediaSources[0].Id,this.currentTime,"DirectStream");
 	this.pluginMusic.Stop();
 	this.Status = "STOPPED";
 		
@@ -526,7 +519,7 @@ GuiMusicPlayer.setCurrentTime = function(time){
 			if (this.updateTimeCount == 8) {
 				this.updateTimeCount = 0;
 				//Update Server
-				Server.videoPaused(this.queuedItems[this.currentPlayingItem].Id,this.queuedItems[this.currentPlayingItem].MediaSources[0].Id,this.currentTime,"DirectStream",this.PlaySessionId);
+				Server.videoPaused(this.queuedItems[this.currentPlayingItem].Id,this.queuedItems[this.currentPlayingItem].MediaSources[0].Id,this.currentTime,"DirectStream");
 			}
 			document.getElementById("guiMusicPlayerTime").innerHTML = Support.convertTicksToTime(this.currentTime, (this.queuedItems[this.currentPlayingItem].RunTimeTicks / 10000));
 		}
@@ -567,7 +560,7 @@ GuiMusicPlayer.OnStreamInfoReady = function() {
 	document.getElementById("guiMusicPlayerTime").innerHTML = Support.convertTicksToTime(this.currentTime, (this.queuedItems[this.currentPlayingItem].RunTimeTicks / 10000));
 	
 	//Playback Checkin
-	Server.videoStarted(this.queuedItems[this.currentPlayingItem].Id,this.queuedItems[this.currentPlayingItem].MediaSources[0].Id,"DirectStream",this.PlaySessionId);
+	Server.videoStarted(this.queuedItems[this.currentPlayingItem].Id,this.queuedItems[this.currentPlayingItem].MediaSources[0].Id,"DirectStream");
 	
     //Volume & Mute Control - Works!
 	NNaviPlugin = document.getElementById("pluginObjectNNavi");

@@ -275,7 +275,7 @@ Support.updateDisplayedItems = function(Items,selectedItemID,startPos,endPos,Div
 				if (Items[index].ParentThumbItemId) {
 					title = this.getNameFormat("", Items[index].ParentIndexNumber, Items[index].Name, Items[index].IndexNumber);
 					imgsrc = Server.getImageURL(Items[index].SeriesId,"Thumb",Main.posterWidth,Main.posterHeight,0,false);
-				} else if (Items[index].ParentBackdropItemId) {	
+				} else if (Items[index].ParentBackdropImageTags.length > 0) {	
 					title = title = this.getNameFormat(Items[index].SeriesName, Items[index].ParentIndexNumber, Items[index].Name, Items[index].IndexNumber,  Items[index].SeriesStudio?Items[index].SeriesStudio:undefined, Items[index].AirTime?Items[index].AirTime:undefined);
 					imgsrc = Server.getImageURL(Items[index].ParentBackdropItemId,"Backdrop",Main.posterWidth,Main.posterHeight,0,false);
 				} else if (Items[index].ImageTags.Primary) {	
@@ -311,11 +311,23 @@ Support.updateDisplayedItems = function(Items,selectedItemID,startPos,endPos,Div
 		} else {
 			//----------------------------------------------------------------------------------------------
 			if (Items[index].Type == "Genre") {	
+				var itemCount = 0;
+				
+				switch (Genre) {
+				case "Movie":
+					itemCount = Items[index].MovieCount;
+					break;
+				case "Series":
+					itemCount = Items[index].SeriesCount;
+					break;
+				default:
+					break;
+				}
 				if (Items[index].ImageTags.Primary) {
 					var imgsrc = (File.getUserProperty("LargerView") == true) ? Server.getImageURL(Items[index].Id,"Primary",238,356,0,false,0) : Server.getImageURL(Items[index].Id,"Primary",192,280,0,false,0); 
-					htmlToAdd += "<div id="+ DivIdPrepend + Items[index].Id + " style=background-image:url(" +imgsrc+ ")></div>";	
+					htmlToAdd += "<div id="+ DivIdPrepend + Items[index].Id + " style=background-image:url(" +imgsrc+ ")><div class='genreItemCount highlight"+Main.highlightColour+"Background'>"+itemCount+"</div></div>";	
 				} else {
-					htmlToAdd += "<div id="+ DivIdPrepend + Items[index].Id + " style=background-color:rgba(0,0,0,0.5);></div>";
+					htmlToAdd += "<div id="+ DivIdPrepend + Items[index].Id + " style=background-color:rgba(0,0,0,0.5);><div class='genreItemCount highlight"+Main.highlightColour+"Background'>"+itemCount+"</div></div>";
 				}
 			//----------------------------------------------------------------------------------------------
 			} else if (Items[index].Type == "Episode") {
@@ -325,10 +337,10 @@ Support.updateDisplayedItems = function(Items,selectedItemID,startPos,endPos,Div
 					var imgsrc = Server.getImageURL(Items[index].SeriesId,"Thumb",Main.posterWidth,Main.posterHeight,0,Items[index].UserData.Played,0);
 					imageData = "'background-image:url(" +imgsrc+ ");background-size:contain'";
 					title = this.getNameFormat("", Items[index].ParentIndexNumber, Items[index].Name, Items[index].IndexNumber,  Items[index].SeriesStudio?Items[index].SeriesStudio:undefined, Items[index].AirTime?Items[index].AirTime:undefined);
-				} else if (Items[index].ParentBackdropItemId) {	
+				} else if (Items[index].ParentBackdropImageTags.length > 0) {	
 					var imgsrc = Server.getImageURL(Items[index].ParentBackdropItemId,"Backdrop",Main.posterWidth,Main.posterHeight,0,false);
 					imageData = "'background-image:url(" +imgsrc+ ");background-size:contain'";
-					title = this.getNameFormat(Items[index].SeriesName, Items[index].ParentIndexNumber, Items[index].Name, Items[index].IndexNumber,  Items[index].SeriesStudio?Items[index].SeriesStudio:undefined, Items[index].AirTime?Items[index].AirTime:undefined);
+					title = title = this.getNameFormat(Items[index].SeriesName, Items[index].ParentIndexNumber, Items[index].Name, Items[index].IndexNumber,  Items[index].SeriesStudio?Items[index].SeriesStudio:undefined, Items[index].AirTime?Items[index].AirTime:undefined);
 				} else 	if (Items[index].ImageTags.Primary) {	
 					var imgsrc = Server.getImageURL(Items[index].Id,"Primary",Main.posterWidth,Main.posterHeight,0,Items[index].UserData.Played,0);	
 					imageData = "'background-image:url(" +imgsrc+ ");background-size:contain'";
@@ -774,7 +786,7 @@ Support.processSelectedItem = function(page,ItemData,startParams,selectedItem,to
 		case "Series":
 			//Is Latest Items Screen - If so skip to Episode view of latest episodes
 			if (isLatest) {
-				var url = Server.getCustomURL("/Shows/" + ItemData.Items[selectedItem].Id +  "/Episodes?format=json&userId=" + Server.getUserID() + "&isPlayed=false&IsFolder=false&GroupItems=false&fields=SortName,Overview,Genres,RunTimeTicks");
+				var url = Server.getCustomURL("/Users/" + Server.getUserID() + "/Items/Latest?format=json&Limit="+ItemData.Items[selectedItem].ChildCount+"&ParentId="+ItemData.Items[selectedItem].Id+"&isPlayed=false&IsFolder=false&GroupItems=false&fields=SortName,Overview,Genres,RunTimeTicks");
 				GuiDisplay_Episodes.start("New TV",url,0,0);
 			} else {
 				var url = Server.getItemInfoURL(ItemData.Items[selectedItem].Id,null);
@@ -1241,11 +1253,11 @@ Support.enterMusicPage = function(musicView) {
 				GuiDisplay_Series.start("Album Music",url,0,0);
 				break;
 			case "Album Artist":
-				var url = Server.getCustomURL("/Artists/AlbumArtists?format=json&SortBy=SortName&SortOrder=Ascending&Recursive=true&ExcludeLocationTypes=Virtual&Fields=ParentId,SortName,Genres&userId=" + Server.getUserID());
+				var url = Server.getCustomURL("/Artists/AlbumArtists?format=json&SortBy=SortName&SortOrder=Ascending&Recursive=true&ExcludeLocationTypes=Virtual&Fields=ParentId,SortName,Genres,ItemCounts&userId=" + Server.getUserID());
 				GuiPage_MusicArtist.start("Album Artist",url,0,0);
 				break;
 			case "Artist":
-				var url = Server.getCustomURL("/Artists?format=json&SortBy=SortName&SortOrder=Ascending&Recursive=true&ExcludeLocationTypes=Virtual&Fields=ParentId,SortName,Genres&userId=" + Server.getUserID());
+				var url = Server.getCustomURL("/Artists?format=json&SortBy=SortName&SortOrder=Ascending&Recursive=true&ExcludeLocationTypes=Virtual&Fields=ParentId,SortName,Genres,ItemCounts&userId=" + Server.getUserID());
 				GuiDisplay_Series.start("Artist Music",url,0,0);
 				break;
 			case "Recent":

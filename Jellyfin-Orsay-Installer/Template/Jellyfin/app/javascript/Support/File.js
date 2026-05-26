@@ -211,7 +211,7 @@ File.deleteUserPasswords = function () {
 		fileSystemObj.closeCommonFile(openRead);	
 
 		for (var index = 0; index < fileJson.Servers[this.ServerEntry].Users.length; index++) {
-			fileJson.Servers[this.ServerEntry].Users[index].Password = ""; // Do this so that users with no password are unaffected!
+			fileJson.Servers[this.ServerEntry].Users[index].Password = ""; // Do this so that users with no password are unaffected! 
 		}
 		
 		var openWrite = fileSystemObj.openCommonFile(curWidget.id + '/MB3_Settings.json', 'w');
