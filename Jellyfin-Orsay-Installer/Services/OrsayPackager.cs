@@ -3,31 +3,41 @@ using System.IO;
 using System.IO.Compression;
 using System.Text;
 using System.Xml.Linq;
+using Jellyfin.Orsay.Installer.Core;
+using Jellyfin.Orsay.Installer.Models;
+using Jellyfin.Orsay.Installer.Services.Abstractions;
 
-namespace Jellyfin.Orsay.Installer.Services
+namespace Jellyfin.Orsay.Installer.Services;
+
+public sealed class OrsayPackager : IOrsayPackager
 {
-    public sealed class OrsayPackager
+    private readonly string _templateRoot;
+
+    public OrsayPackager()
     {
-        private readonly string _templateRoot;
+        _templateRoot = Path.Combine(AppContext.BaseDirectory, "Template");
+    }
 
-        public record BuildResult(string ZipFileName, long ZipSize, string WidgetId);
+    public string GetDefaultOutputPath()
+    {
+        return Path.Combine(
+            AppContext.BaseDirectory,
+            "assets",
+            "orsay-output"
+        );
+    }
 
-        public OrsayPackager(string templateRoot)
+    public Result<PackageResult> BuildWidget(string outputRoot, string appName, string localIp, int port)
+    {
+        try
         {
-            _templateRoot = templateRoot;
-        }
+            // Validate template exists
+            var jellyfinTemplatePath = Path.Combine(_templateRoot, "Jellyfin");
+            if (!Directory.Exists(jellyfinTemplatePath))
+            {
+                return Result<PackageResult>.Failure($"Template directory not found: {jellyfinTemplatePath}");
+            }
 
-        public string GetDefaultOutputPath()
-        {
-            return Path.Combine(
-                AppContext.BaseDirectory,
-                "assets",
-                "orsay-output"
-            );
-        }
-
-        public BuildResult BuildWidget(string outputRoot, string appName, string localIp, int port)
-        {
             // Clean output directory
             if (Directory.Exists(outputRoot))
                 Directory.Delete(outputRoot, true);
@@ -38,7 +48,7 @@ namespace Jellyfin.Orsay.Installer.Services
             Directory.CreateDirectory(tempWidget);
 
             // Copy template files
-            CopyDir(Path.Combine(_templateRoot, "Jellyfin"), tempWidget);
+            CopyDir(jellyfinTemplatePath, tempWidget);
 
             // Extract version from config.xml
             var version = ExtractVersion(Path.Combine(tempWidget, "config.xml"));
@@ -89,32 +99,43 @@ namespace Jellyfin.Orsay.Installer.Services
                 new UTF8Encoding(false) // UTF-8 without BOM
             );
 
-            return new BuildResult(zipFileName, zipSize, widgetId);
-        }
-
-        private static string ExtractVersion(string configXmlPath)
-        {
-            try
+            return Result<PackageResult>.Success(new PackageResult
             {
-                var doc = XDocument.Load(configXmlPath);
-                var verElement = doc.Root?.Element("ver");
-                if (verElement != null)
-                    return verElement.Value;
-            }
-            catch
-            {
-                // Fallback if parsing fails
-            }
-            return "1.0.0";
+                ZipFileName = zipFileName,
+                ZipSize = zipSize,
+                WidgetId = widgetId,
+                OutputPath = outputRoot,
+                DownloadUrl = downloadUrl
+            });
         }
-
-        private static void CopyDir(string src, string dst)
+        catch (Exception ex)
         {
-            Directory.CreateDirectory(dst);
-            foreach (var f in Directory.GetFiles(src))
-                File.Copy(f, Path.Combine(dst, Path.GetFileName(f)), true);
-            foreach (var d in Directory.GetDirectories(src))
-                CopyDir(d, Path.Combine(dst, Path.GetFileName(d)));
+            return Result<PackageResult>.Failure($"Failed to build widget: {ex.Message}");
         }
+    }
+
+    private static string ExtractVersion(string configXmlPath)
+    {
+        try
+        {
+            var doc = XDocument.Load(configXmlPath);
+            var verElement = doc.Root?.Element("ver");
+            if (verElement != null)
+                return verElement.Value;
+        }
+        catch
+        {
+            // Fallback if parsing fails
+        }
+        return "1.0.0";
+    }
+
+    private static void CopyDir(string src, string dst)
+    {
+        Directory.CreateDirectory(dst);
+        foreach (var f in Directory.GetFiles(src))
+            File.Copy(f, Path.Combine(dst, Path.GetFileName(f)), true);
+        foreach (var d in Directory.GetDirectories(src))
+            CopyDir(d, Path.Combine(dst, Path.GetFileName(d)));
     }
 }

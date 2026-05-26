@@ -1,0 +1,358 @@
+# Dutch translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-04 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Dutch\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: App
+msgid "App.Title"
+msgstr "Jellyfin Installatie: Samsung Smart TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "Stap {0} van {1}"
+
+msgid "Wizard.GetStarted"
+msgstr "Beginnen"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "Welkom"
+
+msgid "Welcome.Subtitle"
+msgstr "Installeer Jellyfin op uw Samsung Smart TV models 2011-2015"
+
+msgid "Welcome.Feature1"
+msgstr "Eenvoudige installatie in enkele minuten"
+
+msgid "Welcome.Feature2"
+msgstr "Geen USB-stick nodig"
+
+msgid "Welcome.Feature3"
+msgstr "Werkt met 2012-2015 Samsung TV's"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "Netwerk instellen"
+
+msgid "Network.SelectIp"
+msgstr "Selecteer het IP-adres van uw PC:"
+
+msgid "Network.Port"
+msgstr "Server poort:"
+
+msgid "Network.PortHint"
+msgstr "Standaard is 80. Wijzig alleen indien nodig."
+
+msgid "Network.SameNetworkHint"
+msgstr "Uw TV moet op hetzelfde netwerk zijn als de geselecteerde interface."
+
+msgid "Network.GroupOther"
+msgstr "— Overig —"
+
+msgid "Network.GroupVirtual"
+msgstr "— Virtueel —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "TV instellen"
+
+msgid "TvSetup.IpBanner"
+msgstr "Voer dit IP-adres in op uw TV:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "Selecteer uw TV-serie:"
+
+msgid "TvSetup.SeriesE"
+msgstr "Serie E (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "Serie F (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "Serie H (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "Niet zeker? Controleer het modelnummer op de achterkant van uw TV (bijv. UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "Netwerk scannen naar TV's"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Gedetecteerd:"
+
+msgid "TvSetup.NextHint"
+msgstr "Lees deze instructies en klik op 'Volgende' om de server te starten. Volg daarna de stappen op uw TV."
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Open Smart Hub"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "Druk op de Smart Hub-knop op uw afstandsbediening, druk vervolgens op de rode A-knop om het inlogmenu te openen."
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "Inloggen als ontwikkelaar"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "Voer 'develop' in als accountnaam. De TV genereert een wachtwoord - noteer dit. Druk op Aanmelden."
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "Open ontwikkelaarinstellingen"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "Druk op de Tools-knop op uw afstandsbediening, ga naar Instellingen, selecteer vervolgens Ontwikkelaar."
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "Voer IP-adres in"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "Selecteer 'IP-adres' en voer in: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "Synchroniseer applicaties"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "Selecteer 'Gebruikersapp synchroniseren' om de installatie te starten. De app verschijnt in Smart Hub."
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "Open Samsung Account"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "Druk op de Menu-knop, ga naar Smart-functies, selecteer vervolgens Samsung Account."
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "Inloggen als ontwikkelaar"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "Voer 'develop' in als e-mail. Laat wachtwoord leeg (of probeer 'sso1029dev!' indien nodig). Druk op Aanmelden."
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "Open app-instellingen"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Druk op Smart Hub, ga naar Meer apps (rechtsonder), druk vervolgens op Opties."
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "Voer IP-adres in"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "Selecteer 'IP Settings' en voer in: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "Synchroniseer applicaties"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "Selecteer 'Start App Sync' om de installatie te starten."
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "Herstart indien nodig"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "Als apps niet verschijnen, herstart uw TV en controleer Smart Hub opnieuw."
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "Open Samsung Account"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Ga naar Smart Hub, selecteer Samsung Account, vervolgens Aanmelden."
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "Inloggen als ontwikkelaar"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "Voer 'develop' in als login. Sla het wachtwoordveld over. Vink 'Onthouden' aan en druk op Aanmelden."
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "Open synchronisatiemenu"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "Richt in Smart Hub uw afstandsbediening op een app en houd het midden van de D-pad ingedrukt tot een menu verschijnt."
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "Voer IP-adres in"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "Selecteer 'IP Setting' en voer in: {0} (bevestig elke nummergroep met het midden van de D-pad)."
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "Start synchronisatie"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "Open het menu opnieuw en selecteer 'Start User App Sync'."
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "Voltooi installatie"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "Accepteer de installatieprompt. Verlaat Smart Hub en ga opnieuw naar binnen om de geïnstalleerde apps te zien."
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "Installeren..."
+
+msgid "Server.Running"
+msgstr "Server draait"
+
+msgid "Server.Stopped"
+msgstr "Server gestopt"
+
+msgid "Server.Requests"
+msgstr "Verzoeken"
+
+msgid "Server.LastRequest"
+msgstr "Laatste verzoek"
+
+msgid "Server.InstallProgress"
+msgstr "Installatieproces"
+
+msgid "Server.TvConnected"
+msgstr "TV verbonden (widgetlist.xml opgevraagd)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "Widget gedownload (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "Wachten op TV-verbinding..."
+
+msgid "Server.InstallDetected"
+msgstr "Installatie gedetecteerd!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "Installatie voltooid!"
+
+msgid "Completed.Message"
+msgstr "Jellyfin is succesvol geïnstalleerd op uw TV."
+
+msgid "Completed.WhatsNext"
+msgstr "Wat nu?"
+
+msgid "Completed.Step1"
+msgstr "Open Smart Hub op uw TV"
+
+msgid "Completed.Step2"
+msgstr "Zoek en start de Jellyfin-app"
+
+msgid "Completed.Step3"
+msgstr "Configureer uw Jellyfin-server"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "Logboek"
+
+msgid "Logs.OpenButton"
+msgstr "Logs"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "Geïnstalleerd"
+
+msgid "Install.Waiting"
+msgstr "Wachten op TV..."
+
+msgid "Install.ThatWasEasy"
+msgstr "Dat was makkelijk!"
+
+msgid "Install.BuyMeABeer"
+msgstr "Koop me een biertje"
+
+#: Common
+msgid "Common.Back"
+msgstr "Terug"
+
+msgid "Common.Next"
+msgstr "Volgende"
+
+msgid "Common.Finish"
+msgstr "Voltooien"
+
+msgid "Common.Close"
+msgstr "Sluiten"
+
+msgid "Common.Cancel"
+msgstr "Annuleren"
+
+msgid "Common.Select"
+msgstr "Selecteren"
+
+msgid "Common.Copy"
+msgstr "Kopiëren"
+
+msgid "Common.CopyAll"
+msgstr "Alles kopiëren"
+
+msgid "Common.Clear"
+msgstr "Wissen"
+
+msgid "Common.Refresh"
+msgstr "Vernieuwen"
+
+msgid "Common.Recommended"
+msgstr "Aanbevolen"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "Zoeken naar TV's"
+
+msgid "Discovery.ScanButton"
+msgstr "Zoeken naar TV's"
+
+msgid "Discovery.Scanning"
+msgstr "Netwerk scannen..."
+
+msgid "Discovery.Found"
+msgstr "{0} Samsung TV('s) gevonden"
+
+msgid "Discovery.NoTvsFound"
+msgstr "Geen Samsung TV's gevonden op het netwerk"
+
+msgid "Discovery.Cancelled"
+msgstr "Scan geannuleerd"
+
+msgid "Discovery.NoInterface"
+msgstr "Geen netwerkinterface geselecteerd"
+
+msgid "Discovery.Error"
+msgstr "Zoeken mislukt"
+
+msgid "Discovery.Phase.Starting"
+msgstr "Zoeken starten..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "SSDP uitzenden..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "Poorten scannen..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "Scannen {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "Apparaatinfo ophalen..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Zoeken voltooid"
+
+msgid "Discovery.Confidence.High"
+msgstr "Hoge betrouwbaarheid"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Gemiddelde betrouwbaarheid"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Lage betrouwbaarheid"

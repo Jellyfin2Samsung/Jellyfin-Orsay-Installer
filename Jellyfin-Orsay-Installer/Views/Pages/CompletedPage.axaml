@@ -1,0 +1,108 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:Jellyfin.Orsay.Installer.ViewModels.Pages"
+             mc:Ignorable="d"
+             x:Class="Jellyfin.Orsay.Installer.Views.Pages.CompletedPage"
+             x:DataType="vm:CompletedPageViewModel">
+
+    <Grid Margin="24">
+        <StackPanel VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Spacing="32"
+                    MaxWidth="600">
+
+            <!-- Success Icon -->
+            <Border Background="#D5F4E6"
+                    CornerRadius="50"
+                    Width="100"
+                    Height="100"
+                    HorizontalAlignment="Center">
+                <TextBlock Text="✓"
+                           FontSize="48"
+                           FontWeight="Bold"
+                           Foreground="#27AE60"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+            </Border>
+
+            <!-- Title -->
+            <TextBlock Text="{Binding L[Completed.Title]}"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       Foreground="#27AE60"
+                       HorizontalAlignment="Center"/>
+
+            <!-- Message -->
+            <TextBlock Text="{Binding L[Completed.Message]}"
+                       FontSize="16"
+                       Foreground="#555"
+                       TextWrapping="Wrap"
+                       TextAlignment="Center"
+                       HorizontalAlignment="Center"/>
+
+            <!-- Next steps card -->
+            <Border Background="White"
+                    CornerRadius="12"
+                    Padding="24"
+                    BoxShadow="0 2 8 0 #20000000">
+                <StackPanel Spacing="16">
+                    <TextBlock Text="{Binding L[Completed.WhatsNext]}"
+                               FontSize="16"
+                               FontWeight="SemiBold"
+                               Foreground="#2C3E50"/>
+
+                    <StackPanel Spacing="8">
+                        <Grid ColumnDefinitions="Auto,*">
+                            <TextBlock Text="1."
+                                       FontWeight="Bold"
+                                       Foreground="#3498DB"/>
+                            <TextBlock Grid.Column="1"
+                                       Text="{Binding L[Completed.Step1]}"
+                                       Foreground="#555"
+                                       TextWrapping="Wrap"
+                                       Margin="8,0,0,0"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="Auto,*">
+                            <TextBlock Text="2."
+                                       FontWeight="Bold"
+                                       Foreground="#3498DB"/>
+                            <TextBlock Grid.Column="1"
+                                       Text="{Binding L[Completed.Step2]}"
+                                       Foreground="#555"
+                                       TextWrapping="Wrap"
+                                       Margin="8,0,0,0"/>
+                        </Grid>
+                        <Grid ColumnDefinitions="Auto,*">
+                            <TextBlock Text="3."
+                                       FontWeight="Bold"
+                                       Foreground="#3498DB"/>
+                            <TextBlock Grid.Column="1"
+                                       Text="{Binding L[Completed.Step3]}"
+                                       Foreground="#555"
+                                       TextWrapping="Wrap"
+                                       Margin="8,0,0,0"/>
+                        </Grid>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Donate button -->
+            <Button Command="{Binding BuyMeABeerCommand}"
+                    HorizontalAlignment="Center"
+                    Padding="24,12"
+                    Background="#F39C12"
+                    Foreground="White"
+                    CornerRadius="8">
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <TextBlock Text="☕"
+                               FontSize="16"/>
+                    <TextBlock Text="{Binding L[Install.BuyMeABeer]}"
+                               FontWeight="SemiBold"/>
+                </StackPanel>
+            </Button>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

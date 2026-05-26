@@ -1,0 +1,358 @@
+# Chinese Simplified translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: App
+msgid "App.Title"
+msgstr "Jellyfin 安装程序：三星智能电视 (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "第 {0} 步，共 {1} 步"
+
+msgid "Wizard.GetStarted"
+msgstr "开始"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "欢迎"
+
+msgid "Welcome.Subtitle"
+msgstr "在您的三星智能电视 2011-2015 型号上安装 Jellyfin"
+
+msgid "Welcome.Feature1"
+msgstr "几分钟内轻松安装"
+
+msgid "Welcome.Feature2"
+msgstr "无需 USB 设备"
+
+msgid "Welcome.Feature3"
+msgstr "支持 2012-2015 年三星电视"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "网络设置"
+
+msgid "Network.SelectIp"
+msgstr "选择您电脑的 IP 地址："
+
+msgid "Network.Port"
+msgstr "服务器端口："
+
+msgid "Network.PortHint"
+msgstr "默认为 80。仅在需要时更改。"
+
+msgid "Network.SameNetworkHint"
+msgstr "您的电视必须与所选接口在同一网络中。"
+
+msgid "Network.GroupOther"
+msgstr "— 其他 —"
+
+msgid "Network.GroupVirtual"
+msgstr "— 虚拟 —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "电视设置"
+
+msgid "TvSetup.IpBanner"
+msgstr "在您的电视上输入此 IP 地址："
+
+msgid "TvSetup.SelectSeries"
+msgstr "选择您的电视系列："
+
+msgid "TvSetup.SeriesE"
+msgstr "E 系列 (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "F 系列 (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "H 系列 (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "不确定？请查看电视背面的型号（例如 UE40ES6100）"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "扫描网络中的电视"
+
+msgid "TvSetup.DetectedTv"
+msgstr "已检测到："
+
+msgid "TvSetup.NextHint"
+msgstr "阅读这些说明后，点击"下一步"启动服务器。然后在电视上按步骤操作。"
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "打开 Smart Hub"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "按遥控器上的 Smart Hub 按钮，然后按红色 A 按钮打开登录菜单。"
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "以开发者身份登录"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "输入 'develop' 作为账户名。电视将生成密码 - 请记录下来。按登录。"
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "打开开发者设置"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "按遥控器上的 Tools 按钮，进入设置，然后选择开发者。"
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "输入 IP 地址"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "选择"IP 地址"并输入：{0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "同步应用程序"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "选择"用户应用程序同步"开始安装。应用将出现在 Smart Hub 中。"
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "打开三星账户"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "按菜单按钮，进入智能功能，然后选择三星账户。"
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "以开发者身份登录"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "输入 'develop' 作为邮箱。密码留空（如需要可尝试 'sso1029dev!'）。按登录。"
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "打开应用设置"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "按 Smart Hub，进入更多应用（右下角），然后按选项。"
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "输入 IP 地址"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "选择 'IP Settings' 并输入：{0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "同步应用程序"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "选择 'Start App Sync' 开始安装。"
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "如需要请重启"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "如果应用未出现，请重启电视并再次检查 Smart Hub。"
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "打开三星账户"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "进入 Smart Hub，选择三星账户，然后登录。"
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "以开发者身份登录"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "输入 'develop' 作为登录名。跳过密码字段。勾选"记住"并按登录。"
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "打开同步菜单"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "在 Smart Hub 中，将遥控器对准任意应用并按住方向键中心，直到出现菜单。"
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "输入 IP 地址"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "选择 'IP Setting' 并输入：{0}（用方向键中心确认每组数字）。"
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "开始同步"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "再次打开菜单并选择 'Start User App Sync'。"
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "完成安装"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "接受安装提示。退出 Smart Hub 并重新进入以查看已安装的应用。"
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "正在安装..."
+
+msgid "Server.Running"
+msgstr "服务器运行中"
+
+msgid "Server.Stopped"
+msgstr "服务器已停止"
+
+msgid "Server.Requests"
+msgstr "请求数"
+
+msgid "Server.LastRequest"
+msgstr "最后请求"
+
+msgid "Server.InstallProgress"
+msgstr "安装进度"
+
+msgid "Server.TvConnected"
+msgstr "电视已连接（已请求 widgetlist.xml）"
+
+msgid "Server.WidgetDownloaded"
+msgstr "小部件已下载（.zip）"
+
+msgid "Server.WaitingForTv"
+msgstr "等待电视连接..."
+
+msgid "Server.InstallDetected"
+msgstr "检测到安装完成！"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "安装完成！"
+
+msgid "Completed.Message"
+msgstr "Jellyfin 已成功安装到您的电视。"
+
+msgid "Completed.WhatsNext"
+msgstr "接下来做什么？"
+
+msgid "Completed.Step1"
+msgstr "在电视上打开 Smart Hub"
+
+msgid "Completed.Step2"
+msgstr "找到并启动 Jellyfin 应用"
+
+msgid "Completed.Step3"
+msgstr "配置您的 Jellyfin 服务器"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "事件日志"
+
+msgid "Logs.OpenButton"
+msgstr "日志"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "已安装"
+
+msgid "Install.Waiting"
+msgstr "等待电视..."
+
+msgid "Install.ThatWasEasy"
+msgstr "真简单！"
+
+msgid "Install.BuyMeABeer"
+msgstr "请我喝杯啤酒"
+
+#: Common
+msgid "Common.Back"
+msgstr "返回"
+
+msgid "Common.Next"
+msgstr "下一步"
+
+msgid "Common.Finish"
+msgstr "完成"
+
+msgid "Common.Close"
+msgstr "关闭"
+
+msgid "Common.Cancel"
+msgstr "取消"
+
+msgid "Common.Select"
+msgstr "选择"
+
+msgid "Common.Copy"
+msgstr "复制"
+
+msgid "Common.CopyAll"
+msgstr "全部复制"
+
+msgid "Common.Clear"
+msgstr "清除"
+
+msgid "Common.Refresh"
+msgstr "刷新"
+
+msgid "Common.Recommended"
+msgstr "推荐"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "搜索电视"
+
+msgid "Discovery.ScanButton"
+msgstr "搜索电视"
+
+msgid "Discovery.Scanning"
+msgstr "正在扫描网络..."
+
+msgid "Discovery.Found"
+msgstr "找到 {0} 台三星电视"
+
+msgid "Discovery.NoTvsFound"
+msgstr "网络中未找到三星电视"
+
+msgid "Discovery.Cancelled"
+msgstr "扫描已取消"
+
+msgid "Discovery.NoInterface"
+msgstr "未选择网络接口"
+
+msgid "Discovery.Error"
+msgstr "搜索失败"
+
+msgid "Discovery.Phase.Starting"
+msgstr "开始搜索..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "正在发送 SSDP..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "正在扫描端口..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "正在扫描 {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "正在获取设备信息..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "搜索完成"
+
+msgid "Discovery.Confidence.High"
+msgstr "高可信度"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "中可信度"
+
+msgid "Discovery.Confidence.Low"
+msgstr "低可信度"

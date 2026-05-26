@@ -1,21 +1,11 @@
 using Avalonia.Controls;
-using Jellyfin.Orsay.Installer.ViewModels;
 
-namespace Jellyfin.Orsay.Installer.Views
+namespace Jellyfin.Orsay.Installer.Views;
+
+public partial class MainWindow : Window
 {
-    public partial class MainWindow : Window
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-
-        private void Window_Opened(object? sender, System.EventArgs e)
-        {
-            if (DataContext is MainWindowViewModel vm)
-            {
-                vm.CloseRequested += Close;
-            }
-        }
+        InitializeComponent();
     }
 }

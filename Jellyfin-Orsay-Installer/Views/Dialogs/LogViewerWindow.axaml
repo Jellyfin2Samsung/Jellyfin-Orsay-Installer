@@ -1,0 +1,93 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="using:Jellyfin.Orsay.Installer.ViewModels.Dialogs"
+        xmlns:conv="using:Jellyfin.Orsay.Installer.Converters"
+        mc:Ignorable="d"
+        x:Class="Jellyfin.Orsay.Installer.Views.Dialogs.LogViewerWindow"
+        x:DataType="vm:LogViewerViewModel"
+        Title="{Binding L[Logs.Title]}"
+        Width="550"
+        Height="450"
+        MinWidth="400"
+        MinHeight="300"
+        Background="#F5F5F5"
+        WindowStartupLocation="CenterOwner">
+
+    <Grid RowDefinitions="*,Auto">
+
+        <!-- Log entries list -->
+        <Border Grid.Row="0"
+                Background="White"
+                CornerRadius="8"
+                Margin="16,16,16,8"
+                BoxShadow="0 2 8 0 #20000000">
+            <ListBox ItemsSource="{Binding Entries}"
+                     Background="Transparent"
+                     Padding="8">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="Auto,Auto,*">
+                            <!-- Timestamp -->
+                            <TextBlock Grid.Column="0"
+                                       Text="{Binding Timestamp, StringFormat=[{0:HH:mm:ss}]}"
+                                       FontFamily="Consolas"
+                                       FontSize="12"
+                                       Foreground="#7F8C8D"
+                                       Margin="0,0,8,0"/>
+
+                            <!-- Level indicator -->
+                            <Border Grid.Column="1"
+                                    CornerRadius="3"
+                                    Padding="4,2"
+                                    Margin="0,0,8,0"
+                                    Background="{Binding Level, Converter={x:Static conv:LogLevelToBrushConverter.Instance}}">
+                                <TextBlock Text="{Binding Level}"
+                                           FontSize="10"
+                                           Foreground="White"
+                                           FontWeight="SemiBold"/>
+                            </Border>
+
+                            <!-- Message -->
+                            <TextBlock Grid.Column="2"
+                                       Text="{Binding Message}"
+                                       FontFamily="Consolas"
+                                       FontSize="12"
+                                       Foreground="#2C3E50"
+                                       TextWrapping="Wrap"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
+
+        <!-- Actions -->
+        <Border Grid.Row="1"
+                Background="White"
+                Padding="16"
+                BoxShadow="0 -2 8 0 #10000000">
+            <StackPanel Orientation="Horizontal"
+                        Spacing="12"
+                        HorizontalAlignment="Right">
+
+                <Button Content="{Binding L[Common.Clear]}"
+                        Command="{Binding ClearCommand}"
+                        Padding="16,8"
+                        Background="#E8E8E8"
+                        Foreground="#555"
+                        CornerRadius="6"
+                        Cursor="Hand"/>
+
+                <Button Content="{Binding L[Common.CopyAll]}"
+                        Command="{Binding CopyAllCommand}"
+                        Padding="16,8"
+                        Background="#3498DB"
+                        Foreground="White"
+                        CornerRadius="6"
+                        Cursor="Hand"/>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>

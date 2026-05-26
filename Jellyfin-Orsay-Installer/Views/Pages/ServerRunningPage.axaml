@@ -1,0 +1,177 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:Jellyfin.Orsay.Installer.ViewModels.Pages"
+             xmlns:conv="using:Jellyfin.Orsay.Installer.Converters"
+             mc:Ignorable="d"
+             x:Class="Jellyfin.Orsay.Installer.Views.Pages.ServerRunningPage"
+             x:DataType="vm:ServerRunningPageViewModel">
+
+    <Grid RowDefinitions="Auto,*" Margin="24">
+
+        <!-- Title -->
+        <TextBlock Grid.Row="0"
+                   Text="{Binding L[Server.Title]}"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="#2C3E50"
+                   Margin="0,0,0,24"/>
+
+        <!-- Content -->
+        <StackPanel Grid.Row="1" Spacing="24">
+
+            <!-- Server Status Card -->
+            <Border Background="White"
+                    CornerRadius="12"
+                    Padding="24"
+                    BoxShadow="0 2 8 0 #20000000">
+                <StackPanel Spacing="16">
+
+                    <!-- Status indicator -->
+                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <Border Width="16" Height="16"
+                                CornerRadius="8"
+                                Background="{Binding Status.IsRunning, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#27AE60;#E74C3C}"/>
+                        <TextBlock Text="{Binding L[Server.Running]}"
+                                   IsVisible="{Binding Status.IsRunning}"
+                                   FontSize="16"
+                                   FontWeight="SemiBold"
+                                   Foreground="#2C3E50"/>
+                        <TextBlock Text="{Binding L[Server.Stopped]}"
+                                   IsVisible="{Binding !Status.IsRunning}"
+                                   FontSize="16"
+                                   FontWeight="SemiBold"
+                                   Foreground="#2C3E50"/>
+                    </StackPanel>
+
+                    <!-- Server URL -->
+                    <Border Background="#2C3E50"
+                            CornerRadius="8"
+                            Padding="16">
+                        <SelectableTextBlock Text="{Binding ServerUrl}"
+                                            FontSize="18"
+                                            FontWeight="SemiBold"
+                                            FontFamily="Consolas"
+                                            Foreground="White"
+                                            HorizontalAlignment="Center"
+                                            SelectionBrush="#5078C0">
+                            <SelectableTextBlock.ContextFlyout>
+                                <MenuFlyout>
+                                    <MenuItem Header="{Binding L[Common.Copy]}"
+                                              Command="{Binding CopyUrlCommand}"/>
+                                </MenuFlyout>
+                            </SelectableTextBlock.ContextFlyout>
+                        </SelectableTextBlock>
+                    </Border>
+
+                    <!-- Stats -->
+                    <Grid ColumnDefinitions="*,*">
+                        <StackPanel Grid.Column="0" Spacing="4">
+                            <TextBlock Text="{Binding L[Server.Requests]}"
+                                       FontSize="12"
+                                       Foreground="#7F8C8D"/>
+                            <TextBlock Text="{Binding Status.RequestCount}"
+                                       FontSize="24"
+                                       FontWeight="Bold"
+                                       Foreground="#3498DB"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Spacing="4">
+                            <TextBlock Text="{Binding L[Server.LastRequest]}"
+                                       FontSize="12"
+                                       Foreground="#7F8C8D"/>
+                            <TextBlock Text="{Binding Status.LastRequestPath, FallbackValue=-}"
+                                       FontSize="14"
+                                       Foreground="#555"
+                                       TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Grid>
+
+                </StackPanel>
+            </Border>
+
+            <!-- Progress indicators -->
+            <Border Background="White"
+                    CornerRadius="12"
+                    Padding="24"
+                    BoxShadow="0 2 8 0 #20000000">
+                <StackPanel Spacing="12">
+                    <TextBlock Text="{Binding L[Server.InstallProgress]}"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#2C3E50"/>
+
+                    <!-- Widget list requested -->
+                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <Border Width="24" Height="24"
+                                CornerRadius="12"
+                                Background="{Binding Status.WidgetListRequested, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#27AE60;#BDC3C7}">
+                            <TextBlock Text="1"
+                                       FontWeight="Bold"
+                                       Foreground="White"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"/>
+                        </Border>
+                        <TextBlock Text="{Binding L[Server.TvConnected]}"
+                                   VerticalAlignment="Center"
+                                   TextWrapping="Wrap"
+                                   Foreground="{Binding Status.WidgetListRequested, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#2C3E50;#95A5A6}"/>
+                    </StackPanel>
+
+                    <!-- Widget downloaded -->
+                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <Border Width="24" Height="24"
+                                CornerRadius="12"
+                                Background="{Binding Status.WidgetDownloaded, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#27AE60;#BDC3C7}">
+                            <TextBlock Text="2"
+                                       FontWeight="Bold"
+                                       Foreground="White"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"/>
+                        </Border>
+                        <TextBlock Text="{Binding L[Server.WidgetDownloaded]}"
+                                   VerticalAlignment="Center"
+                                   TextWrapping="Wrap"
+                                   Foreground="{Binding Status.WidgetDownloaded, Converter={x:Static conv:BoolToColorConverter.Instance}, ConverterParameter=#2C3E50;#95A5A6}"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+
+            <!-- Waiting indicator -->
+            <Border Background="#E8F4FD"
+                    CornerRadius="8"
+                    Padding="16"
+                    IsVisible="{Binding !IsInstallDetected}">
+                <StackPanel Orientation="Horizontal" Spacing="12" HorizontalAlignment="Center">
+                    <ProgressBar IsIndeterminate="True"
+                                 Width="100"
+                                 Height="4"/>
+                    <TextBlock Text="{Binding L[Server.WaitingForTv]}"
+                               Foreground="#2980B9"
+                               VerticalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Success message -->
+            <Border Background="#D5F4E6"
+                    CornerRadius="8"
+                    Padding="16"
+                    IsVisible="{Binding IsInstallDetected}">
+                <StackPanel Orientation="Horizontal" Spacing="12" HorizontalAlignment="Center">
+                    <TextBlock Text="OK"
+                               FontSize="16"
+                               FontWeight="Bold"
+                               Foreground="#27AE60"/>
+                    <TextBlock Text="{Binding L[Server.InstallDetected]}"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#27AE60"
+                               VerticalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>

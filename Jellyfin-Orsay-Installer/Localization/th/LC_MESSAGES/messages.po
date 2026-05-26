@@ -1,0 +1,358 @@
+# Thai translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Thai\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: App
+msgid "App.Title"
+msgstr "ตัวติดตั้ง Jellyfin: Samsung Smart TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "ขั้นตอนที่ {0} จาก {1}"
+
+msgid "Wizard.GetStarted"
+msgstr "เริ่มต้น"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "ยินดีต้อนรับ"
+
+msgid "Welcome.Subtitle"
+msgstr "ติดตั้ง Jellyfin บน Samsung Smart TV รุ่นปี 2011-2015"
+
+msgid "Welcome.Feature1"
+msgstr "ติดตั้งง่ายภายในไม่กี่นาที"
+
+msgid "Welcome.Feature2"
+msgstr "ไม่ต้องใช้ USB"
+
+msgid "Welcome.Feature3"
+msgstr "รองรับ Samsung TV ปี 2012-2015"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "ตั้งค่าเครือข่าย"
+
+msgid "Network.SelectIp"
+msgstr "เลือกที่อยู่ IP ของคอมพิวเตอร์:"
+
+msgid "Network.Port"
+msgstr "พอร์ตเซิร์ฟเวอร์:"
+
+msgid "Network.PortHint"
+msgstr "ค่าเริ่มต้นคือ 80 เปลี่ยนเฉพาะเมื่อจำเป็น"
+
+msgid "Network.SameNetworkHint"
+msgstr "ทีวีต้องอยู่ในเครือข่ายเดียวกันกับอินเทอร์เฟซที่เลือก"
+
+msgid "Network.GroupOther"
+msgstr "— อื่นๆ —"
+
+msgid "Network.GroupVirtual"
+msgstr "— เสมือน —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "ตั้งค่าทีวี"
+
+msgid "TvSetup.IpBanner"
+msgstr "ป้อนที่อยู่ IP นี้ในทีวี:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "เลือกซีรีส์ทีวี:"
+
+msgid "TvSetup.SeriesE"
+msgstr "ซีรีส์ E (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "ซีรีส์ F (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "ซีรีส์ H (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "ไม่แน่ใจ? ตรวจสอบหมายเลขรุ่นที่ด้านหลังทีวี (เช่น UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "ค้นหาทีวีในเครือข่าย"
+
+msgid "TvSetup.DetectedTv"
+msgstr "พบ:"
+
+msgid "TvSetup.NextHint"
+msgstr "หลังอ่านคำแนะนำเหล่านี้ คลิก 'ถัดไป' เพื่อเริ่มเซิร์ฟเวอร์ แล้วทำตามขั้นตอนบนทีวี"
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "เปิด Smart Hub"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "กดปุ่ม Smart Hub บนรีโมท แล้วกดปุ่ม A สีแดงเพื่อเปิดเมนูเข้าสู่ระบบ"
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "เข้าสู่ระบบเป็นนักพัฒนา"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "ป้อน 'develop' เป็นชื่อบัญชี ทีวีจะสร้างรหัสผ่าน - จดไว้ กดลงชื่อเข้าใช้"
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "เปิดการตั้งค่านักพัฒนา"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "กดปุ่ม Tools บนรีโมท ไปที่การตั้งค่า แล้วเลือกนักพัฒนา"
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "ป้อนที่อยู่ IP"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "เลือก 'ที่อยู่ IP' แล้วป้อน: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "ซิงค์แอปพลิเคชัน"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "เลือก 'ซิงค์แอปพลิเคชันผู้ใช้' เพื่อเริ่มการติดตั้ง แอปจะปรากฏใน Smart Hub"
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "เปิดบัญชี Samsung"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "กดปุ่มเมนู ไปที่คุณสมบัติอัจฉริยะ แล้วเลือกบัญชี Samsung"
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "เข้าสู่ระบบเป็นนักพัฒนา"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "ป้อน 'develop' เป็นอีเมล ปล่อยรหัสผ่านว่างไว้ (หรือลอง 'sso1029dev!' หากจำเป็น) กดลงชื่อเข้าใช้"
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "เปิดการตั้งค่าแอป"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "กด Smart Hub ไปที่แอปเพิ่มเติม (ขวาล่าง) แล้วกดตัวเลือก"
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "ป้อนที่อยู่ IP"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "เลือก 'การตั้งค่า IP' แล้วป้อน: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "ซิงค์แอปพลิเคชัน"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "เลือก 'เริ่มซิงค์แอป' เพื่อเริ่มการติดตั้ง"
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "รีสตาร์ทหากจำเป็น"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "หากแอปไม่ปรากฏ ให้รีสตาร์ททีวีและตรวจสอบ Smart Hub อีกครั้ง"
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "เปิดบัญชี Samsung"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "ไปที่ Smart Hub เลือกบัญชี Samsung แล้วเลือกลงชื่อเข้าใช้"
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "เข้าสู่ระบบเป็นนักพัฒนา"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "ป้อน 'develop' เป็นชื่อเข้าสู่ระบบ ข้ามช่องรหัสผ่าน ทำเครื่องหมาย 'จดจำ' แล้วกดลงชื่อเข้าใช้"
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "เปิดเมนูซิงค์"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "ใน Smart Hub ชี้รีโมทไปที่แอปใดก็ได้ แล้วกดตรงกลาง D-pad ค้างไว้จนกว่าเมนูจะปรากฏ"
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "ป้อนที่อยู่ IP"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "เลือก 'การตั้งค่า IP' แล้วป้อน: {0} (ยืนยันแต่ละกลุ่มตัวเลขด้วยตรงกลาง D-pad)"
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "เริ่มซิงค์"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "เปิดเมนูอีกครั้งแล้วเลือก 'Start User App Sync'"
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "เสร็จสิ้นการติดตั้ง"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "ยอมรับข้อความติดตั้ง ออกจาก Smart Hub แล้วเข้าอีกครั้งเพื่อดูแอปที่ติดตั้ง"
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "กำลังติดตั้ง..."
+
+msgid "Server.Running"
+msgstr "เซิร์ฟเวอร์กำลังทำงาน"
+
+msgid "Server.Stopped"
+msgstr "เซิร์ฟเวอร์หยุดทำงาน"
+
+msgid "Server.Requests"
+msgstr "คำขอ"
+
+msgid "Server.LastRequest"
+msgstr "คำขอล่าสุด"
+
+msgid "Server.InstallProgress"
+msgstr "ความคืบหน้าการติดตั้ง"
+
+msgid "Server.TvConnected"
+msgstr "ทีวีเชื่อมต่อแล้ว (ขอ widgetlist.xml)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "ดาวน์โหลดวิดเจ็ตแล้ว (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "รอการเชื่อมต่อทีวี..."
+
+msgid "Server.InstallDetected"
+msgstr "ตรวจพบการติดตั้ง!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "ติดตั้งเสร็จสิ้น!"
+
+msgid "Completed.Message"
+msgstr "ติดตั้ง Jellyfin บนทีวีเรียบร้อยแล้ว"
+
+msgid "Completed.WhatsNext"
+msgstr "ขั้นตอนต่อไป?"
+
+msgid "Completed.Step1"
+msgstr "เปิด Smart Hub บนทีวี"
+
+msgid "Completed.Step2"
+msgstr "ค้นหาและเปิดแอป Jellyfin"
+
+msgid "Completed.Step3"
+msgstr "ตั้งค่าเซิร์ฟเวอร์ Jellyfin"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "บันทึกเหตุการณ์"
+
+msgid "Logs.OpenButton"
+msgstr "บันทึก"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "ติดตั้งแล้ว"
+
+msgid "Install.Waiting"
+msgstr "รอทีวี..."
+
+msgid "Install.ThatWasEasy"
+msgstr "ง่ายมาก!"
+
+msgid "Install.BuyMeABeer"
+msgstr "เลี้ยงเบียร์สักแก้ว"
+
+#: Common
+msgid "Common.Back"
+msgstr "ย้อนกลับ"
+
+msgid "Common.Next"
+msgstr "ถัดไป"
+
+msgid "Common.Finish"
+msgstr "เสร็จสิ้น"
+
+msgid "Common.Close"
+msgstr "ปิด"
+
+msgid "Common.Cancel"
+msgstr "ยกเลิก"
+
+msgid "Common.Select"
+msgstr "เลือก"
+
+msgid "Common.Copy"
+msgstr "คัดลอก"
+
+msgid "Common.CopyAll"
+msgstr "คัดลอกทั้งหมด"
+
+msgid "Common.Clear"
+msgstr "ล้าง"
+
+msgid "Common.Refresh"
+msgstr "รีเฟรช"
+
+msgid "Common.Recommended"
+msgstr "แนะนำ"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "ค้นหาทีวี"
+
+msgid "Discovery.ScanButton"
+msgstr "ค้นหาทีวี"
+
+msgid "Discovery.Scanning"
+msgstr "กำลังค้นหาเครือข่าย..."
+
+msgid "Discovery.Found"
+msgstr "พบ {0} Samsung TV"
+
+msgid "Discovery.NoTvsFound"
+msgstr "ไม่พบ Samsung TV ในเครือข่าย"
+
+msgid "Discovery.Cancelled"
+msgstr "ยกเลิกการค้นหา"
+
+msgid "Discovery.NoInterface"
+msgstr "ไม่ได้เลือกอินเทอร์เฟซเครือข่าย"
+
+msgid "Discovery.Error"
+msgstr "การค้นหาล้มเหลว"
+
+msgid "Discovery.Phase.Starting"
+msgstr "กำลังเริ่มค้นหา..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "กำลังส่ง SSDP..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "กำลังสแกนพอร์ต..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "กำลังสแกน {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "กำลังดึงข้อมูลอุปกรณ์..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "การค้นหาเสร็จสิ้น"
+
+msgid "Discovery.Confidence.High"
+msgstr "ความมั่นใจสูง"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "ความมั่นใจปานกลาง"
+
+msgid "Discovery.Confidence.Low"
+msgstr "ความมั่นใจต่ำ"

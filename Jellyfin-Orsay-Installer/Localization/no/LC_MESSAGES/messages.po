@@ -1,0 +1,358 @@
+# Norwegian translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Norwegian\n"
+"Language: no\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: App
+msgid "App.Title"
+msgstr "Jellyfin Installasjonsprogram: Samsung Smart TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "Steg {0} av {1}"
+
+msgid "Wizard.GetStarted"
+msgstr "Kom i gang"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "Velkommen"
+
+msgid "Welcome.Subtitle"
+msgstr "Installer Jellyfin på din Samsung Smart TV fra 2011-2015"
+
+msgid "Welcome.Feature1"
+msgstr "Enkel installasjon på noen minutter"
+
+msgid "Welcome.Feature2"
+msgstr "Ingen USB-stasjon nødvendig"
+
+msgid "Welcome.Feature3"
+msgstr "Fungerer med 2012-2015 Samsung TV-er"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "Nettverksoppsett"
+
+msgid "Network.SelectIp"
+msgstr "Velg PC-ens IP-adresse:"
+
+msgid "Network.Port"
+msgstr "Serverport:"
+
+msgid "Network.PortHint"
+msgstr "Standard er 80. Endre kun ved behov."
+
+msgid "Network.SameNetworkHint"
+msgstr "TV-en må være på samme nettverk som det valgte grensesnittet."
+
+msgid "Network.GroupOther"
+msgstr "— Andre —"
+
+msgid "Network.GroupVirtual"
+msgstr "— Virtuelle —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "TV-oppsett"
+
+msgid "TvSetup.IpBanner"
+msgstr "Skriv inn denne IP-adressen på TV-en:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "Velg TV-serie:"
+
+msgid "TvSetup.SeriesE"
+msgstr "Serie E (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "Serie F (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "Serie H (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "Usikker? Sjekk modellnummeret på baksiden av TV-en (f.eks. UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "Søk etter TV-er på nettverket"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Funnet:"
+
+msgid "TvSetup.NextHint"
+msgstr "Etter å ha lest disse instruksjonene, klikk 'Neste' for å starte serveren. Følg deretter stegene på TV-en."
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Åpne Smart Hub"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "Trykk på Smart Hub-knappen på fjernkontrollen, og trykk deretter på den røde A-knappen for å åpne innloggingsmenyen."
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "Logg inn som utvikler"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "Skriv inn 'develop' som kontonavn. TV-en vil generere et passord - noter det. Trykk på Logg inn."
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "Åpne utviklerinnstillinger"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "Trykk på Verktøy-knappen på fjernkontrollen, gå til Innstillinger, og velg Utvikler."
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "Skriv inn IP-adresse"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "Velg 'IP-adresse' og skriv inn: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "Synkroniser applikasjoner"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "Velg 'Synkroniser brukerapplikasjoner' for å starte installasjonen. Appen vises i Smart Hub."
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "Åpne Samsung-konto"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "Trykk på Meny-knappen, gå til Smarte funksjoner, og velg Samsung-konto."
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "Logg inn som utvikler"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "Skriv inn 'develop' som e-post. La passordet være tomt (eller prøv 'sso1029dev!' hvis nødvendig). Trykk på Logg inn."
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "Åpne app-innstillinger"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Trykk på Smart Hub, gå til Flere apper (nederst til høyre), og trykk på Alternativer."
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "Skriv inn IP-adresse"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "Velg 'IP-innstillinger' og skriv inn: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "Synkroniser applikasjoner"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "Velg 'Start app-synkronisering' for å starte installasjonen."
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "Start på nytt ved behov"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "Hvis appene ikke vises, start TV-en på nytt og sjekk Smart Hub igjen."
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "Åpne Samsung-konto"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Gå til Smart Hub, velg Samsung-konto, og velg Logg inn."
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "Logg inn som utvikler"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "Skriv inn 'develop' som brukernavn. Hopp over passordfeltet. Merk av 'Husk' og trykk på Logg inn."
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "Åpne synkroniseringsmeny"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "I Smart Hub, pek fjernkontrollen på en app og hold midten av D-pad nede til en meny vises."
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "Skriv inn IP-adresse"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "Velg 'IP-innstilling' og skriv inn: {0} (bekreft hver tallgruppe med D-pad midten)."
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "Start synkronisering"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "Åpne menyen igjen og velg 'Start User App Sync'."
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "Fullfør installasjon"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "Godta installasjonsmeldingen. Forlat Smart Hub og gå inn igjen for å se installerte apper."
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "Installerer..."
+
+msgid "Server.Running"
+msgstr "Server kjører"
+
+msgid "Server.Stopped"
+msgstr "Server stoppet"
+
+msgid "Server.Requests"
+msgstr "Forespørsler"
+
+msgid "Server.LastRequest"
+msgstr "Siste forespørsel"
+
+msgid "Server.InstallProgress"
+msgstr "Installasjonsfremdrift"
+
+msgid "Server.TvConnected"
+msgstr "TV tilkoblet (widgetlist.xml forespurt)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "Widget lastet ned (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "Venter på TV-tilkobling..."
+
+msgid "Server.InstallDetected"
+msgstr "Installasjon oppdaget!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "Installasjon fullført!"
+
+msgid "Completed.Message"
+msgstr "Jellyfin har blitt installert på TV-en din."
+
+msgid "Completed.WhatsNext"
+msgstr "Hva nå?"
+
+msgid "Completed.Step1"
+msgstr "Åpne Smart Hub på TV-en"
+
+msgid "Completed.Step2"
+msgstr "Finn og start Jellyfin-appen"
+
+msgid "Completed.Step3"
+msgstr "Konfigurer Jellyfin-serveren din"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "Hendelseslogg"
+
+msgid "Logs.OpenButton"
+msgstr "Logger"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "Installert"
+
+msgid "Install.Waiting"
+msgstr "Venter på TV..."
+
+msgid "Install.ThatWasEasy"
+msgstr "Det var enkelt!"
+
+msgid "Install.BuyMeABeer"
+msgstr "Kjøp meg en øl"
+
+#: Common
+msgid "Common.Back"
+msgstr "Tilbake"
+
+msgid "Common.Next"
+msgstr "Neste"
+
+msgid "Common.Finish"
+msgstr "Fullfør"
+
+msgid "Common.Close"
+msgstr "Lukk"
+
+msgid "Common.Cancel"
+msgstr "Avbryt"
+
+msgid "Common.Select"
+msgstr "Velg"
+
+msgid "Common.Copy"
+msgstr "Kopier"
+
+msgid "Common.CopyAll"
+msgstr "Kopier alt"
+
+msgid "Common.Clear"
+msgstr "Tøm"
+
+msgid "Common.Refresh"
+msgstr "Oppdater"
+
+msgid "Common.Recommended"
+msgstr "Anbefalt"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "Søk etter TV-er"
+
+msgid "Discovery.ScanButton"
+msgstr "Søk etter TV-er"
+
+msgid "Discovery.Scanning"
+msgstr "Søker på nettverket..."
+
+msgid "Discovery.Found"
+msgstr "Fant {0} Samsung TV(er)"
+
+msgid "Discovery.NoTvsFound"
+msgstr "Ingen Samsung TV-er funnet på nettverket"
+
+msgid "Discovery.Cancelled"
+msgstr "Søk avbrutt"
+
+msgid "Discovery.NoInterface"
+msgstr "Ingen nettverksgrensesnitt valgt"
+
+msgid "Discovery.Error"
+msgstr "Oppdagelse mislyktes"
+
+msgid "Discovery.Phase.Starting"
+msgstr "Starter oppdagelse..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "Sender SSDP..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "Skanner porter..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "Skanner {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "Henter enhetsinfo..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Oppdagelse fullført"
+
+msgid "Discovery.Confidence.High"
+msgstr "Høy sikkerhet"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Middels sikkerhet"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Lav sikkerhet"

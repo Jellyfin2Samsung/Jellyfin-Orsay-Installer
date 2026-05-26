@@ -1,31 +1,82 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Text.Json;
+using Jellyfin.Orsay.Installer.Services.Abstractions;
 
-namespace Jellyfin.Orsay.Installer.Services
+namespace Jellyfin.Orsay.Installer.Services;
+
+public sealed class SettingsService : ISettingsService
 {
-    public static class SettingsService
+    private readonly string _settingsPath;
+    private AppSettings _settings;
+
+    public SettingsService()
     {
-        private static readonly string Path = System.IO.Path.Combine(AppContext.BaseDirectory, "settings.json");
+        _settingsPath = Path.Combine(AppContext.BaseDirectory, "settings.json");
+        _settings = LoadSettings();
+    }
 
-        public static string LoadLanguage()
+    public string LoadLanguage() => _settings.Language;
+
+    public void SaveLanguage(string languageCode)
+    {
+        _settings = _settings with { Language = languageCode };
+        SaveSettings();
+    }
+
+    public int LoadPort() => _settings.Port;
+
+    public void SavePort(int port)
+    {
+        _settings = _settings with { Port = port };
+        SaveSettings();
+    }
+
+    public string? LoadLastIpAddress() => _settings.LastIpAddress;
+
+    public void SaveLastIpAddress(string ipAddress)
+    {
+        _settings = _settings with { LastIpAddress = ipAddress };
+        SaveSettings();
+    }
+
+    private AppSettings LoadSettings()
+    {
+        try
         {
-            if (!File.Exists(Path))
-                return "en";
+            if (!File.Exists(_settingsPath))
+                return new AppSettings();
 
-            var json = File.ReadAllText(Path);
-            return JsonSerializer.Deserialize<Settings>(json)?.Language ?? "en";
+            var json = File.ReadAllText(_settingsPath);
+            return JsonSerializer.Deserialize<AppSettings>(json) ?? new AppSettings();
         }
-
-        public static void SaveLanguage(string lang)
+        catch
         {
-            Directory.CreateDirectory(System.IO.Path.GetDirectoryName(Path)!);
-            File.WriteAllText(Path, JsonSerializer.Serialize(new Settings { Language = lang }));
+            return new AppSettings();
         }
+    }
 
-        private class Settings
+    private void SaveSettings()
+    {
+        try
         {
-            public string Language { get; set; } = "en";
+            var directory = Path.GetDirectoryName(_settingsPath);
+            if (!string.IsNullOrEmpty(directory))
+                Directory.CreateDirectory(directory);
+
+            var json = JsonSerializer.Serialize(_settings, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(_settingsPath, json);
         }
+        catch
+        {
+            // Silently ignore save errors
+        }
+    }
+
+    private record AppSettings
+    {
+        public string Language { get; init; } = "en";
+        public int Port { get; init; } = 80;
+        public string? LastIpAddress { get; init; }
     }
 }

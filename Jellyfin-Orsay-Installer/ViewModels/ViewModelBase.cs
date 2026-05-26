@@ -1,26 +1,39 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
+using CommunityToolkit.Mvvm.ComponentModel;
+using Jellyfin.Orsay.Installer.Localization;
+using Jellyfin.Orsay.Installer.Services.Abstractions;
 
-namespace Jellyfin.Orsay.Installer.ViewModels
+namespace Jellyfin.Orsay.Installer.ViewModels;
+
+/// <summary>
+/// Base class for all ViewModels in the application.
+/// Provides shared localization support via the L property.
+/// </summary>
+public abstract class ViewModelBase : ObservableObject
 {
-    public abstract class ViewModelBase : INotifyPropertyChanged
+    /// <summary>
+    /// Localization helper for XAML bindings.
+    /// Usage: {Binding L[Key]} or L.Format("Key", args) in code.
+    /// </summary>
+    public LocalizationViewModel L { get; }
+
+    /// <summary>
+    /// Direct access to localization service for advanced scenarios.
+    /// </summary>
+    protected ILocalizationService Localization { get; }
+
+    protected ViewModelBase(ILocalizationService localization)
     {
-        public event PropertyChangedEventHandler? PropertyChanged;
+        Localization = localization;
+        L = new LocalizationViewModel(localization);
+        localization.LanguageChanged += OnLocalizationChanged;
+    }
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        protected bool SetProperty<T>(ref T field, T value, [CallerMemberName] string? propertyName = null)
-        {
-            if (EqualityComparer<T>.Default.Equals(field, value))
-                return false;
-
-            field = value;
-            OnPropertyChanged(propertyName);
-            return true;
-        }
+    /// <summary>
+    /// Override to handle language changes for computed properties
+    /// that use L.Format() or conditional logic.
+    /// </summary>
+    protected virtual void OnLocalizationChanged()
+    {
+        // Default: no action needed if all strings use L[Key] in XAML
     }
 }

@@ -1,0 +1,65 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:Jellyfin.Orsay.Installer.ViewModels.Pages"
+             mc:Ignorable="d"
+             x:Class="Jellyfin.Orsay.Installer.Views.Pages.WelcomePage"
+             x:DataType="vm:WelcomePageViewModel">
+
+    <Grid RowDefinitions="*,Auto" Margin="24">
+
+        <!-- Main Content -->
+        <StackPanel Grid.Row="0"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Spacing="24">
+
+            <!-- Icon -->
+            <Image Source="/Assets/jelly2sams.ico"
+                   Width="96" Height="96"
+                   HorizontalAlignment="Center"/>
+
+            <!-- Title -->
+            <TextBlock Text="{Binding L[Welcome.Title]}"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       Foreground="#2C3E50"
+                       HorizontalAlignment="Center"/>
+
+            <!-- Subtitle -->
+            <TextBlock Text="{Binding L[Welcome.Subtitle]}"
+                       FontSize="16"
+                       Foreground="#7F8C8D"
+                       TextWrapping="Wrap"
+                       TextAlignment="Center"
+                       HorizontalAlignment="Center"/>
+
+            <!-- Features list -->
+            <Border Background="#F8F9FA"
+                    CornerRadius="12"
+                    Padding="24"
+                    Margin="0,16,0,0">
+                <StackPanel Spacing="12">
+                    <Grid ColumnDefinitions="Auto,*">
+                        <TextBlock Text="1." FontWeight="SemiBold" Foreground="#3498DB"/>
+                        <TextBlock Grid.Column="1" Text="{Binding L[Welcome.Feature1]}"
+                                   Foreground="#555" TextWrapping="Wrap" Margin="12,0,0,0"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="Auto,*">
+                        <TextBlock Text="2." FontWeight="SemiBold" Foreground="#3498DB"/>
+                        <TextBlock Grid.Column="1" Text="{Binding L[Welcome.Feature2]}"
+                                   Foreground="#555" TextWrapping="Wrap" Margin="12,0,0,0"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="Auto,*">
+                        <TextBlock Text="3." FontWeight="SemiBold" Foreground="#3498DB"/>
+                        <TextBlock Grid.Column="1" Text="{Binding L[Welcome.Feature3]}"
+                                   Foreground="#555" TextWrapping="Wrap" Margin="12,0,0,0"/>
+                    </Grid>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>

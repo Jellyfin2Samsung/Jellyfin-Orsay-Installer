@@ -1,0 +1,358 @@
+# Greek translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Greek\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: App
+msgid "App.Title"
+msgstr "Πρόγραμμα εγκατάστασης Jellyfin: Samsung Smart TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "Βήμα {0} από {1}"
+
+msgid "Wizard.GetStarted"
+msgstr "Έναρξη"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "Καλώς ήρθατε"
+
+msgid "Welcome.Subtitle"
+msgstr "Εγκαταστήστε το Jellyfin στην Samsung Smart TV σας 2011-2015"
+
+msgid "Welcome.Feature1"
+msgstr "Εύκολη εγκατάσταση σε λίγα λεπτά"
+
+msgid "Welcome.Feature2"
+msgstr "Δεν απαιτείται USB"
+
+msgid "Welcome.Feature3"
+msgstr "Λειτουργεί με Samsung TV 2012-2015"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "Ρύθμιση δικτύου"
+
+msgid "Network.SelectIp"
+msgstr "Επιλέξτε τη διεύθυνση IP του υπολογιστή:"
+
+msgid "Network.Port"
+msgstr "Θύρα διακομιστή:"
+
+msgid "Network.PortHint"
+msgstr "Προεπιλογή είναι 80. Αλλάξτε μόνο αν χρειάζεται."
+
+msgid "Network.SameNetworkHint"
+msgstr "Η τηλεόραση πρέπει να είναι στο ίδιο δίκτυο με την επιλεγμένη διεπαφή."
+
+msgid "Network.GroupOther"
+msgstr "— Άλλα —"
+
+msgid "Network.GroupVirtual"
+msgstr "— Εικονικά —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "Ρύθμιση τηλεόρασης"
+
+msgid "TvSetup.IpBanner"
+msgstr "Εισάγετε αυτή τη διεύθυνση IP στην τηλεόραση:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "Επιλέξτε τη σειρά της τηλεόρασης:"
+
+msgid "TvSetup.SeriesE"
+msgstr "Σειρά E (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "Σειρά F (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "Σειρά H (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "Δεν είστε σίγουροι; Ελέγξτε τον αριθμό μοντέλου στο πίσω μέρος της TV (π.χ. UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "Σάρωση δικτύου για τηλεοράσεις"
+
+msgid "TvSetup.DetectedTv"
+msgstr "Εντοπίστηκε:"
+
+msgid "TvSetup.NextHint"
+msgstr "Αφού διαβάσετε τις οδηγίες, κάντε κλικ στο 'Επόμενο' για να ξεκινήσει ο διακομιστής. Μετά ακολουθήστε τα βήματα στην τηλεόραση."
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Ανοίξτε το Smart Hub"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "Πατήστε το κουμπί Smart Hub στο τηλεχειριστήριο και μετά το κόκκινο κουμπί A για να ανοίξει το μενού σύνδεσης."
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "Σύνδεση ως προγραμματιστής"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "Εισάγετε 'develop' ως όνομα λογαριασμού. Η TV θα δημιουργήσει κωδικό - σημειώστε τον. Πατήστε Σύνδεση."
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "Ανοίξτε τις ρυθμίσεις προγραμματιστή"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "Πατήστε το κουμπί Εργαλεία στο τηλεχειριστήριο, μεταβείτε στις Ρυθμίσεις και επιλέξτε Προγραμματιστής."
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "Εισάγετε τη διεύθυνση IP"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "Επιλέξτε 'Διεύθυνση IP' και εισάγετε: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "Συγχρονισμός εφαρμογών"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "Επιλέξτε 'Συγχρονισμός εφαρμογών χρήστη' για να ξεκινήσει η εγκατάσταση. Η εφαρμογή θα εμφανιστεί στο Smart Hub."
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "Ανοίξτε τον λογαριασμό Samsung"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "Πατήστε το κουμπί Μενού, μεταβείτε στις Έξυπνες λειτουργίες και επιλέξτε Λογαριασμός Samsung."
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "Σύνδεση ως προγραμματιστής"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "Εισάγετε 'develop' ως email. Αφήστε τον κωδικό κενό (ή δοκιμάστε 'sso1029dev!' αν χρειάζεται). Πατήστε Σύνδεση."
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "Ανοίξτε τις ρυθμίσεις εφαρμογών"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Πατήστε Smart Hub, μεταβείτε στις Περισσότερες εφαρμογές (κάτω δεξιά) και πατήστε Επιλογές."
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "Εισάγετε τη διεύθυνση IP"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "Επιλέξτε 'Ρυθμίσεις IP' και εισάγετε: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "Συγχρονισμός εφαρμογών"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "Επιλέξτε 'Έναρξη συγχρονισμού εφαρμογών' για να ξεκινήσει η εγκατάσταση."
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "Επανεκκίνηση αν χρειάζεται"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "Αν οι εφαρμογές δεν εμφανίζονται, επανεκκινήστε την τηλεόραση και ελέγξτε ξανά το Smart Hub."
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "Ανοίξτε τον λογαριασμό Samsung"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Μεταβείτε στο Smart Hub, επιλέξτε Λογαριασμός Samsung και μετά Σύνδεση."
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "Σύνδεση ως προγραμματιστής"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "Εισάγετε 'develop' ως όνομα χρήστη. Παραλείψτε το πεδίο κωδικού. Επιλέξτε 'Απομνημόνευση' και πατήστε Σύνδεση."
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "Ανοίξτε το μενού συγχρονισμού"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "Στο Smart Hub, στρέψτε το τηλεχειριστήριο σε οποιαδήποτε εφαρμογή και κρατήστε πατημένο το κέντρο του D-pad μέχρι να εμφανιστεί μενού."
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "Εισάγετε τη διεύθυνση IP"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "Επιλέξτε 'Ρύθμιση IP' και εισάγετε: {0} (επιβεβαιώστε κάθε ομάδα αριθμών με το κέντρο του D-pad)."
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "Έναρξη συγχρονισμού"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "Ανοίξτε ξανά το μενού και επιλέξτε 'Start User App Sync'."
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "Ολοκλήρωση εγκατάστασης"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "Αποδεχτείτε το μήνυμα εγκατάστασης. Βγείτε από το Smart Hub και μπείτε ξανά για να δείτε τις εγκατεστημένες εφαρμογές."
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "Εγκατάσταση..."
+
+msgid "Server.Running"
+msgstr "Ο διακομιστής εκτελείται"
+
+msgid "Server.Stopped"
+msgstr "Ο διακομιστής σταμάτησε"
+
+msgid "Server.Requests"
+msgstr "Αιτήματα"
+
+msgid "Server.LastRequest"
+msgstr "Τελευταίο αίτημα"
+
+msgid "Server.InstallProgress"
+msgstr "Πρόοδος εγκατάστασης"
+
+msgid "Server.TvConnected"
+msgstr "TV συνδέθηκε (ζητήθηκε widgetlist.xml)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "Το widget κατέβηκε (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "Αναμονή σύνδεσης TV..."
+
+msgid "Server.InstallDetected"
+msgstr "Εντοπίστηκε εγκατάσταση!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "Η εγκατάσταση ολοκληρώθηκε!"
+
+msgid "Completed.Message"
+msgstr "Το Jellyfin εγκαταστάθηκε επιτυχώς στην τηλεόρασή σας."
+
+msgid "Completed.WhatsNext"
+msgstr "Τι ακολουθεί;"
+
+msgid "Completed.Step1"
+msgstr "Ανοίξτε το Smart Hub στην τηλεόραση"
+
+msgid "Completed.Step2"
+msgstr "Βρείτε και ξεκινήστε την εφαρμογή Jellyfin"
+
+msgid "Completed.Step3"
+msgstr "Ρυθμίστε τον διακομιστή Jellyfin"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "Αρχείο καταγραφής"
+
+msgid "Logs.OpenButton"
+msgstr "Αρχεία"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "Εγκαταστάθηκε"
+
+msgid "Install.Waiting"
+msgstr "Αναμονή TV..."
+
+msgid "Install.ThatWasEasy"
+msgstr "Ήταν εύκολο!"
+
+msgid "Install.BuyMeABeer"
+msgstr "Κέρασέ με μια μπύρα"
+
+#: Common
+msgid "Common.Back"
+msgstr "Πίσω"
+
+msgid "Common.Next"
+msgstr "Επόμενο"
+
+msgid "Common.Finish"
+msgstr "Τέλος"
+
+msgid "Common.Close"
+msgstr "Κλείσιμο"
+
+msgid "Common.Cancel"
+msgstr "Ακύρωση"
+
+msgid "Common.Select"
+msgstr "Επιλογή"
+
+msgid "Common.Copy"
+msgstr "Αντιγραφή"
+
+msgid "Common.CopyAll"
+msgstr "Αντιγραφή όλων"
+
+msgid "Common.Clear"
+msgstr "Εκκαθάριση"
+
+msgid "Common.Refresh"
+msgstr "Ανανέωση"
+
+msgid "Common.Recommended"
+msgstr "Συνιστάται"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "Αναζήτηση TV"
+
+msgid "Discovery.ScanButton"
+msgstr "Αναζήτηση TV"
+
+msgid "Discovery.Scanning"
+msgstr "Σάρωση δικτύου..."
+
+msgid "Discovery.Found"
+msgstr "Βρέθηκαν {0} Samsung TV"
+
+msgid "Discovery.NoTvsFound"
+msgstr "Δεν βρέθηκαν Samsung TV στο δίκτυο"
+
+msgid "Discovery.Cancelled"
+msgstr "Η σάρωση ακυρώθηκε"
+
+msgid "Discovery.NoInterface"
+msgstr "Δεν έχει επιλεγεί διεπαφή δικτύου"
+
+msgid "Discovery.Error"
+msgstr "Η ανακάλυψη απέτυχε"
+
+msgid "Discovery.Phase.Starting"
+msgstr "Έναρξη ανακάλυψης..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "Μετάδοση SSDP..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "Σάρωση θυρών..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "Σάρωση {0}..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "Λήψη πληροφοριών συσκευής..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "Η ανακάλυψη ολοκληρώθηκε"
+
+msgid "Discovery.Confidence.High"
+msgstr "Υψηλή βεβαιότητα"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "Μέτρια βεβαιότητα"
+
+msgid "Discovery.Confidence.Low"
+msgstr "Χαμηλή βεβαιότητα"

@@ -1,0 +1,358 @@
+# Korean translations for Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015)
+# Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: 2026-01-07 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: App
+msgid "App.Title"
+msgstr "Jellyfin 설치 프로그램: 삼성 스마트 TV (Orsay)"
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr "{1}단계 중 {0}단계"
+
+msgid "Wizard.GetStarted"
+msgstr "시작하기"
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr "환영합니다"
+
+msgid "Welcome.Subtitle"
+msgstr "2011-2015년형 삼성 스마트 TV에 Jellyfin을 설치하세요"
+
+msgid "Welcome.Feature1"
+msgstr "몇 분 만에 간편하게 설치"
+
+msgid "Welcome.Feature2"
+msgstr "USB 드라이브 불필요"
+
+msgid "Welcome.Feature3"
+msgstr "2012-2015년형 삼성 TV 지원"
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr "네트워크 설정"
+
+msgid "Network.SelectIp"
+msgstr "PC의 IP 주소를 선택하세요:"
+
+msgid "Network.Port"
+msgstr "서버 포트:"
+
+msgid "Network.PortHint"
+msgstr "기본값은 80입니다. 필요한 경우에만 변경하세요."
+
+msgid "Network.SameNetworkHint"
+msgstr "TV가 선택한 네트워크와 동일한 네트워크에 있어야 합니다."
+
+msgid "Network.GroupOther"
+msgstr "— 기타 —"
+
+msgid "Network.GroupVirtual"
+msgstr "— 가상 —"
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr "TV 설정"
+
+msgid "TvSetup.IpBanner"
+msgstr "TV에 이 IP 주소를 입력하세요:"
+
+msgid "TvSetup.SelectSeries"
+msgstr "TV 시리즈를 선택하세요:"
+
+msgid "TvSetup.SeriesE"
+msgstr "E 시리즈 (2012)"
+
+msgid "TvSetup.SeriesF"
+msgstr "F 시리즈 (2013)"
+
+msgid "TvSetup.SeriesH"
+msgstr "H 시리즈 (2014-15)"
+
+msgid "TvSetup.DontKnowSeries"
+msgstr "잘 모르시겠어요? TV 뒷면의 모델 번호를 확인하세요 (예: UE40ES6100)"
+
+msgid "TvSetup.ScanForTvs"
+msgstr "네트워크에서 TV 검색"
+
+msgid "TvSetup.DetectedTv"
+msgstr "감지됨:"
+
+msgid "TvSetup.NextHint"
+msgstr "이 안내를 읽은 후 '다음'을 클릭하여 서버를 시작하세요. 그런 다음 TV에서 단계를 따르세요."
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr "Smart Hub 열기"
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr "리모컨의 Smart Hub 버튼을 누른 다음 빨간색 A 버튼을 눌러 로그인 메뉴를 여세요."
+
+msgid "TvSetup.E.Step2.Title"
+msgstr "개발자로 로그인"
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr "계정 이름으로 'develop'을 입력하세요. TV가 비밀번호를 생성합니다 - 메모해 두세요. 로그인을 누르세요."
+
+msgid "TvSetup.E.Step3.Title"
+msgstr "개발자 설정 열기"
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr "리모컨의 도구 버튼을 누르고 설정으로 이동한 다음 개발자를 선택하세요."
+
+msgid "TvSetup.E.Step4.Title"
+msgstr "IP 주소 입력"
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr "'IP 주소'를 선택하고 다음을 입력하세요: {0}"
+
+msgid "TvSetup.E.Step5.Title"
+msgstr "애플리케이션 동기화"
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr "'사용자 애플리케이션 동기화'를 선택하여 설치를 시작하세요. 앱이 Smart Hub에 나타납니다."
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr "삼성 계정 열기"
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr "메뉴 버튼을 누르고 스마트 기능으로 이동한 다음 삼성 계정을 선택하세요."
+
+msgid "TvSetup.F.Step2.Title"
+msgstr "개발자로 로그인"
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr "이메일로 'develop'을 입력하세요. 비밀번호는 비워두세요 (필요시 'sso1029dev!' 시도). 로그인을 누르세요."
+
+msgid "TvSetup.F.Step3.Title"
+msgstr "앱 설정 열기"
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr "Smart Hub를 누르고 더 많은 앱(오른쪽 하단)으로 이동한 다음 옵션을 누르세요."
+
+msgid "TvSetup.F.Step4.Title"
+msgstr "IP 주소 입력"
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr "'IP 설정'을 선택하고 다음을 입력하세요: {0}"
+
+msgid "TvSetup.F.Step5.Title"
+msgstr "애플리케이션 동기화"
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr "'앱 동기화 시작'을 선택하여 설치를 시작하세요."
+
+msgid "TvSetup.F.Step6.Title"
+msgstr "필요시 재시작"
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr "앱이 나타나지 않으면 TV를 재시작하고 Smart Hub를 다시 확인하세요."
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr "삼성 계정 열기"
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr "Smart Hub로 이동하여 삼성 계정을 선택한 다음 로그인을 선택하세요."
+
+msgid "TvSetup.H.Step2.Title"
+msgstr "개발자로 로그인"
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr "로그인으로 'develop'을 입력하세요. 비밀번호 필드는 건너뛰세요. '기억하기'를 체크하고 로그인을 누르세요."
+
+msgid "TvSetup.H.Step3.Title"
+msgstr "동기화 메뉴 열기"
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr "Smart Hub에서 리모컨으로 앱을 가리키고 메뉴가 나타날 때까지 D-pad 중앙을 길게 누르세요."
+
+msgid "TvSetup.H.Step4.Title"
+msgstr "IP 주소 입력"
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr "'IP 설정'을 선택하고 다음을 입력하세요: {0} (각 숫자 그룹을 D-pad 중앙으로 확인)."
+
+msgid "TvSetup.H.Step5.Title"
+msgstr "동기화 시작"
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr "메뉴를 다시 열고 'Start User App Sync'를 선택하세요."
+
+msgid "TvSetup.H.Step6.Title"
+msgstr "설치 완료"
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr "설치 메시지를 수락하세요. Smart Hub를 종료하고 다시 들어가면 설치된 앱을 볼 수 있습니다."
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr "설치 중..."
+
+msgid "Server.Running"
+msgstr "서버 실행 중"
+
+msgid "Server.Stopped"
+msgstr "서버 중지됨"
+
+msgid "Server.Requests"
+msgstr "요청"
+
+msgid "Server.LastRequest"
+msgstr "마지막 요청"
+
+msgid "Server.InstallProgress"
+msgstr "설치 진행률"
+
+msgid "Server.TvConnected"
+msgstr "TV 연결됨 (widgetlist.xml 요청됨)"
+
+msgid "Server.WidgetDownloaded"
+msgstr "위젯 다운로드됨 (.zip)"
+
+msgid "Server.WaitingForTv"
+msgstr "TV 연결 대기 중..."
+
+msgid "Server.InstallDetected"
+msgstr "설치 감지됨!"
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr "설치 완료!"
+
+msgid "Completed.Message"
+msgstr "Jellyfin이 TV에 성공적으로 설치되었습니다."
+
+msgid "Completed.WhatsNext"
+msgstr "다음 단계는?"
+
+msgid "Completed.Step1"
+msgstr "TV에서 Smart Hub를 여세요"
+
+msgid "Completed.Step2"
+msgstr "Jellyfin 앱을 찾아 실행하세요"
+
+msgid "Completed.Step3"
+msgstr "Jellyfin 서버를 구성하세요"
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr "이벤트 로그"
+
+msgid "Logs.OpenButton"
+msgstr "로그"
+
+#: Installation Status
+msgid "Install.Done"
+msgstr "설치됨"
+
+msgid "Install.Waiting"
+msgstr "TV 대기 중..."
+
+msgid "Install.ThatWasEasy"
+msgstr "간단하죠!"
+
+msgid "Install.BuyMeABeer"
+msgstr "맥주 한 잔 사주기"
+
+#: Common
+msgid "Common.Back"
+msgstr "이전"
+
+msgid "Common.Next"
+msgstr "다음"
+
+msgid "Common.Finish"
+msgstr "완료"
+
+msgid "Common.Close"
+msgstr "닫기"
+
+msgid "Common.Cancel"
+msgstr "취소"
+
+msgid "Common.Select"
+msgstr "선택"
+
+msgid "Common.Copy"
+msgstr "복사"
+
+msgid "Common.CopyAll"
+msgstr "모두 복사"
+
+msgid "Common.Clear"
+msgstr "지우기"
+
+msgid "Common.Refresh"
+msgstr "새로고침"
+
+msgid "Common.Recommended"
+msgstr "권장"
+
+#: TV Discovery
+msgid "Discovery.Title"
+msgstr "TV 검색"
+
+msgid "Discovery.ScanButton"
+msgstr "TV 검색"
+
+msgid "Discovery.Scanning"
+msgstr "네트워크 검색 중..."
+
+msgid "Discovery.Found"
+msgstr "{0}대의 삼성 TV 발견"
+
+msgid "Discovery.NoTvsFound"
+msgstr "네트워크에서 삼성 TV를 찾을 수 없습니다"
+
+msgid "Discovery.Cancelled"
+msgstr "검색 취소됨"
+
+msgid "Discovery.NoInterface"
+msgstr "네트워크 인터페이스가 선택되지 않았습니다"
+
+msgid "Discovery.Error"
+msgstr "검색 실패"
+
+msgid "Discovery.Phase.Starting"
+msgstr "검색 시작 중..."
+
+msgid "Discovery.Phase.Ssdp"
+msgstr "SSDP 브로드캐스트 중..."
+
+msgid "Discovery.Phase.PortScan"
+msgstr "포트 스캔 중..."
+
+msgid "Discovery.Phase.PortScanIp"
+msgstr "{0} 스캔 중..."
+
+msgid "Discovery.Phase.FetchingInfo"
+msgstr "장치 정보 가져오는 중..."
+
+msgid "Discovery.Phase.Complete"
+msgstr "검색 완료"
+
+msgid "Discovery.Confidence.High"
+msgstr "높은 신뢰도"
+
+msgid "Discovery.Confidence.Medium"
+msgstr "중간 신뢰도"
+
+msgid "Discovery.Confidence.Low"
+msgstr "낮은 신뢰도"

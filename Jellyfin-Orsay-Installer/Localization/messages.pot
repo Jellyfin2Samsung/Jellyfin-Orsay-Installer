@@ -1,0 +1,288 @@
+# Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) - Translation Template
+# Copyright (C) 2024-2026 Patrick Stel, Artem Smirnov & Contributors
+# This file is distributed under the same license as the Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Jellyfin Installer for Samsung Smart TV (Orsay) models (2011-2015) 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-04 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: App
+msgid "App.Title"
+msgstr ""
+
+#: Wizard
+msgid "Wizard.Step"
+msgstr ""
+
+msgid "Wizard.GetStarted"
+msgstr ""
+
+#: Welcome Page
+msgid "Welcome.Title"
+msgstr ""
+
+msgid "Welcome.Subtitle"
+msgstr ""
+
+msgid "Welcome.Feature1"
+msgstr ""
+
+msgid "Welcome.Feature2"
+msgstr ""
+
+msgid "Welcome.Feature3"
+msgstr ""
+
+#: Network Setup Page
+msgid "Network.Title"
+msgstr ""
+
+msgid "Network.SelectIp"
+msgstr ""
+
+msgid "Network.Port"
+msgstr ""
+
+msgid "Network.PortHint"
+msgstr ""
+
+msgid "Network.SameNetworkHint"
+msgstr ""
+
+#: TV Setup Page
+msgid "TvSetup.Title"
+msgstr ""
+
+msgid "TvSetup.IpBanner"
+msgstr ""
+
+msgid "TvSetup.SelectSeries"
+msgstr ""
+
+msgid "TvSetup.SeriesE"
+msgstr ""
+
+msgid "TvSetup.SeriesF"
+msgstr ""
+
+msgid "TvSetup.SeriesH"
+msgstr ""
+
+msgid "TvSetup.DontKnowSeries"
+msgstr ""
+
+#: TV Setup - Series E (2012)
+msgid "TvSetup.E.Step1.Title"
+msgstr ""
+
+msgid "TvSetup.E.Step1.Desc"
+msgstr ""
+
+msgid "TvSetup.E.Step2.Title"
+msgstr ""
+
+msgid "TvSetup.E.Step2.Desc"
+msgstr ""
+
+msgid "TvSetup.E.Step3.Title"
+msgstr ""
+
+msgid "TvSetup.E.Step3.Desc"
+msgstr ""
+
+msgid "TvSetup.E.Step4.Title"
+msgstr ""
+
+msgid "TvSetup.E.Step4.Desc"
+msgstr ""
+
+msgid "TvSetup.E.Step5.Title"
+msgstr ""
+
+msgid "TvSetup.E.Step5.Desc"
+msgstr ""
+
+#: TV Setup - Series F (2013)
+msgid "TvSetup.F.Step1.Title"
+msgstr ""
+
+msgid "TvSetup.F.Step1.Desc"
+msgstr ""
+
+msgid "TvSetup.F.Step2.Title"
+msgstr ""
+
+msgid "TvSetup.F.Step2.Desc"
+msgstr ""
+
+msgid "TvSetup.F.Step3.Title"
+msgstr ""
+
+msgid "TvSetup.F.Step3.Desc"
+msgstr ""
+
+msgid "TvSetup.F.Step4.Title"
+msgstr ""
+
+msgid "TvSetup.F.Step4.Desc"
+msgstr ""
+
+msgid "TvSetup.F.Step5.Title"
+msgstr ""
+
+msgid "TvSetup.F.Step5.Desc"
+msgstr ""
+
+msgid "TvSetup.F.Step6.Title"
+msgstr ""
+
+msgid "TvSetup.F.Step6.Desc"
+msgstr ""
+
+#: TV Setup - Series H (2014-15)
+msgid "TvSetup.H.Step1.Title"
+msgstr ""
+
+msgid "TvSetup.H.Step1.Desc"
+msgstr ""
+
+msgid "TvSetup.H.Step2.Title"
+msgstr ""
+
+msgid "TvSetup.H.Step2.Desc"
+msgstr ""
+
+msgid "TvSetup.H.Step3.Title"
+msgstr ""
+
+msgid "TvSetup.H.Step3.Desc"
+msgstr ""
+
+msgid "TvSetup.H.Step4.Title"
+msgstr ""
+
+msgid "TvSetup.H.Step4.Desc"
+msgstr ""
+
+msgid "TvSetup.H.Step5.Title"
+msgstr ""
+
+msgid "TvSetup.H.Step5.Desc"
+msgstr ""
+
+msgid "TvSetup.H.Step6.Title"
+msgstr ""
+
+msgid "TvSetup.H.Step6.Desc"
+msgstr ""
+
+#: Server Running Page
+msgid "Server.Title"
+msgstr ""
+
+msgid "Server.WaitingForTv"
+msgstr ""
+
+msgid "Server.Requests"
+msgstr ""
+
+msgid "Server.LastRequest"
+msgstr ""
+
+msgid "Server.Url"
+msgstr ""
+
+msgid "Server.InstallProgress"
+msgstr ""
+
+msgid "Server.TvConnected"
+msgstr ""
+
+msgid "Server.WidgetDownloaded"
+msgstr ""
+
+msgid "Server.InstallDetected"
+msgstr ""
+
+#: Completed Page
+msgid "Completed.Title"
+msgstr ""
+
+msgid "Completed.Message"
+msgstr ""
+
+msgid "Completed.WhatsNext"
+msgstr ""
+
+msgid "Completed.Step1"
+msgstr ""
+
+msgid "Completed.Step2"
+msgstr ""
+
+msgid "Completed.Step3"
+msgstr ""
+
+#: Log Viewer
+msgid "Logs.Title"
+msgstr ""
+
+msgid "Logs.OpenButton"
+msgstr ""
+
+#: Installation Status
+msgid "Install.Done"
+msgstr ""
+
+msgid "Install.Waiting"
+msgstr ""
+
+msgid "Install.ThatWasEasy"
+msgstr ""
+
+msgid "Install.BuyMeABeer"
+msgstr ""
+
+#: Common
+msgid "Common.Back"
+msgstr ""
+
+msgid "Common.Next"
+msgstr ""
+
+msgid "Common.Finish"
+msgstr ""
+
+msgid "Common.Close"
+msgstr ""
+
+msgid "Common.Cancel"
+msgstr ""
+
+msgid "Common.Select"
+msgstr ""
+
+msgid "Common.Copy"
+msgstr ""
+
+msgid "Common.CopyAll"
+msgstr ""
+
+msgid "Common.Clear"
+msgstr ""
+
+msgid "Common.Refresh"
+msgstr ""
+
+msgid "Common.Recommended"
+msgstr ""
